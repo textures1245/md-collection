@@ -1,0 +1,9 @@
+{
+  "accentColor": "",
+  "theme": "moonstone",
+  "baseFontSize": 13,
+  "cssTheme": "Minimal",
+  "enabledCssSnippets": [
+    "tag_colors"
+  ]
+}

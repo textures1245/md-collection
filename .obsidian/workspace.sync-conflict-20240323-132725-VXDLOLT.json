@@ -1,0 +1,393 @@
+{
+  "main": {
+    "id": "91622c51dc4840a0",
+    "type": "split",
+    "children": [
+      {
+        "id": "7501e7b31e1cd729",
+        "type": "tabs",
+        "dimension": 46.36118598382749,
+        "children": [
+          {
+            "id": "bab31f94ab54824c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PROJECTS/Home For Paws/Application Design.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e1b4233932ef79f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Books/Money Literacy/Based of Wealthy.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "75c609d7062b334f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PROJECTS/Components.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aab986805e5d0abd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Go Lectures/Concept/Go Generic.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "74680b0f6e4cd528",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Go Lectures/Package & Module.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f452420a74e187e9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Go Lectures/Concept/Pointer.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 5
+      },
+      {
+        "id": "02a184b334bca340",
+        "type": "tabs",
+        "dimension": 53.63881401617251,
+        "children": [
+          {
+            "id": "db50b8e91f0f7d63",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "abdbfb539afea479",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Books/Money Literacy/Expense Income Guide.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d8627c0bb9c369c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PROJECTS/PaoSatang/Case-Study (YNAB).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b7c2457e02c46922",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Books/Money Literacy/Expense Income Guide.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "98b9b4baf172b3e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Books/Money Literacy/Based of Wealthy.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c6f0d280a398a220",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "37d49bb1db211b2b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6021c2c752a03d1e",
+    "type": "split",
+    "children": [
+      {
+        "id": "6c455e082da27692",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9818297229f795d6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "102bcf3e0cb0346e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Unit Testing/Unit Test with Cypress.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5bc2d6709be98b49",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2b7eb6c0c74254d4",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Untitled 1.canvas",
+                "viewState": {
+                  "x": -24.18,
+                  "y": -2280.36,
+                  "zoom": 0
+                }
+              }
+            }
+          },
+          {
+            "id": "ddce970cc745f390",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "fcab376267815ad6",
+    "type": "split",
+    "children": [
+      {
+        "id": "4774f636b612fa12",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d8826134133ee10f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b6434cc33ddff334",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "256ad28ce8e23687",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "99410ea81c11f4da",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md"
+              }
+            }
+          },
+          {
+            "id": "23de40fd45583bdb",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "notion-like-tables:Create loom": false,
+      "obsidian-importer:Open Importer": false
+    }
+  },
+  "active": "c6f0d280a398a220",
+  "lastOpenFiles": [
+    "Go Lectures/Concept/Pointer.md",
+    "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
+    "Go Lectures/Concept/Go Generic.md",
+    "Go Lectures/Package & Module.md",
+    "Go Lectures/Go Lectures.md",
+    "Go Lectures/Concept/Error  Handling.md",
+    "PROJECTS/PaoSatang/System Design.md",
+    "Dudee Projects/Laundry Automation (Design Concept).md",
+    "CompCamp22ndPromote/Bugs Reporter.md",
+    "Books/Money Literacy/Based of Wealthy.md",
+    "Books/Money Literacy/Expense Income Guide.md",
+    "Go Lectures/Concept",
+    "PROJECTS/Components.md",
+    "Go Lectures.md",
+    "Untitled.md",
+    "Day4_INETMS_AM_20231123 2.pdf",
+    "CS341 DS  1-66 Lect03 Data Understanding and Preparation.pdf",
+    "Go Lectures",
+    "PROJECTS/PaoSatang/Case-Study (YNAB).md",
+    "PROJECTS/PaoSatang/Note Detail.md",
+    "PROJECTS/PaoSatang/System Analysis (PaoSatang).md",
+    "Apple Notes/On My Mac/Angular Projects/Schedule Management Application.md",
+    "Apple Notes/On My Mac/Angular Projects/Authentication app.md",
+    "Apple Notes/On My Mac/Angular Projects/NoteMarkDown.md",
+    "Apple Notes/On My Mac/Angular Projects/User-manager.md",
+    "Apple Notes/On My Mac/Angular Projects/template-driven form.md",
+    "Apple Notes/On My Mac/Angular Lectures/Angular Standalone Component.md",
+    "Apple Notes/On My Mac/Angular Lectures/HTTP METHODS REQUEST.md",
+    "Apple Notes/On My Mac/Angular Lectures/Dynamic Component.md",
+    "Apple Notes/On My Mac/Angular Lectures/Angular Animation.md",
+    "Apple Notes Attachments/Pasted Graphic 113.png",
+    "Apple Notes Attachments/275380880_1151696682309661_9148540444223312813_n.png",
+    "Apple Notes Attachments/275436907_282941767185126_2783035371904606674_n.png",
+    "Apple Notes Attachments/บทที่ 2 พื้นฐานชีววิทยา ของพฤติกรรม.png",
+    "Apple Notes Attachments/บทที่ 3 ทฤษฎีพัฒนาการ และ มนุษย์.png",
+    "Apple Notes Attachments/Screen Recording 2565-05-11 at 16.10.17.mov",
+    "Apple Notes Attachments/Pasted Graphic 112.png",
+    "Apple Notes Attachments/Pasted Graphic 54.png",
+    "Apple Notes Attachments/Pasted Graphic 55.png",
+    "Apple Notes Attachments/Pasted Graphic 114.png",
+    "Apple Notes Attachments/Screen Recording 2565-02-26 at 16.18.26.mov",
+    "Apple Notes Attachments/Screen Recording 2565-03-20 at 15.18.46.mov",
+    "Apple Notes Attachments/Screen Recording 2565-06-23 at 16.48.34.mov",
+    "Apple Notes Attachments/Screen Recording 2565-06-23 at 17.38.55.mov",
+    "Apple Notes Attachments/Pasted Graphic 40.png",
+    "Apple Notes Attachments/Screen Recording 2565-05-09 at 13.48.38.mov",
+    "Untitled.canvas",
+    "Untitled 1.canvas"
+  ]
+}

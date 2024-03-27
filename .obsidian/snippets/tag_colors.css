@@ -1,0 +1,74 @@
+:root {
+  --bright-blue: #1e90ff;
+  --white: #ffffff;
+}
+
+.tag {
+  background-color: #333333;
+  border: none;
+  color:  var(--bright-blue) !important;
+  --text-a:                     var(--bright-orange);
+  --text-a-hover:               var(--bright-blue);
+  font-size: 11px;
+  padding: 1px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 0px;
+  cursor: pointer;
+  border-radius: 14px;
+}
+
+.tag:hover {
+color: black;
+background-color: #333333;
+}
+.tag[href^="#obsidian"] {
+  background-color: #4d3ca6;
+}
+.tag[href^="#important"] {
+  color: white;
+  background-color: red;
+}
+.tag[href^="#complete"] {
+  background-color: green;
+}
+.tag[href^="#inprogress"] {
+  background-color: orange;
+}
+
+
+
+/* Colored Tags in Side Panel */
+.tag-pane-tag-text {
+  background-color: #333333;
+  border: none;
+  color: var(--text-accent);
+  font-size: 11px;
+  padding: 1px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 0px;
+  cursor: pointer;
+  border-radius: 14px;
+}
+
+.theme-dark .graph-view.color-fill {
+  color: green;
+}
+.theme-dark .graph-view.color-fill-unresolved {
+  color: red;
+}
+.theme-dark .graph-view.color-fill-tag {
+  color: blue;
+}
+.theme-light .graph-view.color-fill {
+  color: green;
+}
+.theme-light .graph-view.color-fill-unresolved {
+    color: red;
+}
+.theme-light .graph-view.color-fill-tag {
+  color: blue;
+}

@@ -1,0 +1,18 @@
+{
+  "editor:context-menu": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": ","
+    }
+  ],
+  "editor:insert-wikilink": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "A"
+    }
+  ]
+}
