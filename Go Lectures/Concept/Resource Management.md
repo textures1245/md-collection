@@ -1,9 +1,10 @@
 [[Go Lectures]] #Go-Core #Go-Concept 
 
-**Content**
+**Content** #Go-Resource-Management-Cotents
 #Rate-limit
 #Atomic-Counters
 #Mutexes
+#Stateful-Goroutines
 
 ## Rate Limiting
 #Rate-limit 
@@ -208,3 +209,196 @@ func main() {
 ```terminal
 map[a:20000 b:10000]
 ```
+
+## Stateful Goroutines
+#Stateful-Goroutines
+
+We can use the built-in synchronization features of goroutines and channels to achieve the **shared state across multiple goroutines**.. This channel-based approach aligns with Go’s ideas of **sharing memory by communicating and having each piece of data owned by exactly 1 goroutine.**
+
+```merm
+stateDiagram-v2
+    state main {
+        state "Create Channels" as create_channels
+        create_channels --> "Spawn State Goroutine"
+        create_channels --> "Spawn Reader Goroutines"
+        create_channels --> "Spawn Writer Goroutines"
+    }
+
+    state StateGoroutine {
+        state "Select" as select
+        select --> "Handle Read" : read_op
+        "Handle Read" --> select : "Send Response"
+        select --> "Handle Write" : write_op
+        "Handle Write" --> select : "Send Response"
+    }
+
+    state ReaderGoroutine {
+        state "Create Read Op" as create_read_op
+        create_read_op --> "Send Read Op"
+        "Send Read Op" --> "Receive Response"
+        "Receive Response" --> create_read_op
+    }
+
+    state WriterGoroutine {
+        state "Create Write Op" as create_write_op
+        create_write_op --> "Send Write Op"
+        "Send Write Op" --> "Receive Response"
+        "Receive Response" --> create_write_op
+    }
+
+	[*] --> "Spawn State Goroutine"
+    "Spawn State Goroutine" --> select
+    "Spawn Reader Goroutines" --> create_read_op
+    "Spawn Writer Goroutines" --> create_write_op
+
+    "Send Read Op" --> select : read_op
+    select --> "Receive Response" : "Send Response"
+    "Send Write Op" --> select : write_op
+    select --> "Receive Response" : "Send Response"
+
+    note right of select
+        Handles read and write operations
+        by modifying the state map
+    end note
+
+    note left of create_read_op
+        Constructs a readOp with a
+        random key and response channel
+    end note
+
+    note left of create_write_op
+        Constructs a writeOp with a random
+        key, value, and response channel
+    end note
+```
+
+```go
+package main
+
+import (
+	"fmt"
+	"math/rand"
+	"sync/atomic"
+	"time"
+)
+
+// (1)
+type readOp struct {
+	key  int
+	resp chan int
+}
+type writeOp struct {
+	key  int
+	val  int
+	resp chan bool
+}
+
+func main() {
+
+	// set variable to count how many operations we perform.
+	var readOps uint64
+	var writeOps uint64
+
+	// used by other goroutines to issue read and write requests, respectively.
+	reads := make(chan readOp)
+	writes := make(chan writeOp)
+
+
+// (2)
+	go func() {
+		var state = make(map[int]int) // create state history
+		for {
+			select {
+			case read := <-reads:
+				read.resp <- state[read.key]
+			case write := <-writes:
+				state[write.key] = write.val
+				write.resp <- true
+			}
+		}
+	}()
+
+// (3)
+	for r := 0; r < 100; r++ {
+		go func() {
+			for {
+				read := readOp{
+					key:  rand.Intn(5),
+					resp: make(chan int)}
+				reads <- read
+				<-read.resp
+				atomic.AddUint64(&readOps, 1)
+				time.Sleep(time.Millisecond)
+			}
+		}()
+	}
+
+	for w := 0; w < 10; w++ {
+		go func() {
+			for {
+				write := writeOp{
+					key:  rand.Intn(5),
+					val:  rand.Intn(100),
+					resp: make(chan bool)}
+				writes <- write
+				<-write.resp
+				atomic.AddUint64(&writeOps, 1)
+				time.Sleep(time.Millisecond)
+			}
+		}()
+	}
+
+	time.Sleep(time.Second) // wait for the goroutines to finished thier work
+
+	readOpsFinal := atomic.LoadUint64(&readOps)
+	fmt.Println("readOps:", readOpsFinal)
+	writeOpsFinal := atomic.LoadUint64(&writeOps)
+	fmt.Println("writeOps:", writeOpsFinal)
+}
+
+```
+
+1. State will be owned by a single goroutine. 
+	1. This will guarantee that the data is never **corrupted** **with concurrent access**
+	2. **other goroutines** will **send messages to the owning goroutine and receive corresponding replies.**
+	3. These `readOp` and `writeOp` structs encapsulate those requests and a way for the owning goroutine to respond.
+2. This goroutine repeatedly selects on the `reads` and `writes` channels, responding to requests as they arrive. 
+	1. A response is executed by first performing the requested operation and then sending a value on the response channel `resp` to indicate success (and the desired value in the case of `reads`).
+3. Start goroutines to issue `reads` and `writes` to the state-owning goroutine via the `reads` and `writes` channel.
+	1. Each read requires constructing a `readOp`, sending it over the `reads` channel, and then receiving the result over the provided `resp` channel.
+	2.  Each write requires constructing a `writeOp`, sending it over the `writes` channel, and then receiving the result over the provided `resp` channel.
+
+```terminal
+// around 80k
+readOps: 71708
+writeOps: 7177
+```
+
+- For this particular case the goroutine-based approach was a bit more involved than the mutex-based one. It might be useful in certain cases though, for example where you have other channels involved or when managing multiple such mutexes would be error-prone. 
+
+
+```merm
+flowchart TD
+    start([Start]) --> define_state[Define a shared state]
+    define_state --> define_mutex[Define a mutex to protect the state]
+
+    define_mutex --> access_state{Access shared state?}
+    access_state --Yes--> lock_mutex[Lock the mutex]
+    lock_mutex --> read_or_write{Read or Write?}
+
+    read_or_write --Read--> read_state[Read the state]
+    read_state --> unlock_mutex[Unlock the mutex]
+    unlock_mutex --> process_read[Process read data]
+
+    read_or_write --Write--> modify_state[Modify the state]
+    modify_state --> unlock_mutex
+
+    unlock_mutex --> access_state
+
+    access_state -- No --> End([End])
+
+    process_read --> access_state
+
+```
+-  Using a mutex ensures that only one goroutine can access the shared state at a time, preventing data races and corruption. 
+- So, you should use whichever approach feels most natural, especially with respect to understanding the correctness of your program.

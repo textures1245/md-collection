@@ -74,7 +74,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Go Lectures/Concept/Resource Management.md",
+                "file": "Go Lectures/Concept/Testing and Bechmarking.md",
                 "mode": "source",
                 "source": false
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Mutexes",
+                "query": "tag:#Channel-Direction",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -254,8 +254,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -333,6 +332,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "webpage-html-export:Export Vault to HTML": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -340,25 +340,28 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
-      "notion-like-tables:Create loom": false,
-      "obsidian-importer:Open Importer": false
+      "notion-like-tables:Create loom": false
     }
   },
   "active": "2f132030ff414a6e",
   "lastOpenFiles": [
-    "Go Lectures/Concept/Basic.md",
-    "Go Lectures/Concept/Resource Management.md",
-    "Go Lectures/Concept/Concurrently.md",
+    "Go Lectures/Concept/Testing and Bechmarking.md",
+    "Go Lectures/Concept/HTTP Protocols.md",
     "Go Lectures/Concept/Go Channels.md",
+    "Go Lectures/Concept/Logger.md",
+    "Go Lectures/Concept/Package Method.md",
+    "Go Lectures/Concept/Pointer.md",
+    "Go Lectures/Concept/Concurrently.md",
+    "Go Lectures/Concept/Basic.md",
+    "Go Lectures/Concept/Error  Handling.md",
+    "Go Lectures/Concept/Resource Management.md",
     "Go Lectures/Concept/Goroutine.md",
     "Go Lectures/Concept/Go Generic.md",
     "Go Lectures/Concept/Timer & Ticker.md",
     "Go Lectures/Concept/Timeout.md",
     "Go Lectures/Concept/Select.md",
     "Go Lectures/Go Lectures.md",
-    "Go Lectures/Concept/Error  Handling.md",
     "Go Lectures/Package & Module.md",
-    "Go Lectures/Concept/Pointer.md",
     "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
     "Pasted image 20240325142636.png",
     "Pasted image 20240325142612.png",
@@ -375,10 +378,6 @@
     "Day4_INETMS_AM_20231123 2.pdf",
     "CS341 DS  1-66 Lect03 Data Understanding and Preparation.pdf",
     "Go Lectures",
-    "PROJECTS/PaoSatang/Case-Study (YNAB).md",
-    "PROJECTS/PaoSatang/Note Detail.md",
-    "PROJECTS/PaoSatang/System Analysis (PaoSatang).md",
-    "Apple Notes/On My Mac/Angular Projects/Schedule Management Application.md",
     "Apple Notes Attachments/Pasted Graphic 113.png",
     "Apple Notes Attachments/275380880_1151696682309661_9148540444223312813_n.png",
     "Apple Notes Attachments/275436907_282941767185126_2783035371904606674_n.png",

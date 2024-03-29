@@ -3,6 +3,7 @@
 **Content**
 #Closure
 #defer
+#Go-ENV
 
 ## Closure
 #Closure
@@ -62,4 +63,51 @@ func (c *Container) inc(name string) {
 ```
 
 - The `Unlock()` method is called directly after incrementing the counter. If an error occurs between the `Lock()` and `Unlock()` calls (for example, if incrementing the counter panics), using `Unlock()` alone may not be called, which would result in a deadlock.
+
+## Go Environment Variables
+#Go-ENV 
+
+```go
+package main
+
+import (
+    "fmt"
+    "os"
+    "strings"
+)
+
+func main() {
+
+// setter
+    os.Setenv("FOO", "1")
+// getting
+    fmt.Println("FOO:", os.Getenv("FOO"))
+    fmt.Println("BAR:", os.Getenv("BAR"))
+
+    fmt.Println()
+    for _, e := range os.Environ() {
+        pair := strings.SplitN(e, "=", 2)
+        fmt.Println(pair[0])
+    }
+}
+```
+
+```
+FOO: 1
+BAR: 
+
+TERM_PROGRAM
+PATH
+SHELL
+...
+FOO
+```
+
+- If we set `BAR` in the environment first, the running program picks that value up.
+
+```terminal
+$ BAR=2 go run environment-variables.go
+FOO: 1
+BAR: 2
+```
 

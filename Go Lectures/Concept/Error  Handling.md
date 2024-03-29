@@ -1,6 +1,14 @@
 [[Go Lectures]] #Go-Concept #Go-Basic 
 
-	 communicate errors via an explicit, separate return value. This contrasts with the exceptions used in languages like Java and Ruby and the overloaded single result
+**Content**
+#Error-Interface 
+#Custom-Error
+#Panic
+#Recovering
+
+
+
+communicate errors via an explicit, separate return value. This contrasts with the exceptions used in languages like Java and Ruby and the overloaded single result
 
 
 ```merm
@@ -17,7 +25,8 @@ flowchart LR
   
 
 ```
-
+## Error Interface
+#Error-Interface 
 - **Error Interface** 
 	- By convention, errors are the last return value and have type `error`, a built-in interface.
 	- `errors.New` constructs a basic `error` value with the given error message
@@ -79,8 +88,11 @@ func main() {
 }
 ```
 
-- **Custom Error**
-	- Create custom Error with type structor and for custom handling and usage repeating.  
+
+## **Custom Error**
+#Custom-Error 
+
+Create custom Error with type structor and for custom handling and usage repeating.  
 ```go
 package main
 
@@ -125,9 +137,157 @@ func main() {
 
 ```
 	
-	In this example. We could see the that we had 
-	- `argError` struct and `Error()` method that return `error format`from struct pointer receiver 
+- `argError` struct and `Error()` method that return `error format`from struct pointer receiver 
 	- f() function for error handler
 	- and the main function that would check if err is of type argError or not by using `error.As`
-	  
-	`errors.Is` checks that a given error (or any error in its chain) matches a specific error value. This is especially useful with wrapped or nested errors, allowing you to identify specific error types or sentinel errors in a chain of errors.
+- `errors.Is` checks that a given error (or any error in its chain) matches a specific error value. 
+	- This is especially useful with wrapped or nested errors, allowing you to identify specific error types or sentinel errors in a chain of errors.
+
+## Panic 
+#Panic 
+
+```merm
+flowchart TD
+    start([Start]) --> normal_flow{Normal Flow}
+
+    normal_flow --No Errors--> continue_execution
+
+    normal_flow --Error Occurs--> handle_error{Possible to Handle Error?}
+
+    handle_error --Yes--> handle_gracefully[Handle Error Gracefully]
+    handle_gracefully --> continue_execution
+
+    handle_error --No--> panic_condition{Panic Condition Met?}
+
+    panic_condition --Yes--> trigger_panic[Trigger panic]
+    trigger_panic --> deferred_calls[Execute Deferred Calls]
+    deferred_calls --> stack_unwind[Unwind Call Stack]
+    stack_unwind --> recover_block{Recover Block Found?}
+
+    recover_block --Yes--> handle_panic[Handle Panic]
+    handle_panic --> continue_execution
+
+    recover_block --No--> terminate_program[Terminate Program]
+
+    panic_condition --No--> terminate_program
+
+    continue_execution --> normal_flow
+
+    terminate_program([End])
+
+    style start fill:#0db9d7,stroke:#333,stroke-width:2px
+    style normal_flow fill:#f9f,stroke:#333,stroke-width:4px
+    style continue_execution fill:#b8e186,stroke:#333,stroke-width:2px
+    style handle_error fill:#ffd31d,stroke:#333,stroke-width:2px
+    style handle_gracefully fill:#b8e186,stroke:#333,stroke-width:2px
+    style panic_condition fill:#ffd31d,stroke:#333,stroke-width:2px
+    style trigger_panic fill:#e85d75,stroke:#333,stroke-width:2px
+    style deferred_calls fill:#b8e186,stroke:#333,stroke-width:2px
+    style stack_unwind fill:#b8e186,stroke:#333,stroke-width:2px
+    style recover_block fill:#ffd31d,stroke:#333,stroke-width:2px
+    style handle_panic fill:#b8e186,stroke:#333,stroke-width:2px
+    style terminate_program fill:#e85d75,stroke:#333,stroke-width:2px
+
+```
+
+A **panic** typically means something **went unexpectedly wrong**. Mostly **we use it to fail fast** on errors that shouldn’t occur during normal operation, or that we aren’t prepared to handle gracefully.
+- Note: panic is used to handle unrecoverable errors in Go. It should be used judiciously and only in situations where it's impossible to continue execution safely.
+
+```go
+package main
+
+import "os"
+
+func main() {
+
+// When first panic in `main` fires, the program exits without reaching the rest of the code
+    panic("a problem")
+
+    _, err := os.Create("/tmp/file")
+    if err != nil {
+        panic(err)
+    }
+}
+```
+
+- A common use of panic is to abort if a function returns an error value that we don’t know how to (or want to) handle. Here’s an example of `panic`king if we get an unexpected error when creating a new file.
+
+```terminal
+panic: a problem
+goroutine 1 [running]:
+main.main()
+    /.../panic.go:12 +0x47
+...
+exit status 2
+```
+
+## Recovering
+#Recovering 
+
+A `recover` can stop a `panic` from aborting the program and let it continue with execution instead.
+
+- An example of where this can be useful: a server wouldn’t want to crash if one of the client connections exhibits a critical error. Instead, the server would want to close that connection and continue serving other clients
+
+```merm
+sequenceDiagram
+    participant Server
+    actor Client1
+    actor Client2
+    actor Client3
+
+    Client1->>Server: Request
+    Server->>Client1: Response
+    Note right of Server: Handling Client1 request
+
+    Client2->>Server: Request
+    Note right of Server: Handling Client2 request
+
+    Client3->>Server: Request
+    Note right of Server: Handling Client3 request
+
+    Client2-->>Server: Critical Error
+    Note right of Server: Critical error from Client2
+
+    Server->>Server: Handle Critical Error
+    Server->>Server: (1) Recovering from the panic
+
+    Server->>Client2: Close Connection
+    Note right of Server: Recover from panic and close Client2 connection
+
+    Server->>Client1: Continue Serving
+    Note right of Server: Continue serving Client1
+
+    Server->>Client3: Continue Serving
+    Note right of Server: Continue serving Client3
+```
+
+```go
+package main
+
+import "fmt"
+
+func mayPanic() {
+	panic("a problem")
+}
+
+func main() {
+
+// (1) recover must be called within a deferred function. to be trigger when encrosing function panic (panic triggered)
+	defer func() {
+		if r := recover(); r != nil {
+			fmt.Println("Recovered. Error:\n", r)
+			closeConnection(Client2) // closed connection to this client, then continue serving others.
+		}
+	}()
+
+	mayPanic()
+
+// this won't run since the function got panicked before it executed
+	fmt.Println("After mayPanic()")
+}
+```
+
+```terminal
+Recovered. Error:
+ a problem
+```
