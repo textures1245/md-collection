@@ -1,4 +1,4 @@
-#Go-Basic #Go-Package [[Go Lectures]]
+#Go-Concept #Go-Basic #Go-Package [[Go Lectures]]
 
 	In the Go Lang "Package" had important role for running and build for application. and Essential for organizing code into reusable units, promoting modularity and maintainability. 
 	

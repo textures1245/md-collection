@@ -133,7 +133,7 @@ func main() {
 	time.Sleep(2 * time.Second)
 
 // Using `Load` it’s safe to atomically read a value even while other goroutines are (atomically) updating it.
-	fmt.Printf("Final Value: %d\n", atomic.LoadInt32(&counter))
+
 }
 ```
 
