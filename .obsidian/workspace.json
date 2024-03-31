@@ -74,7 +74,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Go Lectures/Go Practical Examples.md",
+                "file": "Go Lectures/Practical Examples/Go Generic and Timeout.md",
                 "mode": "source",
                 "source": false
               }
@@ -190,7 +190,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Go Lectures/Concept/Go Generic.md",
+                "file": "Go Lectures/Concept/HTTP Protocols.md",
                 "mode": "source",
                 "source": false
               }
@@ -270,7 +270,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -290,7 +291,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Go Lectures/Go Practical Examples.md",
+                "file": "Go Lectures/Practical Examples/Go Generic and Timeout.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -307,7 +308,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Go Lectures/Go Practical Examples.md",
+                "file": "Go Lectures/Practical Examples/Go Generic and Timeout.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -330,7 +331,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Go Lectures/Go Practical Examples.md"
+                "file": "Go Lectures/Practical Examples/Go Generic and Timeout.md"
               }
             }
           },
@@ -365,14 +366,15 @@
   },
   "active": "b23468c61db40cde",
   "lastOpenFiles": [
-    "Go Lectures/Go Lectures.md",
-    "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md",
-    "Go Lectures/Practical Examples/Basic and Resource Management.md",
-    "Go Lectures/Concept/Go Generic.md",
-    "Go Lectures/Concept/Concurrently.md",
     "Go Lectures/Concept/HTTP Protocols.md",
-    "Go Lectures/Concept/Resource Management.md",
+    "Go Lectures/Practical Examples/Go Generic and Timeout.md",
+    "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md",
     "Go Lectures/Go Practical Examples.md",
+    "Go Lectures/Concept/Go Generic.md",
+    "Go Lectures/Go Lectures.md",
+    "Go Lectures/Practical Examples/Basic and Resource Management.md",
+    "Go Lectures/Concept/Concurrently.md",
+    "Go Lectures/Concept/Resource Management.md",
     "Go Lectures/Concept/Go Channels.md",
     "Go Lectures/Package & Module.md",
     "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
@@ -401,7 +403,6 @@
     "PROJECTS/PaoSatang/System Design.md",
     "Dudee Projects/Laundry Automation (Design Concept).md",
     "CompCamp22ndPromote/Bugs Reporter.md",
-    "Books/Money Literacy/Based of Wealthy.md",
     "Go Lectures/Concept",
     "Day4_INETMS_AM_20231123 2.pdf",
     "Apple Notes Attachments/Pasted Graphic 113.png",
