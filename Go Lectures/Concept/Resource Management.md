@@ -65,7 +65,7 @@ func main() {
 
 - note on (1). When allow short bursts of requests in our rate limiting scheme while preserving the overall rate limit. We can accomplish this by buffering our limiter channel. Here we allow to short bursts of 3 incoming requests before preserving the overall rate limit.
 
-```terminal
+```bash
 // batch 1
 request 1 2024-03-27 15:35:17.067136 +0700 +07 m=+0.201275835
 request 2 2024-03-27 15:35:17.267128 +0700 +07 m=+0.401271543
@@ -137,7 +137,7 @@ func main() {
 }
 ```
 
-```terminal
+```bash
 Decremented: 0
 Incremented: 1
 Incremented: 1
@@ -206,7 +206,7 @@ func main() {
 
 1. add **mutex** for **synchronize access**. note that **mutexes must not be copied,** so if this struct is passed around, it should be **done by pointer**.
 2. **Lock the** **mutex** before accessing counters; **unlock it at the end of the function** using a #defer statement.
-```terminal
+```bash
 map[a:20000 b:10000]
 ```
 
@@ -368,7 +368,7 @@ func main() {
 	1. Each read requires constructing a `readOp`, sending it over the `reads` channel, and then receiving the result over the provided `resp` channel.
 	2.  Each write requires constructing a `writeOp`, sending it over the `writes` channel, and then receiving the result over the provided `resp` channel.
 
-```terminal
+```bash
 // around 80k
 readOps: 71708
 writeOps: 7177

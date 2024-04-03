@@ -42,6 +42,7 @@ func f(arg int) (int, error) {
 }
 ```
 
+
 - **Error Format**
 ```go
 var ErrOutOfTea = fmt.Errorf("no more tea available")
@@ -212,7 +213,7 @@ func main() {
 
 - A common use of panic is to abort if a function returns an error value that we don’t know how to (or want to) handle. Here’s an example of `panic`king if we get an unexpected error when creating a new file.
 
-```terminal
+```bash
 panic: a problem
 goroutine 1 [running]:
 main.main()
@@ -287,7 +288,7 @@ func main() {
 }
 ```
 
-```terminal
+```bash
 Recovered. Error:
  a problem
 ```

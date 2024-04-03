@@ -80,7 +80,7 @@ func main() {
 }
 ```
 
-```terminal
+```bash
 worker 1 started  job 1
 worker 2 started  job 2
 worker 3 started  job 3
@@ -148,7 +148,7 @@ func main() {
 
 ```
 
-```terminal
+```bash
 Worker 5 starting
 Worker 3 starting
 Worker 4 starting

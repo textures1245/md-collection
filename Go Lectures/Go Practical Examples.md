@@ -14,11 +14,11 @@
 		- each time that had sum the elements, **keep track to last slice of its pointer elements.** And it can **print** **slice of elements** (convert pointers to original elements).
     - Write a program that simulates a client-server interaction, where the client sends a request and waits for a response with a timeout.
 
-4. **Error Handling, Pointers, and Concurrency**:
+4. **[[Error Handling, Pointers, and Concurrency]]**:
     - Write a function that reads data from a file and handles various errors that may occur during the process.
     - Implement a program that uses pointers to modify the values of variables passed to a function.
     - Create a program that uses goroutines and channels to perform a parallel calculation, such as finding the sum of elements in a large array.
-5. **Timer & Ticker, HTTP Protocols, and Testing and Benchmarking**:
+5. **[[Timer & Ticker, HTTP Protocols, and Testing and Benchmarking]]**:
     - Write a program that uses a timer to periodically print a message to the console.
     - Implement a simple HTTP server that serves static files and handles different HTTP methods (GET, POST, etc.).
     - Create a test suite for a function or package you have written, and include benchmarks to measure its performance.

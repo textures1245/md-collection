@@ -83,7 +83,7 @@ func main() {
 }
 ```
 
-```terminal
+```bash
 [kiwi peach banana]
 [{TJ 25} {Jax 37} {Alex 72}]
 ```
@@ -138,7 +138,7 @@ func main() {
 }
 ```
 
-```terminal
+```bash
 Contains:   true
 Count:      2
 HasPrefix:  true
@@ -324,7 +324,7 @@ func main() {
 }
 ```
 
-```terminal
+```bash
 true
 1
 2.34
@@ -392,7 +392,7 @@ func main() {
 }
 ```
 
-```terminal
+```bash
 2012-10-31 15:50:13.793654 +0000 UTC
 2009-11-17 20:34:58.651387237 +0000 UTC
 2009
@@ -458,7 +458,7 @@ func main() {
 }
 ```
 
-```terminal
+```bash
 2014-04-15T18:00:15-07:00
 2012-11-01 22:08:41 +0000 +0000
 6:00PM

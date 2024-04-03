@@ -46,7 +46,7 @@ func main() {
 - Note (1) that the channel is **buffered**, so the send in the goroutine is nonblocking. This is a common pattern to prevent goroutine leaks in case the channel is `never read`.
 - On (2) and (3)  the `select` implementing a timeout. `res := <-c1` awaits the result and `<-time.After` awaits a value to be sent after the timeout which are **1s** and **3s** 
 
-```terminal
+```bash
 timeout 1
 result 2
 ```

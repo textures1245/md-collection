@@ -36,7 +36,7 @@ func main() {
 }
 ```
 
-```terminal
+```bash
 received one
 received two
 

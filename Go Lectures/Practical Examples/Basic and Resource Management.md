@@ -109,7 +109,8 @@ func (b *BackAccount) Withdraw(amount int) {
 }
 ```
 
-```terminal
+```bash
 27
 100
 ```
+

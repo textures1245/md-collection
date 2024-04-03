@@ -39,7 +39,7 @@ func main() {
 }
 ```
 
-```terminal
+```bash
 Response status: 200 OK
 <!DOCTYPE html>
 <html>
@@ -88,7 +88,7 @@ func main() {
 }
 ```
 
-```terminal
+```bash
 phakh$ go run . & curl localhost:8090/hello
 [3] 82087
 hello
@@ -288,7 +288,7 @@ func fetchAPI(ctx context.Context, url string, results chan<- string) {
 }
 ```
 
-```terminal
+```bash
 Response from https://api.example.com/users: 200  
 Response from https://api.example.com/products: 200  
 Response from https://api.example.com/orders: 200

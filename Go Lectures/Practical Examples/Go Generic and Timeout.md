@@ -111,7 +111,7 @@ func genericTask() {
 }
 ```
 
-```terminal
+```bash
 15
 [1 2 3 4 5]
 abcde
@@ -179,7 +179,7 @@ func genericTask() {
 }
 ```
 
-```terminal
+```bash
 // case that request had succeed
 Response from https://jsonplaceholder.typicode.com/todos/1: 200
 Response from https://jsonplaceholder.typicode.com/todos/3: 200

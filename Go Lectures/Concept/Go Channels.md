@@ -102,7 +102,7 @@ func main() {
 }
 ```
 
-```terminal
+```bash
 ซื้อแว่น : ที่เซเว่น : เสร็จแล้ว  
 ซื้อผลไม้ : ที่สยามพารากอน : เสร็จแล้ว  
 ซื้อนาฬิกา : ที่เซ็นทรัล : เสร็จแล้ว  
@@ -136,7 +136,7 @@ func main() {
 }
 ```
 
-```terminal
+```bash
 buffered
 channel
 ```
@@ -173,7 +173,7 @@ func main() {
 }
 ```
 
-```terminal
+```bash
 working...done 
 0x1400008c060
 ```
@@ -262,7 +262,7 @@ func main() {
 }
 ```
 
-```terminal
+```bash
 no message received // since the channel doesn't receive any value
 sent message hi // the channel receiving value
 no signal sent // the channel trying to received the value but it don't have receiver since it not the channel buffer 
@@ -312,7 +312,7 @@ func main() {
 }
 ```
 
-```terminal
+```bash
 sent job 1
 received job 1
 sent job 2

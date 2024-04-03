@@ -105,7 +105,7 @@ FOO
 
 - If we set `BAR` in the environment first, the running program picks that value up.
 
-```terminal
+```bash
 $ BAR=2 go run environment-variables.go
 FOO: 1
 BAR: 2
