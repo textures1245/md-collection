@@ -22,7 +22,6 @@
     - Write a program that uses a timer to periodically print a message to the console.
     - Implement a simple HTTP server that serves static files and handles different HTTP methods (GET, POST, etc.).
     - Create a test suite for a function or package you have written, and include benchmarks to measure its performance.
-6. **Package & Module, Logger, and Package Method**:
-    - Create a Go module with multiple packages, and write functions that demonstrate the usage of package-level variables and functions.
-    - Implement a logging system for a simple application, using Go's built-in `log` package or a third-party logging library.
-    - Write a package that provides utility functions for common tasks, such as string manipulation, file handling, or data processing.
+6. ** [[Logger]]**:
+    - Implement a custom logging library in Go with the following features:
+		- **Log Levels**: Your logging library should support different log levels, such as DEBUG, INFO, WARNING, ERROR, and FATAL. Each log level should have an associated level of severity.

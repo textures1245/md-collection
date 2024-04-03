@@ -145,7 +145,12 @@
     "Go-API": 132,
     "Go-": 133,
     "TODO": 134,
-    "Go-Examples": 135
+    "Go-Examples": 135,
+    "Logger-Architecture": 136,
+    "Log-Rotation-Retention": 137,
+    "Log-Usage": 138,
+    "Log-Rotation": 139,
+    "Log-Retention": 140
   },
   "_version": 3
 }

@@ -6,7 +6,7 @@
       {
         "id": "7501e7b31e1cd729",
         "type": "tabs",
-        "dimension": 48.921832884097036,
+        "dimension": 45.2156334231806,
         "children": [
           {
             "id": "bab31f94ab54824c",
@@ -62,7 +62,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md",
+                "file": "Go Lectures/Practical Examples/Logger.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
       {
         "id": "02a184b334bca340",
         "type": "tabs",
-        "dimension": 51.078167115902964,
+        "dimension": 54.78436657681941,
         "children": [
           {
             "id": "db50b8e91f0f7d63",
@@ -118,7 +118,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Go Lectures/Practical Examples/Logger.md",
+                "file": "Go Lectures/Concept/Logging.md",
                 "mode": "source",
                 "source": false
               }
@@ -226,7 +226,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Logging",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -258,7 +258,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -278,7 +279,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Go Lectures/Practical Examples/Logger.md",
+                "file": "Go Lectures/Concept/Logging.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -295,7 +296,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Go Lectures/Practical Examples/Logger.md",
+                "file": "Go Lectures/Concept/Logging.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -318,7 +319,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Go Lectures/Practical Examples/Logger.md"
+                "file": "Go Lectures/Concept/Logging.md"
               }
             }
           },
@@ -353,11 +354,12 @@
   },
   "active": "717b1f59181a4c8b",
   "lastOpenFiles": [
-    "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md",
-    "Go Lectures/Concept/Logging.md",
     "Go Lectures/Practical Examples/Logger.md",
-    "Books/Money Literacy/Expense Income Guide.md",
     "Go Lectures/Go Practical Examples.md",
+    "Go Lectures/Concept/Logging.md",
+    "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md",
+    "Go Lectures/Go Lectures.md",
+    "Books/Money Literacy/Expense Income Guide.md",
     "Go Lectures/Practical Examples/Timer & Ticker, HTTP Protocols, and Testing and Benchmarking.md",
     "Go Lectures/Practical Examples/Go Generic and Timeout.md",
     "Go Lectures/Concept/Testing and Bechmarking.md",
@@ -376,7 +378,6 @@
     "Go Lectures/Package & Module.md",
     "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
     "Go Lectures/Concept/Go Generic.md",
-    "Go Lectures/Go Lectures.md",
     "Users/phakh/go/src/github.com/textures1245/practical-examples/main.go.md",
     "Users/phakh/go/src/github.com/textures1245/practical-examples",
     "Users/phakh/go/src/github.com/textures1245",
