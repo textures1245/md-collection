@@ -36,7 +36,7 @@ mindmap
 
 1.  #Key-Features-PaoSatang
 	1. **PDCA Cycle Integration **:
-	    - Incorporate the PDCA (Plan-Do-Check-Action) cycle to help users plan their finances, execute financial activities, review their progress, and take necessary actions to improve their financial health. [[Note Detail]]  #PDCA-Integration
+	    - Incorporate the PDCA (Plan-Do-Check-Action) cycle to help users plan their finances, execute financial activities, review their progress, and take necessary actions to improve their financial health. [[PROJECTS/PaoSatang/Note Detail]]  #PDCA-Integration
 	    
 	2. **Diary for Income/Expenses**:
 	    - Include a diary feature where users can log their daily income and expenses, categorize transactions, and track their financial activities over time to gain insights into their spending habits.
