@@ -62,7 +62,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Go Lectures/Practical Examples/Logger.md",
+                "file": "Go Lectures/Gin/Quickstart.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Go Lectures/Concept/Logging.md",
+                "file": "Go Lectures/Package & Module.md",
                 "mode": "source",
                 "source": false
               }
@@ -226,7 +226,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Logging",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -258,8 +258,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -279,7 +278,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Go Lectures/Concept/Logging.md",
+                "file": "Go Lectures/Gin/Quickstart.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -296,7 +295,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Go Lectures/Concept/Logging.md",
+                "file": "Go Lectures/Gin/Quickstart.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -319,7 +318,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Go Lectures/Concept/Logging.md"
+                "file": "Go Lectures/Gin/Quickstart.md"
               }
             }
           },
@@ -352,13 +351,16 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "717b1f59181a4c8b",
+  "active": "74680b0f6e4cd528",
   "lastOpenFiles": [
-    "Go Lectures/Practical Examples/Logger.md",
-    "Go Lectures/Go Practical Examples.md",
-    "Go Lectures/Concept/Logging.md",
-    "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md",
+    "Go Lectures/Package & Module.md",
+    "Go Lectures/Gin/Quickstart.md",
     "Go Lectures/Go Lectures.md",
+    "Go Lectures/Practical Examples/Logger.md",
+    "Go Lectures/Gin",
+    "Go Lectures/Concept/Logging.md",
+    "Go Lectures/Go Practical Examples.md",
+    "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md",
     "Books/Money Literacy/Expense Income Guide.md",
     "Go Lectures/Practical Examples/Timer & Ticker, HTTP Protocols, and Testing and Benchmarking.md",
     "Go Lectures/Practical Examples/Go Generic and Timeout.md",
@@ -375,7 +377,6 @@
     "Go Lectures/Concept/Concurrently.md",
     "Go Lectures/Practical Examples/Basic and Resource Management.md",
     "Go Lectures/Concept/Basic.md",
-    "Go Lectures/Package & Module.md",
     "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
     "Go Lectures/Concept/Go Generic.md",
     "Users/phakh/go/src/github.com/textures1245/practical-examples/main.go.md",
@@ -387,12 +388,10 @@
     "Users/phakh",
     "Users",
     "Go Lectures/Practical Examples",
-    "Go Lectures/Concept/Pointer.md",
     "Pasted image 20240325142636.png",
     "Pasted image 20240325142612.png",
     "Pasted image 20240325142543.png",
     "Go Lectures/Concept",
-    "Day4_INETMS_AM_20231123 2.pdf",
     "Apple Notes Attachments/Pasted Graphic 113.png",
     "Apple Notes Attachments/275380880_1151696682309661_9148540444223312813_n.png",
     "Apple Notes Attachments/275436907_282941767185126_2783035371904606674_n.png",
