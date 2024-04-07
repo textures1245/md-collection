@@ -78,3 +78,93 @@ mindmap
       Draft Mode
 ```
 
+## User Requirement
+
+- **User Management:**
+    - Registration and Authentication
+    - Profile Management
+- **Content Creation:**
+    - Rich Text Editing and Markdown Support
+    - Media Integration (Images, etc.)
+    - Categorization and Tagging
+    - Draft Saving and Post Scheduling
+- **Content Management:**
+    - Content Publishing with Unique URLs
+    - Post Previewing
+    - Updating and Unpublishing Existing Posts
+- **Content Distribution:**
+    - Submission to Publications within the Platform
+    - RSS Feed Support
+    - Social Sharing Integration
+- **User Engagement:**
+    - Liking/Upvoting Posts
+    - Commenting on Posts
+    - Following Authors
+- **Content Discovery:**
+    - Search Functionality (by title, author, tags, categories)
+    - Curated Sections (featured posts, recommendations)
+
+```merm
+mindmap
+  root((User Requirements))
+    User Registration
+      Email/Username
+      Password
+      Profile Information
+    User Authentication
+      Login
+      Logout
+      Password Recovery
+    Profile Management
+      Edit Personal Information
+        Name
+        Bio
+        Location
+        Website
+      Update Profile Picture
+      Manage Publications
+        Create
+        Edit
+        Delete
+    Content Creation
+      Write Blog Post
+        Rich Text Editor
+        Markdown Support
+        Add Images/Media
+        Formatting Options
+          Headings
+          Bold/Italic
+          Lists
+          Code Blocks
+        Add Tags
+        Add Categories
+      Import Blog Post
+        Upload Markdown File
+      Save as Draft
+      Schedule for Publishing
+    Content Publishing
+      Publish Blog Post
+        Generate Unique URL
+        Preview before Publishing
+      Update Published Post
+      Unpublish Post
+    Content Distribution
+      Submit to Publications
+      RSS Feed
+      Social Sharing
+        Twitter
+        Facebook
+        LinkedIn
+    User Engagement
+      Like/Upvote Posts
+      Comment on Posts
+      Follow Authors
+    Content Discovery
+      Search Posts
+        Title
+        Author
+        Tags
+        Categories
+      Explore Featured Posts
+      View Recommended Posts
+```

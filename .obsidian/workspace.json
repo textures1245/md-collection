@@ -6,7 +6,7 @@
       {
         "id": "7501e7b31e1cd729",
         "type": "tabs",
-        "dimension": 31.767955801104975,
+        "dimension": 40.773480662983424,
         "children": [
           {
             "id": "bab31f94ab54824c",
@@ -74,7 +74,7 @@
       {
         "id": "02a184b334bca340",
         "type": "tabs",
-        "dimension": 36.46408839779006,
+        "dimension": 37.67955801104972,
         "children": [
           {
             "id": "db50b8e91f0f7d63",
@@ -190,7 +190,7 @@
       {
         "id": "6cbf7badf873a557",
         "type": "tabs",
-        "dimension": 31.767955801104975,
+        "dimension": 21.54696132596685,
         "children": [
           {
             "id": "7470324b48aa4613",
@@ -293,7 +293,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Temporary Notes/05-06-2024.md",
+                "file": "PROJECTS/BlogDuaaeeg/Requirement.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -310,7 +310,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Temporary Notes/05-06-2024.md",
+                "file": "PROJECTS/BlogDuaaeeg/Requirement.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -333,7 +333,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Temporary Notes/05-06-2024.md"
+                "file": "PROJECTS/BlogDuaaeeg/Requirement.md"
               }
             }
           },
@@ -366,15 +366,15 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "1dc264b58463f980",
+  "active": "ff2051738bb6d173",
   "lastOpenFiles": [
-    "PROJECTS/BlogDuaaeeg/Requirement.md",
     "Temporary Notes/05-06-2024.md",
+    "PROJECTS/BlogDuaaeeg/Requirement.md",
+    "PROJECTS/BlogDuaaeeg/Note Detail.md",
+    "PROJECTS/BlogDuaaeeg/BlogDuaaeeg Overview.md",
     "Books/Money Literacy/Based of Wealthy.md",
     "PROJECTS/Components.md",
     "PROJECTS/Home For Paws/Application Design.md",
-    "PROJECTS/BlogDuaaeeg/Note Detail.md",
-    "PROJECTS/BlogDuaaeeg/BlogDuaaeeg Overview.md",
     "Go Lectures/Concept/Concurrently.md",
     "Go Lectures/Go Practical Examples.md",
     "PROJECTS/Home For Paws/Home For Paw Overview.md",
