@@ -6,7 +6,7 @@
       {
         "id": "7501e7b31e1cd729",
         "type": "tabs",
-        "dimension": 40.773480662983424,
+        "dimension": 30.055248618784532,
         "children": [
           {
             "id": "bab31f94ab54824c",
@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PROJECTS/Home For Paws/Application Design.md",
+                "file": "PROJECTS/BlogDuaaeeg/System Design.md",
                 "mode": "source",
                 "source": false
               }
@@ -62,19 +62,18 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/Requirement.md",
+                "file": "Important note/Software Development Life Cycle (SDLC)/SDLC Contents.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       },
       {
         "id": "02a184b334bca340",
         "type": "tabs",
-        "dimension": 37.67955801104972,
+        "dimension": 37.23756906077348,
         "children": [
           {
             "id": "db50b8e91f0f7d63",
@@ -166,7 +165,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Temporary Notes/05-06-2024.md",
+                "file": "Important note/Software Development Life Cycle (SDLC)/Design.md",
                 "mode": "source",
                 "source": false
               }
@@ -190,14 +189,18 @@
       {
         "id": "6cbf7badf873a557",
         "type": "tabs",
-        "dimension": 21.54696132596685,
+        "dimension": 32.707182320441994,
         "children": [
           {
             "id": "7470324b48aa4613",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "PROJECTS/PaoSatang/System Design.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -241,7 +244,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Logging",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -293,7 +296,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/Requirement.md",
+                "file": "PROJECTS/BlogDuaaeeg/System Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -310,7 +313,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/Requirement.md",
+                "file": "PROJECTS/BlogDuaaeeg/System Design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -333,7 +336,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/Requirement.md"
+                "file": "PROJECTS/BlogDuaaeeg/System Design.md"
               }
             }
           },
@@ -366,44 +369,45 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "ff2051738bb6d173",
+  "active": "bab31f94ab54824c",
   "lastOpenFiles": [
-    "Temporary Notes/05-06-2024.md",
-    "PROJECTS/BlogDuaaeeg/Requirement.md",
-    "PROJECTS/BlogDuaaeeg/Note Detail.md",
+    "Important note/Software Development Life Cycle (SDLC)/Design.md",
+    "PROJECTS/BlogDuaaeeg/System Design.md",
+    "PROJECTS/PaoSatang/System Design.md",
+    "PROJECTS/PaoSatang/Case-Study (YNAB).md",
+    "PROJECTS/PaoSatang/System Analysis (PaoSatang).md",
+    "PROJECTS/PaoSatang/PaoSatang Overview.md",
+    "Important note/Software Development Life Cycle (SDLC)/SDLC Method.md",
+    "Important note/Software Development Life Cycle (SDLC)/SDLC Contents.md",
+    "PROJECTS/BlogDuaaeeg/App Requirement.md",
     "PROJECTS/BlogDuaaeeg/BlogDuaaeeg Overview.md",
-    "Books/Money Literacy/Based of Wealthy.md",
-    "PROJECTS/Components.md",
+    "PROJECTS/BlogDuaaeeg/Note Detail.md",
+    "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
+    "PROJECTS/Home For Paws/UML Design.md",
+    "PROJECTS/Home For Paws/Home For Paw Overview.md",
     "PROJECTS/Home For Paws/Application Design.md",
+    "Books/Money Literacy/Based of Wealthy.md",
+    "Pasted image 20240408211348.png",
+    "Important note/Software Development Life Cycle (SDLC)",
+    "Temporary Notes/05-06-2024.md",
+    "PROJECTS/Components.md",
     "Go Lectures/Concept/Concurrently.md",
     "Go Lectures/Go Practical Examples.md",
-    "PROJECTS/Home For Paws/Home For Paw Overview.md",
     "PROJECTS/Project Contents.md",
     "PROJECTS/BlogDuaaeeg",
-    "PROJECTS/PaoSatang/PaoSatang Overview.md",
     "PROJECTS/PaoSatang/Note Detail.md",
     "PROJECTS/PersonalFinaceManangement/Personal Finance Project Overview.md",
     "Go Lectures/Package & Module.md",
-    "PROJECTS/PaoSatang/System Analysis (PaoSatang).md",
     "Temporary Notes",
-    "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
     "Go Lectures/Gin/Quickstart.md",
     "Go Lectures/Gin",
     "Go Lectures/Go Lectures.md",
-    "Go Lectures/Concept/Package Method.md",
-    "Go Lectures/Practical Examples/Logger.md",
-    "Go Lectures/Concept/HTTP Protocols.md",
-    "Go Lectures/Concept/Logging.md",
-    "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md",
-    "Books/Money Literacy/Expense Income Guide.md",
-    "Go Lectures/Practical Examples/Timer & Ticker, HTTP Protocols, and Testing and Benchmarking.md",
     "Users/phakh/go/src/github.com/textures1245/practical-examples",
     "Users/phakh/go/src/github.com/textures1245",
     "Users/phakh/go/src/github.com",
     "Users/phakh/go/src",
     "Users/phakh/go",
     "Users/phakh",
-    "Users",
     "Pasted image 20240325142636.png",
     "Pasted image 20240325142612.png",
     "Pasted image 20240325142543.png",
@@ -413,7 +417,6 @@
     "Apple Notes Attachments/บทที่ 2 พื้นฐานชีววิทยา ของพฤติกรรม.png",
     "Apple Notes Attachments/บทที่ 3 ทฤษฎีพัฒนาการ และ มนุษย์.png",
     "Apple Notes Attachments/Pasted Graphic 112.png",
-    "Apple Notes Attachments/Pasted Graphic 54.png",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]

@@ -1,7 +1,13 @@
 References
 - [[PROJECTS/BlogDuaaeeg/Note Detail|Note Detail]]
 
+**Contents**
+#BlogDuaaeeg-feat-reqs
+#BlogDuaaeeg-user-reqs 
+#BlogDuaaeeg-key-feats 
+
 ## Feature Requirement 
+#BlogDuaaeeg-feat-reqs
 - The requirement based on **Medium** Blog website which can be described as following
 	1. Content Creation**
 		- Rich text editor (e.g., Quill, TinyMCE) for creating and editing blog posts with formatting options (bold, italic, headings, lists, code blocks, etc.)
@@ -44,7 +50,7 @@ References
 		- User-friendly navigation and content organization
 ```mermaid
 mindmap
-  root((Blogger Website))
+  root((Feature Requirement ))
     User Management
       Registration
       Authentication
@@ -79,30 +85,31 @@ mindmap
 ```
 
 ## User Requirement
-
-- **User Management:**
-    - Registration and Authentication
-    - Profile Management
-- **Content Creation:**
-    - Rich Text Editing and Markdown Support
-    - Media Integration (Images, etc.)
-    - Categorization and Tagging
-    - Draft Saving and Post Scheduling
-- **Content Management:**
-    - Content Publishing with Unique URLs
-    - Post Previewing
-    - Updating and Unpublishing Existing Posts
-- **Content Distribution:**
-    - Submission to Publications within the Platform
-    - RSS Feed Support
-    - Social Sharing Integration
-- **User Engagement:**
-    - Liking/Upvoting Posts
-    - Commenting on Posts
-    - Following Authors
-- **Content Discovery:**
-    - Search Functionality (by title, author, tags, categories)
-    - Curated Sections (featured posts, recommendations)
+#BlogDuaaeeg-user-reqs 
+- Detail
+	- **User Management:**
+	    - Registration and Authentication
+	    - Profile Management
+	- **Content Creation:**
+	    - Rich Text Editing and Markdown Support
+	    - Media Integration (Images, etc.)
+	    - Categorization and Tagging
+	    - Draft Saving and Post Scheduling
+	- **Content Management:**
+	    - Content Publishing with Unique URLs
+	    - Post Previewing
+	    - Updating and Unpublishing Existing Posts
+	- **Content Distribution:**
+	    - Submission to Publications within the Platform
+	    - RSS Feed Support
+	    - Social Sharing Integration
+	- **User Engagement:**
+	    - Liking/Upvoting Posts
+	    - Commenting on Posts
+	    - Following Authors
+	- **Content Discovery:**
+	    - Search Functionality (by title, author, tags, categories)
+	    - Curated Sections (featured posts, recommendations)
 
 ```merm
 mindmap
@@ -168,3 +175,56 @@ mindmap
       Explore Featured Posts
       View Recommended Posts
 ```
+
+
+## Key Features Application
+#BlogDuaaeeg-key-feats  
+- Based on the user requirements and feature requirements. we can describe the **Key features** for application by following 
+	1. **User Authentication and Registration**
+	    - User registration with email/username and password
+	    - Secure user authentication (login and logout)
+	    - Password recovery mechanism
+	2. **User Profiles**
+	    - Ability to edit personal information (name, bio, location, website)
+	    - Update profile picture
+	    - Manage user's own publications (create, edit, delete)
+	3. **Content Creation**     
+	    - Rich text editor with formatting options (headings, bold/italic, lists, code blocks)
+	    - Markdown support for writing and importing blog posts
+	    - Image and media upload functionality
+	    - Tagging and categorization of posts
+	    - Draft mode for saving unfinished posts
+	    - Scheduling posts for future publishing
+	    - Can post blog as private and public.
+	1. **Content Publishing**
+	    - Publish posts with unique URLs
+	    - Preview functionality before publishing
+	    - Update and unpublish published posts
+	2. **Content Distribution**
+	    - Submit posts to publications within the platform
+	    - Social sharing buttons (Twitter, Facebook, LinkedIn)
+	3. **User Engagement**
+	    - Liking/upvoting posts
+	    - Commenting system for posts
+	    - Follow/subscribe to authors
+	4. **Content Discovery**
+	    - Search functionality for posts (title, author, tags, categories)
+	    - Featured posts or curated content sections
+	    - Recommended posts based on user interests and engagement
+	5. **Analytics**
+	    - Basic analytics for authors (views, likes, comments, shares)
+	    - Integration with third-party analytics tools (e.g., Google Analytics)
+
+```merm
+mindmap
+  root((Keys))
+    User Management
+    User Authentication
+    Content Management
+    Content Distribution
+    User Engagement
+    Content Discovery
+    Analytics
+    Additional Features
+```
+

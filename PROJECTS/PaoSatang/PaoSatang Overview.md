@@ -1,7 +1,7 @@
 [[Project Contents]]
 - [[Case-Study (YNAB)]]
 - [[System Analysis (PaoSatang)]]
-- [[System Design]]
+- [[PROJECTS/PaoSatang/System Design]]
 
 **Extended**
 - [[PROJECTS/PaoSatang/Note Detail]]
