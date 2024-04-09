@@ -2,155 +2,452 @@
 
 References
 - [[App Requirement]]
+- [[PROJECTS/BlogDuaaeeg/System Analysis|System Analysis]]
 
-**Contents**
-#BlogDuaaeeg-SRS 
-#BlogDuaaeeg-ERD 
 
-- ## Software Requirements Specification (SRS)
-	#BlogDuaaeeg-SRS 
-	Based from [[App Requirement]] we had gathered. We can create document outlines for Application roadmap which can be describe as the following
-	
-	### **Introduction**:
-	- Purpose: Describe the purpose of the SRS document and the intended audience.
-	- Scope: Define the scope of the blogger website project and its key features.
-	- Definitions and abbreviations: List any important terms or abbreviations used in the document.
-	
-	### **Overall Description**:
-	- Product perspective: Provide an overview of the blogger website application and its context.
-	- Product features: List the key features of the application, such as user registration, content creation, publishing, distribution, engagement, and discovery.
-	- User characteristics: Describe the target users of the application (e.g., bloggers, writers, readers).
-	- Operating environment: Specify the operating systems, browsers, and devices supported by the application.
-	- Design and implementation constraints: Mention any known constraints or limitations (e.g., technology stack, third-party integrations).
-	
-	### **Specific Requirements**:
-	- Functional requirements: Describe in detail the functional requirements for each feature or component of the application, such as user management, content management, content distribution, user engagement, content discovery, analytics, and additional features.
-	- Non-functional requirements: Specify the non-functional requirements, such as usability, reliability, performance, security, maintainability, and portability.
-	
-	### **Interface Requirements**:
-	- User interfaces: Describe the user interfaces, including the main screens, navigation, and interaction flow.
-	- Hardware interfaces: Specify any hardware interfaces required (e.g., file upload, camera access).
-	- Software interfaces: List any software interfaces or third-party integrations (e.g., social media APIs, analytics tools).
-	- Communication interfaces: Define the communication interfaces, such as APIs or web services.
-	
-	### **Other Non-functional Requirements**:
-	- Performance requirements: Specify any performance requirements, such as response times or throughput.
-	- Security requirements: Define security requirements, such as authentication, authorization, and data encryption.
-	- Software quality attributes: List any quality attributes the application should meet, such as scalability, extensibility, or maintainability.
-	
-	### **Other Requirements**:
-	- Database requirements: Describe the database requirements, including the type of database, data models, and storage needs.
-	- Operational and environmental requirements: Specify any operational or environmental requirements, such as deployment environments or hosting considerations.
-	- Documentation requirements: List the documentation requirements, such as user manuals or developer guides.
+## Class Diagram 
+- Based on #BlogDuaaeeg-ERD structure we designed. We can diagram application services from #BlogDuaaeeg-feat-reqs  that involve with Database by following.
 
 ```merm
-stateDiagram-v2
-    [*] --> Introduction
-    Introduction --> OverallDescription
-    OverallDescription --> SpecificRequirements
-    SpecificRequirements --> FunctionalRequirements
-    FunctionalRequirements --> FnReq
-    state "FunctionalRequirements" as FnReq
-	state "UserManagement" as FnReq
-    state "ContentManagement" as FnReq
-    state "ContentDistribution" as FnReq
-    state "UserEngagement" as FnReq
-    state "ContentDiscovery" as FnReq
-    state "Analytics" as FnReq
-    state "AdditionalFeatures" as FnReq
-    SpecificRequirements --> NonFunctionalRequirements
-    NonFunctionalRequirements --> UsabilityReliabilityPerformance
-    NonFunctionalRequirements --> SecurityMaintainabilityPortability
-    SpecificRequirements --> InterfaceRequirements
-    InterfaceRequirements --> UserHardwareSoftwareCommunication
-    InterfaceRequirements --> OtherNonFunctionalRequirements
-    OtherNonFunctionalRequirements --> PerformanceSecurityQuality
-    OtherNonFunctionalRequirements --> OtherRequirements
-    OtherRequirements --> DatabaseOperationalDocumentation
+classDiagram
+    class User {
+        -userId: int
+        -username: string
+        -email: string
+        -password: string
+        -firstName: string
+        -lastName: string
+        -bio: string
+        -profilePicture: string
+        +registerUser(userInfo)
+        +authenticateUser(credentials)
+        +resetPassword(email)
+        +updatePersonalInfo(info)
+        +updateProfilePicture(picture)
+    }
 
-    state "Usability, Reliability, Performance" as UsabilityReliabilityPerformance
-    state "Security, Maintainability, Portability" as SecurityMaintainabilityPortability
-    state "User, Hardware, Software, Communication" as UserHardwareSoftwareCommunication
-    state "Performance, Security, Quality" as PerformanceSecurityQuality
-    state "Database, Operational, Documentation" as DatabaseOperationalDocumentation
+    class Post {
+        -postId: int
+        -title: string
+        -content: string
+        -createdAt: date
+        -updatedAt: date
+        -published: boolean
+        -userId: int
+        +createPost(userId, postData)
+        +importMarkdownPost(userId, file)
+        +saveAsDraft(userId, draftId)
+        +schedulePublishing(userId, publishDate)
+        +publishPost(userId)
+        +previewPost(userId)
+        +updatePost(userId, updatedData)
+        +unpublishPost(userId)
+    }
+
+    class Tag {
+        -tagId: int
+        -name: string
+    }
+
+    class Category {
+        -categoryId: int
+        -name: string
+    }
+
+    class PostTag {
+        -postId: int
+        -tagId: int
+    }
+
+    class PostCategory {
+        -postId: int
+        -categoryId: int
+    }
+
+    class Comment {
+        -commentId: int
+        -content: string
+        -createdAt: date
+        -userId: int
+        -postId: int
+        +commentOnPost(userId, postId, commentData)
+    }
+
+    class Like {
+        -likeId: int
+        -userId: int
+        -postId: int
+        +likePost(userId, postId)
+    }
+
+    class Content {
+        -publicationId: int
+        -name: string
+        -description: string
+        +submitToPublication(userId, postId)
+    }
+
+    class PublicationPost {
+        -publicationId: int
+        -postId: int
+		+shareOnSocial(userId, postId, platform)
+    }
+
+    User "1" --o "0..*" Post : creates
+    User "1" --o "0..*" Comment : writes
+    User "1" --o "0..*" Like : "likes"
+    User "1" --o "0..*" Content : "submits to"
+    Post "0..*" --o "0..*" PostTag : tagged
+    Post "0..*" --o "0..*" PostCategory : categorized
+    Tag "1" --o "0..*" PostTag : tagged
+    Category "1" --o "0..*" PostCategory : categorized
+    Comment "0..*" --o "1" Post : "commented on"
+    Like "0..*" --o "1" PublicationPost : "liked"
+    Content "1" --o "0..*" PublicationPost : "publishes"
+    Post "0..*" --o "0..*" PublicationPost : "published in"
+	Post "0..*" --o "0..*" Content : "submits to"
+
+    class ContentDiscoveryService {
+        +searchPosts(query, filters)
+		+searchByPostTag(postTagId)
+		+searchByPostCategory(postCategoryId)
+        +getFeaturedPosts()
+        +getRecommendedPosts(userId)
+    }
+
+    class AnalyticsService {
+        +getPostAnalytics(userId, postId)
+        +integrateTool(toolName, config)
+        +googleAnalytics()
+    }
+
+    ContentDiscoveryService "1" --o "0..*" PublicationPost : "discoveried"
+    AnalyticsService "1" --o "0..*" PublicationPost : "analytics"
+	PostTag "0..1" --o "1" ContentDiscoveryService : "sources"
+	PostCategory "0..1" --o "1" ContentDiscoveryService : "sources"
 ```
-## Entity-Relationship Database Diagram
-#BlogDuaaeeg-ERD  
-- This ERD diagram depicts the following entities and their relationships:
-	1. **User**: Represents a registered user of the application. It includes attributes such as userId, username, email, password, firstName, lastName, bio, and profilePicture.
-	2. **Post**: Represents a blog post created by a user. It has attributes like postId, title, content, createdAt, updatedAt, published, and a foreign key (userId) to link it to the User entity.
-	3. **Tag**: Represents a tag that can be associated with a post.
-	4. **Category**: Represents a category that can be associated with a post.
-	5. **PostTag**: A junction table that associates posts with tags, using postId and tagId as composite primary keys.
-	6. **PostCategory**: A junction table that associates posts with categories, using postId and categoryId as composite primary keys.
-	7. **Comment**: Represents a comment made by a user on a post. It has attributes like commentId, content, createdAt, and foreign keys (userId and postId) to link it to the User and Post entities, respectively.
-	8. **Like**: Represents a like given by a user to a post. It has attributes like likeId and foreign keys (userId and postId) to link it to the User and Post entities, respectively.
-	9. **Publication**: Represents a publication within the platform where posts can be submitted.
-	10. **PublicationPost**: A junction table that associates publications with posts, using publicationId and postId as composite primary keys.
 
+## Use-cases
+- Based on #BlogDuaaeeg-Class-Diagram for interface relationship and #BlogDuaaeeg-key-feats core service for application. We can design **Service And User User-cases** following "Sequence Diagram" visualization
+
+1. **User Authentication and Registration**
 ```merm
-erDiagram
-    User ||--o{ Post : creates
-    User ||--o{ Comment : writes
-    User ||--o{ Like : "likes"
-    User {
-        int userId PK
-        string username
-        string email
-        string password
-        string firstName
-        string lastName
-        string bio
-        string profilePicture
-    }
-    Post {
-        int postId PK
-        string title
-        string content
-        date createdAt
-        date updatedAt
-        boolean published
-        int userId FK
-    }
-    Tag ||--o{ PostTag : tagged
-    Tag {
-        int tagId PK
-        string name
-    }
-    Category ||--o{ PostCategory : categorized
-    Category {
-        int categoryId PK
-        string name
-    }
-    PostTag {
-        int postId PK
-        int tagId PK
-    }
-    PostCategory {
-        int postId PK
-        int categoryId PK
-    }
-    Comment {
-        int commentId PK
-        string content
-        date createdAt
-        int userId FK
-        int postId FK
-    }
-    Like {
-        int likeId PK
-        int userId FK
-        int postId FK
-    }
-    User ||--o{ Publication : "submits to"
-    Publication {
-        int publicationId PK
-        string name
-        string description
-    }
-    Publication ||--o{ PublicationPost : "publishes"
-    PublicationPost {
-        int publicationId PK
-        int postId PK
-    }
+sequenceDiagram
+    Actor User
+    participant Server
+    participant UserManagementService
+    participant UserEntity
+
+	rect rgb(200, 200, 255, 0.5)
+    User->>Server: POST /register (userInfo)
+    Server->>UserManagementService: registerUser(userInfo)
+    UserManagementService->>UserEntity: createUser(userInfo)
+    UserEntity-->>UserManagementService: userCreated
+    UserManagementService-->>Server: registrationSuccessful
+    Server-->>User: registrationSuccessful
+    end
+
+	rect rgb(240, 200, 255, 0.5)
+    User->>Server: POST /login (credentials)
+    Server->>UserManagementService: authenticateUser(credentials)
+    UserManagementService->>UserEntity: getUser(credentials)
+    UserEntity-->>UserManagementService: userFound
+    UserManagementService-->>Server: authenticationSuccessful
+    Server-->>User: authenticationSuccessful
+    end
+```
+2. **User Profiles**
+```merm
+sequenceDiagram
+    actor User
+    participant Server
+    participant UserProfileService
+    participant UserEntity
+    
+	rect rgb(200, 200, 255, 0.5)
+    User->>Server: PUT /users/{userId} (info)
+    Server->>UserProfileService: updatePersonalInfo(userId, info)
+    UserProfileService->>UserEntity: getUserById(userId)
+    UserEntity-->>UserProfileService: userFound
+    UserProfileService->>UserEntity: updateUser(userId, info)
+    UserEntity-->>UserProfileService: userUpdated
+    UserProfileService-->>Server: infoUpdated
+    Server-->>User: infoUpdated
+    end
+
+	rect rgb(240, 200, 255, 0.5)
+    User->>Server: PUT /users/{userId}/picture (picture)
+    Server->>UserProfileService: updateProfilePicture(userId, picture)
+    UserProfileService->>UserEntity: getUserById(userId)
+    UserEntity-->>UserProfileService: userFound
+    UserProfileService->>UserEntity: updateUserPicture(userId, picture)
+    UserEntity-->>UserProfileService: pictureUpdated
+    UserProfileService-->>Server: pictureUpdated
+    Server-->>User: pictureUpdated
+    end
+```
+3. **Content Creation**     
+	1. Create Post
+```merm
+sequenceDiagram
+    actor User
+    participant Server
+    participant ContentCreationService
+    participant ContentPublishingService
+    participant PostEntity
+
+    User->>Server: POST /posts (userId, postData)
+    Server->>ContentCreationService: createPost(userId, postData)
+    ContentCreationService->>UserEntity: getUserById(userId)
+    UserEntity-->>ContentCreationService: userFound
+    ContentCreationService->>PostEntity: createPost(userId, postData)
+    PostEntity-->>ContentCreationService: postCreated
+    ContentCreationService-->>Server: postCreated
+    Server-->>User: postCreated
+```
+	2. Publish Post
+```merm
+sequenceDiagram
+    actor User
+    participant Server
+    participant ContentCreationService
+    participant ContentPublishingService
+    participant PostEntity
+
+    User->>Server: PUT /posts/{postId}/publish (userId)
+    Server->>ContentPublishingService: publishPost(userId, postId)
+    ContentPublishingService->>UserEntity: getUserById(userId)
+    UserEntity-->>ContentPublishingService: userFound
+    ContentPublishingService->>PostEntity: getPostById(postId)
+    PostEntity-->>ContentPublishingService: postFound
+    ContentPublishingService->>PostEntity: publishPost(userId, postId)
+    PostEntity-->>ContentPublishingService: postPublished
+    ContentPublishingService-->>Server: postPublished
+    Server-->>User: postPublished
+```
+
+
+2. **Content Publishing**
+```merm
+sequenceDiagram
+    participant User
+    participant Server
+    participant Content
+    participant User
+    participant PostEntity
+    participant PublicationEntity
+    participant PublicationPostEntity
+
+    User->>Server: POST /publications/{publicationId}/posts (userId, postId)
+    Server->>Content: submitToPublication(userId, postId, publicationId)
+    Content->>UserEntity: getUserById(userId)
+    UserEntity-->>Content: userFound
+    Content->>PostEntity: getPostById(postId)
+    PostEntity-->>Content: postFound
+    Content->>PublicationEntity: getPublicationById(publicationId)
+    PublicationEntity-->>Content: publicationFound
+    Content->>PublicationPostEntity: createPublicationPost(publicationId, postId)
+    PublicationPostEntity-->>Content: publicationPostCreated
+    Content-->>Server: postSubmitted
+    Server-->>User: postSubmitted
+```
+2. **Content Distribution**
+- Submit posts to publications within the platform
+- Social sharing buttons (Twitter, Facebook, LinkedIn)
+3. **User Engagement**
+	1. Like post
+```merm
+sequenceDiagram
+    actor User
+    participant Server
+    participant UserEngagementService
+    participant LikeEntity
+    participant CommentEntity
+    participant UserEntity
+    participant PostEntity
+
+    User->>Server: POST /posts/{postId}/likes (userId)
+    Server->>UserEngagementService: likePost(userId, postId)
+    UserEngagementService->>UserEntity: getUserById(userId)
+    UserEntity-->>UserEngagementService: userFound
+    UserEngagementService->>PostEntity: getPostById(postId)
+    PostEntity-->>UserEngagementService: postFound
+    UserEngagementService->>LikeEntity: createLike(userId, postId)
+    LikeEntity-->>UserEngagementService: likeCreated
+    UserEngagementService-->>Server: postLiked
+    Server-->>User: postLiked
+
+```
+	2. Comment on Post 
+```merm
+sequenceDiagram
+    actor User
+    participant Server
+    participant UserEngagementService
+    participant LikeEntity
+    participant CommentEntity
+    participant UserEntity
+    participant PostEntity
+
+    User->>Server: POST /posts/{postId}/comments (userId, commentData)
+    Server->>UserEngagementService: commentOnPost(userId, postId, commentData)
+    UserEngagementService->>UserEntity: getUserById(userId)
+    UserEntity-->>UserEngagementService: userFound
+    UserEngagementService->>PostEntity: getPostById(postId)
+    PostEntity-->>UserEngagementService: postFound
+    UserEngagementService->>CommentEntity: createComment(userId, postId, commentData)
+    CommentEntity-->>UserEngagementService: commentCreated
+    UserEngagementService-->>Server: commentAdded
+    Server-->>User: commentAdded
+
+```
+	3. Follow The Auther
+```merm
+sequenceDiagram
+    actor User
+    participant Server
+    participant UserEngagementService
+    participant LikeEntity
+    participant CommentEntity
+    participant UserEntity
+
+    User->>Server: POST /users/{authorId}/followers (userId)
+    Server->>UserEngagementService: followAuthor(userId, authorId)
+    UserEngagementService->>UserEntity: getUserById(userId)
+    UserEntity-->>UserEngagementService: userFound
+    UserEngagementService->>UserEntity: getUserById(authorId)
+    UserEntity-->>UserEngagementService: authorFound
+    UserEngagementService->>UserEntity: followUser(userId, authorId)
+    UserEntity-->>UserEngagementService: followingCreated
+    UserEngagementService-->>Server: authorFollowed
+    Server-->>User: authorFollowed
+```
+
+4. **Content Discovery**
+1. Get Post By The Query
+```merm
+sequenceDiagram
+    actor User
+    participant Server
+    participant ContentDiscoveryService
+    participant PostEntity
+
+    User->>Server: GET /posts?query={query}&filters={filters}
+    Server->>ContentDiscoveryService: searchPosts(query, filters)
+    ContentDiscoveryService->>PostEntity: getPosts(query, filters)
+    PostEntity-->>ContentDiscoveryService: postsFound
+    ContentDiscoveryService-->>Server: searchResults
+    Server-->>User: searchResults
+```
+2. Get Feature Posts
+```merm
+sequenceDiagram
+    actor User
+    participant Server
+    participant ContentDiscoveryService
+    participant PostEntity
+
+
+    User->>Server: GET /posts/featured
+    Server->>ContentDiscoveryService: getFeaturedPosts()
+    ContentDiscoveryService->>PostEntity: getFeaturedPosts()
+    PostEntity-->>ContentDiscoveryService: featuredPostsFound
+    ContentDiscoveryService-->>Server: featuredPosts
+    Server-->>User: featuredPosts
+```
+3. Get Recommended Posts
+```merm
+sequenceDiagram
+    actor User
+    participant Server
+    participant ContentDiscoveryService
+    participant PostEntity
+    participant TagEntity
+    participant CategoryEntity
+
+
+    User->>Server: GET /users/{userId}/recommended-posts
+    Server->>ContentDiscoveryService: getRecommendedPosts(userId)
+    ContentDiscoveryService->>UserEntity: getUserById(userId)
+    UserEntity-->>ContentDiscoveryService: userFound
+    ContentDiscoveryService->>PostEntity: getRecommendedPosts(userId)
+    PostEntity-->>ContentDiscoveryService: recommendedPostsFound
+
+```
+4. Get Posts By Post Tag
+```merm
+sequenceDiagram
+    actor User
+    participant Server
+    participant ContentDiscoveryService
+    participant PostEntity
+    participant TagEntity
+
+    User->>Server: GET /posts/tags/{tagId}
+    Server->>ContentDiscoveryService: searchByPostTag(tagId)
+    ContentDiscoveryService->>TagEntity: getTagById(tagId)
+    TagEntity-->>ContentDiscoveryService: tagFound
+    ContentDiscoveryService->>PostEntity: getPostsByTag(tagId)
+    PostEntity-->>ContentDiscoveryService: postsFoundByTag
+    ContentDiscoveryService-->>Server: searchResults
+    Server-->>User: searchResults
+```
+5. Get Posts By Post Category
+```merm
+sequenceDiagram
+    actor User
+    participant Server
+    participant ContentDiscoveryService
+    participant PostEntity
+    participant TagEntity
+    participant CategoryEntity
+
+    User->>Server: GET /posts/categories/{categoryId}
+    Server->>ContentDiscoveryService: searchByPostCategory(categoryId)
+    ContentDiscoveryService->>CategoryEntity: getCategoryById(categoryId)
+    CategoryEntity-->>ContentDiscoveryService: categoryFound
+    ContentDiscoveryService->>PostEntity: getPostsByCategory(categoryId)
+    PostEntity-->>ContentDiscoveryService: postsFoundByCategory
+    ContentDiscoveryService-->>Server: searchResults
+    Server-->>User: searchResults
+```
+
+5. **Analytics**
+```merm
+sequenceDiagram
+    participant User
+    participant Server
+    participant AnalyticsService
+    participant User
+    participant PostEntity
+    participant UserEntity
+
+	rect rgb(200, 200, 255, 0.5)
+    User->>Server: GET /posts/{postId}/analytics (userId)
+    Server->>AnalyticsService: getPostAnalytics(userId, postId)
+    AnalyticsService->>UserEntity: getUserById(userId)
+    UserEntity-->>AnalyticsService: userFound
+    AnalyticsService->>PostEntity: getPostById(postId)
+    PostEntity-->>AnalyticsService: postFound
+    AnalyticsService->>PostEntity: getPostAnalytics(postId)
+    PostEntity-->>AnalyticsService: postAnalytics
+    AnalyticsService-->>Server: postAnalytics
+    Server-->>User: postAnalytics
+    end
+
+	rect rgb(244, 200, 255, 0.5)
+    User->>Server: POST /analytics/tools (toolName, config)
+    Server->>AnalyticsService: integrateTool(toolName, config)
+    AnalyticsService-->>Server: toolIntegrated
+    Server-->>User: toolIntegrated
+    end
+
+	rect rgb(230, 230, 255, 0.5)
+    User->>Server: GET /analytics/google
+    Server->>AnalyticsService: googleAnalytics()
+    AnalyticsService->>PostEntity: getGoogleAnalyticsData()
+    PostEntity-->>AnalyticsService: googleAnalyticsData
+    AnalyticsService-->>Server: googleAnalyticsData
+    Server-->>User: googleAnalyticsData
+    end
 ```
