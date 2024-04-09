@@ -1,3 +1,5 @@
+[[BlogDuaaeeg Overview]]
+
 References
 - [[PROJECTS/BlogDuaaeeg/Note Detail|Note Detail]]
 

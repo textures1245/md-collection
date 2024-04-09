@@ -153,11 +153,12 @@
     "Log-Retention": 140,
     "go-gin": 141,
     "Temp-notes": 142,
-    "BlogDuaaeeg-feat-reqs": 143,
-    "BlogDuaaeeg-user-reqs": 144,
-    "BlogDuaaeeg-key-feats": 145,
-    "App": 146,
-    "SRS": 147
+    "SRS": 143,
+    "BlogDuaaeeg-feat-reqs": 144,
+    "BlogDuaaeeg-user-reqs": 145,
+    "BlogDuaaeeg-key-feats": 146,
+    "BlogDuaaeeg-ERD": 147,
+    "BlogDuaaeeg-SRS": 148
   },
   "_version": 3
 }

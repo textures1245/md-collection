@@ -6,7 +6,7 @@
       {
         "id": "7501e7b31e1cd729",
         "type": "tabs",
-        "dimension": 30.055248618784532,
+        "dimension": 49.453883495145625,
         "children": [
           {
             "id": "bab31f94ab54824c",
@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/System Design.md",
+                "file": "PROJECTS/Home For Paws/Application Design.md",
                 "mode": "source",
                 "source": false
               }
@@ -27,6 +27,18 @@
               "type": "markdown",
               "state": {
                 "file": "Books/Money Literacy/Based of Wealthy.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "75c609d7062b334f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PROJECTS/Components.md",
                 "mode": "source",
                 "source": false
               }
@@ -50,30 +62,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Go Lectures/Go Practical Examples.md",
+                "file": "PROJECTS/BlogDuaaeeg/System Analysis.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ff2051738bb6d173",
+            "id": "ccaf8edf9e7f9ae1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Important note/Software Development Life Cycle (SDLC)/SDLC Contents.md",
+                "file": "Go Lectures/Concept/HTTP Protocols.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       },
       {
         "id": "02a184b334bca340",
         "type": "tabs",
-        "dimension": 37.23756906077348,
+        "dimension": 50.54611650485437,
         "children": [
           {
             "id": "db50b8e91f0f7d63",
@@ -105,7 +118,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Go Lectures/Concept/Logging.md",
+                "file": "Go Lectures/Package & Module.md",
                 "mode": "source",
                 "source": false
               }
@@ -141,7 +154,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Books/Money Literacy/Based of Wealthy.md",
+                "file": "PROJECTS/Home For Paws/Application Design.md",
                 "mode": "source",
                 "source": false
               }
@@ -160,18 +173,6 @@
             }
           },
           {
-            "id": "1dc264b58463f980",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Important note/Software Development Life Cycle (SDLC)/Design.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "37d49bb1db211b2b",
             "type": "leaf",
             "state": {
@@ -184,26 +185,7 @@
             }
           }
         ],
-        "currentTab": 7
-      },
-      {
-        "id": "6cbf7badf873a557",
-        "type": "tabs",
-        "dimension": 32.707182320441994,
-        "children": [
-          {
-            "id": "7470324b48aa4613",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PROJECTS/PaoSatang/System Design.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -276,11 +258,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 248.5110321044922
+    "width": 200
   },
   "right": {
     "id": "fcab376267815ad6",
@@ -296,7 +279,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/System Design.md",
+                "file": "PROJECTS/Home For Paws/Application Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -313,7 +296,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/System Design.md",
+                "file": "PROJECTS/Home For Paws/Application Design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -336,7 +319,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/System Design.md"
+                "file": "PROJECTS/Home For Paws/Application Design.md"
               }
             }
           },
@@ -358,50 +341,50 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "webpage-html-export:Export Vault to HTML": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "webpage-html-export:Export Vault to HTML": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "bab31f94ab54824c",
+  "active": "98b9b4baf172b3e0",
   "lastOpenFiles": [
-    "Important note/Software Development Life Cycle (SDLC)/Design.md",
-    "PROJECTS/BlogDuaaeeg/System Design.md",
+    "PROJECTS/BlogDuaaeeg/System Analysis.md",
+    "PROJECTS/Home For Paws/Application Design.md",
+    "PROJECTS/Home For Paws/UML Design.md",
     "PROJECTS/PaoSatang/System Design.md",
-    "PROJECTS/PaoSatang/Case-Study (YNAB).md",
     "PROJECTS/PaoSatang/System Analysis (PaoSatang).md",
-    "PROJECTS/PaoSatang/PaoSatang Overview.md",
-    "Important note/Software Development Life Cycle (SDLC)/SDLC Method.md",
-    "Important note/Software Development Life Cycle (SDLC)/SDLC Contents.md",
-    "PROJECTS/BlogDuaaeeg/App Requirement.md",
+    "PROJECTS/BlogDuaaeeg/System Design.md",
     "PROJECTS/BlogDuaaeeg/BlogDuaaeeg Overview.md",
     "PROJECTS/BlogDuaaeeg/Note Detail.md",
-    "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
-    "PROJECTS/Home For Paws/UML Design.md",
-    "PROJECTS/Home For Paws/Home For Paw Overview.md",
-    "PROJECTS/Home For Paws/Application Design.md",
-    "Books/Money Literacy/Based of Wealthy.md",
+    "PROJECTS/PersonalFinaceManangement/System Analysis.md",
+    "PROJECTS/BlogDuaaeeg/App Requirement.md",
+    "Important note/Software Development Life Cycle (SDLC)/Design.md",
+    "Important note/Software Development Life Cycle (SDLC)/SDLC Contents.md",
+    "Important note/Software Development Life Cycle (SDLC)/SDLC Method.md",
+    "Temporary Notes/05-06-2024.md",
+    "Important note/2nd Comcamp Scheduling.md",
+    "PROJECTS/BlogDuaaeeg/Requirement.md",
     "Pasted image 20240408211348.png",
     "Important note/Software Development Life Cycle (SDLC)",
-    "Temporary Notes/05-06-2024.md",
-    "PROJECTS/Components.md",
-    "Go Lectures/Concept/Concurrently.md",
+    "Books/Money Literacy/Based of Wealthy.md",
     "Go Lectures/Go Practical Examples.md",
-    "PROJECTS/Project Contents.md",
-    "PROJECTS/BlogDuaaeeg",
-    "PROJECTS/PaoSatang/Note Detail.md",
-    "PROJECTS/PersonalFinaceManangement/Personal Finance Project Overview.md",
+    "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
+    "Go Lectures/Gin/Quickstart.md",
     "Go Lectures/Package & Module.md",
     "Temporary Notes",
-    "Go Lectures/Gin/Quickstart.md",
-    "Go Lectures/Gin",
+    "PROJECTS/Project Contents.md",
+    "PROJECTS/PersonalFinaceManangement/Personal Finance Project Overview.md",
+    "PROJECTS/PaoSatang/PaoSatang Overview.md",
+    "PROJECTS/Home For Paws/Home For Paw Overview.md",
+    "PROJECTS/BlogDuaaeeg",
     "Go Lectures/Go Lectures.md",
+    "Go Lectures/Gin",
     "Users/phakh/go/src/github.com/textures1245/practical-examples",
     "Users/phakh/go/src/github.com/textures1245",
     "Users/phakh/go/src/github.com",

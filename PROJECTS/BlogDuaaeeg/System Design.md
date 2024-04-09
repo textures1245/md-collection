@@ -1,8 +1,14 @@
+[[BlogDuaaeeg Overview]]
+
 References
 - [[App Requirement]]
 
+**Contents**
+#BlogDuaaeeg-SRS 
+#BlogDuaaeeg-ERD 
 
 - ## Software Requirements Specification (SRS)
+	#BlogDuaaeeg-SRS 
 	Based from [[App Requirement]] we had gathered. We can create document outlines for Application roadmap which can be describe as the following
 	
 	### **Introduction**:
@@ -37,3 +43,114 @@ References
 	- Operational and environmental requirements: Specify any operational or environmental requirements, such as deployment environments or hosting considerations.
 	- Documentation requirements: List the documentation requirements, such as user manuals or developer guides.
 
+```merm
+stateDiagram-v2
+    [*] --> Introduction
+    Introduction --> OverallDescription
+    OverallDescription --> SpecificRequirements
+    SpecificRequirements --> FunctionalRequirements
+    FunctionalRequirements --> FnReq
+    state "FunctionalRequirements" as FnReq
+	state "UserManagement" as FnReq
+    state "ContentManagement" as FnReq
+    state "ContentDistribution" as FnReq
+    state "UserEngagement" as FnReq
+    state "ContentDiscovery" as FnReq
+    state "Analytics" as FnReq
+    state "AdditionalFeatures" as FnReq
+    SpecificRequirements --> NonFunctionalRequirements
+    NonFunctionalRequirements --> UsabilityReliabilityPerformance
+    NonFunctionalRequirements --> SecurityMaintainabilityPortability
+    SpecificRequirements --> InterfaceRequirements
+    InterfaceRequirements --> UserHardwareSoftwareCommunication
+    InterfaceRequirements --> OtherNonFunctionalRequirements
+    OtherNonFunctionalRequirements --> PerformanceSecurityQuality
+    OtherNonFunctionalRequirements --> OtherRequirements
+    OtherRequirements --> DatabaseOperationalDocumentation
+
+    state "Usability, Reliability, Performance" as UsabilityReliabilityPerformance
+    state "Security, Maintainability, Portability" as SecurityMaintainabilityPortability
+    state "User, Hardware, Software, Communication" as UserHardwareSoftwareCommunication
+    state "Performance, Security, Quality" as PerformanceSecurityQuality
+    state "Database, Operational, Documentation" as DatabaseOperationalDocumentation
+```
+## Entity-Relationship Database Diagram
+#BlogDuaaeeg-ERD  
+- This ERD diagram depicts the following entities and their relationships:
+	1. **User**: Represents a registered user of the application. It includes attributes such as userId, username, email, password, firstName, lastName, bio, and profilePicture.
+	2. **Post**: Represents a blog post created by a user. It has attributes like postId, title, content, createdAt, updatedAt, published, and a foreign key (userId) to link it to the User entity.
+	3. **Tag**: Represents a tag that can be associated with a post.
+	4. **Category**: Represents a category that can be associated with a post.
+	5. **PostTag**: A junction table that associates posts with tags, using postId and tagId as composite primary keys.
+	6. **PostCategory**: A junction table that associates posts with categories, using postId and categoryId as composite primary keys.
+	7. **Comment**: Represents a comment made by a user on a post. It has attributes like commentId, content, createdAt, and foreign keys (userId and postId) to link it to the User and Post entities, respectively.
+	8. **Like**: Represents a like given by a user to a post. It has attributes like likeId and foreign keys (userId and postId) to link it to the User and Post entities, respectively.
+	9. **Publication**: Represents a publication within the platform where posts can be submitted.
+	10. **PublicationPost**: A junction table that associates publications with posts, using publicationId and postId as composite primary keys.
+
+```merm
+erDiagram
+    User ||--o{ Post : creates
+    User ||--o{ Comment : writes
+    User ||--o{ Like : "likes"
+    User {
+        int userId PK
+        string username
+        string email
+        string password
+        string firstName
+        string lastName
+        string bio
+        string profilePicture
+    }
+    Post {
+        int postId PK
+        string title
+        string content
+        date createdAt
+        date updatedAt
+        boolean published
+        int userId FK
+    }
+    Tag ||--o{ PostTag : tagged
+    Tag {
+        int tagId PK
+        string name
+    }
+    Category ||--o{ PostCategory : categorized
+    Category {
+        int categoryId PK
+        string name
+    }
+    PostTag {
+        int postId PK
+        int tagId PK
+    }
+    PostCategory {
+        int postId PK
+        int categoryId PK
+    }
+    Comment {
+        int commentId PK
+        string content
+        date createdAt
+        int userId FK
+        int postId FK
+    }
+    Like {
+        int likeId PK
+        int userId FK
+        int postId FK
+    }
+    User ||--o{ Publication : "submits to"
+    Publication {
+        int publicationId PK
+        string name
+        string description
+    }
+    Publication ||--o{ PublicationPost : "publishes"
+    PublicationPost {
+        int publicationId PK
+        int postId PK
+    }
+```
