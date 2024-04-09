@@ -354,6 +354,7 @@ sequenceDiagram
     PostEntity-->>ContentDiscoveryService: featuredPostsFound
     ContentDiscoveryService-->>Server: featuredPosts
     Server-->>User: featuredPosts
+    
 ```
 3. Get Recommended Posts
 ```merm
@@ -372,6 +373,8 @@ sequenceDiagram
     UserEntity-->>ContentDiscoveryService: userFound
     ContentDiscoveryService->>PostEntity: getRecommendedPosts(userId)
     PostEntity-->>ContentDiscoveryService: recommendedPostsFound
+    ContentDiscoveryService-->>Server: recommendedPosts
+    Server->>User:Responed
 
 ```
 4. Get Posts By Post Tag
