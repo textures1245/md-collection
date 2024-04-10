@@ -4,6 +4,9 @@ References
 - [[App Requirement]]
 - [[PROJECTS/BlogDuaaeeg/System Analysis|System Analysis]]
 
+**Contents**
+#BlogDuaaeeg-Class-Diagram 
+#BlogDuaaeeg-Usecases
 
 ## Class Diagram 
 - Based on #BlogDuaaeeg-ERD structure we designed. We can diagram application services from #BlogDuaaeeg-feat-reqs  that involve with Database by following.
@@ -15,16 +18,19 @@ classDiagram
         -username: string
         -email: string
         -password: string
-        -firstName: string
-        -lastName: string
-        -bio: string
-        -profilePicture: string
         +registerUser(userInfo)
         +authenticateUser(credentials)
         +resetPassword(email)
+    }
+
+	class UserProfile {
+		-firstName: string
+        -lastName: string
+        -bio: string
+        -profilePicture: string
         +updatePersonalInfo(info)
         +updateProfilePicture(picture)
-    }
+	}
 
     class Post {
         -postId: int
@@ -97,15 +103,15 @@ classDiagram
     User "1" --o "0..*" Comment : writes
     User "1" --o "0..*" Like : "likes"
     User "1" --o "0..*" Content : "submits to"
+    User "1" --o "1" UserProfile : "updated"
     Post "0..*" --o "0..*" PostTag : tagged
     Post "0..*" --o "0..*" PostCategory : categorized
     Tag "1" --o "0..*" PostTag : tagged
     Category "1" --o "0..*" PostCategory : categorized
     Comment "0..*" --o "1" Post : "commented on"
     Like "0..*" --o "1" PublicationPost : "liked"
-    Content "1" --o "0..*" PublicationPost : "publishes"
-    Post "0..*" --o "0..*" PublicationPost : "published in"
-	Post "0..*" --o "0..*" Content : "submits to"
+    Content "1" --o "1" PublicationPost : "publishes"
+	Post "1" --o "1" Content : "submits to"
 
     class ContentDiscoveryService {
         +searchPosts(query, filters)
@@ -128,6 +134,7 @@ classDiagram
 ```
 
 ## Use-cases
+#BlogDuaaeeg-Usecases 
 - Based on #BlogDuaaeeg-Class-Diagram for interface relationship and #BlogDuaaeeg-key-feats core service for application. We can design **Service And User User-cases** following "Sequence Diagram" visualization
 
 1. **User Authentication and Registration**
@@ -454,3 +461,4 @@ sequenceDiagram
     Server-->>User: googleAnalyticsData
     end
 ```
+

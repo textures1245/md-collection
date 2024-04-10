@@ -6,7 +6,7 @@
       {
         "id": "7501e7b31e1cd729",
         "type": "tabs",
-        "dimension": 49.453883495145625,
+        "dimension": 47.57281553398058,
         "children": [
           {
             "id": "bab31f94ab54824c",
@@ -62,7 +62,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/System Design.md",
+                "file": "PROJECTS/BlogDuaaeeg/Implementation.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
       {
         "id": "02a184b334bca340",
         "type": "tabs",
-        "dimension": 50.54611650485437,
+        "dimension": 52.42718446601942,
         "children": [
           {
             "id": "db50b8e91f0f7d63",
@@ -94,7 +94,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
+                "file": "Go Lectures/Practical Examples/Logger.md",
                 "mode": "source",
                 "source": false
               }
@@ -184,8 +184,7 @@
               }
             }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "vertical"
@@ -226,7 +225,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#BlogDuaaeeg-ERD",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -258,7 +257,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -278,7 +278,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/System Design.md",
+                "file": "PROJECTS/BlogDuaaeeg/Implementation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -295,7 +295,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/System Design.md",
+                "file": "PROJECTS/BlogDuaaeeg/Implementation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -318,7 +318,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/System Design.md"
+                "file": "PROJECTS/BlogDuaaeeg/Implementation.md"
               }
             }
           },
@@ -353,22 +353,26 @@
   },
   "active": "74680b0f6e4cd528",
   "lastOpenFiles": [
+    "Go Lectures/Practical Examples/Logger.md",
+    "PROJECTS/BlogDuaaeeg/System Design.md",
+    "PROJECTS/BlogDuaaeeg/Implementation.md",
+    "Important note/Software Development Life Cycle (SDLC)/SDLC Method.md",
+    "Important note/Software Development Life Cycle (SDLC)/Implementation.md",
+    "Go Lectures/Concept/Concurrently.md",
+    "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
+    "PROJECTS/BlogDuaaeeg/Note Detail.md",
+    "Books/Money Literacy/Expense Income Guide.md",
     "PROJECTS/BlogDuaaeeg/System Analysis.md",
     "PROJECTS/BlogDuaaeeg/BlogDuaaeeg Overview.md",
     "Go Lectures/Go Practical Examples.md",
-    "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
     "PROJECTS/Home For Paws/Application Design.md",
-    "Books/Money Literacy/Expense Income Guide.md",
-    "PROJECTS/BlogDuaaeeg/System Design.md",
     "PROJECTS/BlogDuaaeeg/App Requirement.md",
     "PROJECTS/Home For Paws/UML Design.md",
     "PROJECTS/PaoSatang/System Design.md",
     "PROJECTS/PaoSatang/System Analysis (PaoSatang).md",
-    "PROJECTS/BlogDuaaeeg/Note Detail.md",
     "PROJECTS/PersonalFinaceManangement/System Analysis.md",
     "Important note/Software Development Life Cycle (SDLC)/Design.md",
     "Important note/Software Development Life Cycle (SDLC)/SDLC Contents.md",
-    "Important note/Software Development Life Cycle (SDLC)/SDLC Method.md",
     "Temporary Notes/05-06-2024.md",
     "Important note/2nd Comcamp Scheduling.md",
     "PROJECTS/BlogDuaaeeg/Requirement.md",
@@ -378,10 +382,6 @@
     "Go Lectures/Gin/Quickstart.md",
     "Go Lectures/Package & Module.md",
     "Temporary Notes",
-    "PROJECTS/Project Contents.md",
-    "PROJECTS/PersonalFinaceManangement/Personal Finance Project Overview.md",
-    "PROJECTS/PaoSatang/PaoSatang Overview.md",
-    "PROJECTS/Home For Paws/Home For Paw Overview.md",
     "PROJECTS/BlogDuaaeeg",
     "Go Lectures/Gin",
     "Users/phakh/go/src/github.com/textures1245/practical-examples",
