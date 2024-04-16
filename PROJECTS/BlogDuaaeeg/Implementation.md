@@ -152,78 +152,82 @@ model PublicationPost {
 ```
 ## Route **Structure** 
 - The benefit from using **Restful API** as App Architecture we can design our HTTPS request/response by the following **path structures** that we performed on  #BlogDuaaeeg-Usecases 
-	1. **User Registration**
-	    - Path: `POST /register`
-	    - Request Payload: `{ userInfo }`
-	    - Response: `registrationSuccessful`
-	2. **User Authentication**
-	    - Path: `POST /login`
-	    - Request Payload: `{ credentials }`
-	    - Response: `authenticationSuccessful`
-	3. **Update User Personal Information**
-	    - Path: `PUT /users/{userId}`
-	    - Request Payload: `{ info }`
-	    - Response: `infoUpdated`
-	4. **Update User Profile Picture**
-	    - Path: `PUT /users/{userId}/picture`
-	    - Request Payload: `{ picture }`
-	    - Response: `pictureUpdated`
-	5. **Create Post**
-	    - Path: `POST /posts`
-	    - Request Payload: `{ userId, postData }`
-	    - Response: `postCreated`
-	6. **Publish Post**
-	    - Path: `PUT /posts/{postId}/publish`
-	    - Request Payload: `{ userId }`
-	    - Response: `postPublished`
-	7. **Submit Post to Publication**
-	    - Path: `POST /publications/{publicationId}/posts`
-	    - Request Payload: `{ userId, postId }`
-	    - Response: `postSubmitted`
-	8. **Like Post**
-	    - Path: `POST /posts/{postId}/likes`
-	    - Request Payload: `{ userId }`
-	    - Response: `postLiked`
-	9. **Comment on Post**
-	    - Path: `POST /posts/{postId}/comments`
-	    - Request Payload: `{ userId, commentData }`
-	    - Response: `commentAdded`
-	10. **Follow Author**
-	    - Path: `POST /users/{authorId}/followers`
-	    - Request Payload: `{ userId }`
-	    - Response: `authorFollowed`
-	11. **Search Posts**
-	    - Path: `GET /posts?query={query}&filters={filters}`
-	    - Request Payload: `{ query, filters }`
-	    - Response: `searchResults`
-	12. **Get Featured Posts**
-	    - Path: `GET /posts/featured`
-	    - Request Payload: None
-	    - Response: `featuredPosts`
-	13. **Get Recommended Posts for User**
-	    - Path: `GET /users/{userId}/recommended-posts`
-	    - Request Payload: None
-	    - Response: `recommendedPosts`
-	14. **Search Posts by Tag**
-	    - Path: `GET /posts/tags/{tagId}`
-	    - Request Payload: None
-	    - Response: `searchResults`
-	15. **Search Posts by Category**
-	    - Path: `GET /posts/categories/{categoryId}`
-	    - Request Payload: None
-	    - Response: `searchResults`
-	16. **Get Post Analytics**
-	    - Path: `GET /posts/{postId}/analytics`
-	    - Request Payload: `{ userId }`
-	    - Response: `postAnalytics`
-	17. **Integrate Analytics Tool**
-	    - Path: `POST /analytics/tools`
-	    - Request Payload: `{ toolName, config }`
-	    - Response: `toolIntegrated`
-	18. **Get Google Analytics Data**
-	    - Path: `GET /analytics/google`
-	    - Request Payload: None
-	    - Response: `googleAnalyticsData`
+- All routes had prefix with `/api/v1`
+### 1. Production Route
+1. **User Registration** 
+	- Path: `POST /register`
+	- Request Payload: `{ userInfo }`
+	- Response: `registrationSuccessful`
+2. **User Authentication**
+	- Path: `POST /login`
+	- Request Payload: `{ credentials }`
+	- Response: `authenticationSuccessful`
+3. **Update User Personal Information**
+	- Path: `PUT /users/{userId}/profile`
+	- Request Payload: `{ info }`
+	- Response: `infoUpdated`
+5. **Create Post**
+	- Path: `POST /posts`
+	- Request Payload: `{ userId, postData }`
+	- Response: `postCreated`
+6. **Publish Post**
+	- Path: `PUT /posts/{postId}/publish`
+	- Request Payload: `{ userId }`
+	- Response: `postPublished`
+7. **Submit Post to Publication**
+	- Path: `POST /publications/{publicationId}/posts`
+	- Request Payload: `{ userId, postId }`
+	- Response: `postSubmitted`
+8. **Like Post**
+	- Path: `POST /posts/{postId}/likes`
+	- Request Payload: `{ userId }`
+	- Response: `postLiked`
+9. **Comment on Post**
+	- Path: `POST /posts/{postId}/comments`
+	- Request Payload: `{ userId, commentData }`
+	- Response: `commentAdded`
+10. **Follow Author**
+	- Path: `POST /users/{authorId}/followers`
+	- Request Payload: `{ userId }`
+	- Response: `authorFollowed`
+11. **Search Posts**
+	- Path: `GET /posts?query={query}&filters={filters}`
+	- Request Payload: `{ query, filters }`
+	- Response: `searchResults`
+12. **Get Featured Posts**
+	- Path: `GET /posts/featured`
+	- Request Payload: None
+	- Response: `featuredPosts`
+13. **Get Recommended Posts for User**
+	- Path: `GET /users/{userId}/recommended-posts`
+	- Request Payload: None
+	- Response: `recommendedPosts`
+14. **Search Posts by Tag**
+	- Path: `GET /posts/tags/{tagId}`
+	- Request Payload: None
+	- Response: `searchResults`
+15. **Search Posts by Category**
+	- Path: `GET /posts/categories/{categoryId}`
+	- Request Payload: None
+	- Response: `searchResults`
+16. **Get Post Analytics**
+	- Path: `GET /posts/{postId}/analytics`
+	- Request Payload: `{ userId }`
+	- Response: `postAnalytics`
+17. **Integrate Analytics Tool**
+	- Path: `POST /analytics/tools`
+	- Request Payload: `{ toolName, config }`
+	- Response: `toolIntegrated`
+18. **Get Google Analytics Data**
+	- Path: `GET /analytics/google`
+	- Request Payload: None
+	- Response: `googleAnalyticsData`
+### 2. Testing Route
+- Route using for functionality testing
+1. **Authorization Barer **
+	- Path: `GET /auth-test`
+	- Request Payload: None
+	- Response: `UserClaims`
 
 
 
