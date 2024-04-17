@@ -162,7 +162,7 @@ model PublicationPost {
 	- Path: `POST /login`
 	- Request Payload: `{ credentials }`
 	- Response: `authenticationSuccessful`
-3. **Update User Personal Information**
+3. **Update User Personal Information**`
 	- Path: `PUT /users/{userId}/profile`
 	- Request Payload: `{ info }`
 	- Response: `infoUpdated`
