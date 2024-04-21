@@ -42,6 +42,7 @@ classDiagram
         -userId: int
         +createPost(userId, postData)
         +importMarkdownPost(userId, file)
+        +submitToPublication(userId, postId)
         +saveAsDraft(userId, draftId)
         +schedulePublishing(userId, publishDate)
         +publishPost(userId)
@@ -86,15 +87,9 @@ classDiagram
         +likePost(userId, postId)
     }
 
-    class Content {
-        -publicationId: int
-        -name: string
-        -description: string
-        +submitToPublication(userId, postId)
-    }
-
     class PublicationPost {
         -publicationId: int
+        -userid: int
         -postId: int
 		+shareOnSocial(userId, postId, platform)
     }
@@ -102,7 +97,6 @@ classDiagram
     User "1" --o "0..*" Post : creates
     User "1" --o "0..*" Comment : writes
     User "1" --o "0..*" Like : "likes"
-    User "1" --o "0..*" Content : "submits to"
     User "1" --o "1" UserProfile : "updated"
     Post "0..*" --o "0..*" PostTag : tagged
     Post "0..*" --o "0..*" PostCategory : categorized
@@ -110,8 +104,9 @@ classDiagram
     Category "1" --o "0..*" PostCategory : categorized
     Comment "0..*" --o "1" Post : "commented on"
     Like "0..*" --o "1" PublicationPost : "liked"
-    Content "1" --o "1" PublicationPost : "publishes"
-	Post "1" --o "1" Content : "submits to"
+	Post "1" --o "1" PublicationPost : "submits to"
+    User "1" --o "0..*" PublicationPost : "views"
+	
 
     class ContentDiscoveryService {
         +searchPosts(query, filters)

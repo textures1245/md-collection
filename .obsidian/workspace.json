@@ -79,9 +79,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "07c17e7b285eb5c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Go Lectures/Concept/Go Generic.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       },
       {
         "id": "02a184b334bca340",
@@ -257,8 +269,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -278,7 +289,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/Implementation.md",
+                "file": "PROJECTS/BlogDuaaeeg/System Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -295,7 +306,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/Implementation.md",
+                "file": "PROJECTS/BlogDuaaeeg/System Design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -318,7 +329,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/Implementation.md"
+                "file": "PROJECTS/BlogDuaaeeg/System Design.md"
               }
             }
           },
@@ -351,11 +362,15 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "74680b0f6e4cd528",
+  "active": "db50b8e91f0f7d63",
   "lastOpenFiles": [
+    "Go Lectures/Concept/Go Generic.md",
     "PROJECTS/BlogDuaaeeg/System Design.md",
-    "Go Lectures/Practical Examples/Logger.md",
+    "Go Lectures/Concept/Go Channels.md",
+    "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md",
+    "Go Lectures/Go Practical Examples.md",
     "PROJECTS/BlogDuaaeeg/Implementation.md",
+    "Go Lectures/Practical Examples/Logger.md",
     "Important note/Software Development Life Cycle (SDLC)/SDLC Method.md",
     "Important note/Software Development Life Cycle (SDLC)/Implementation.md",
     "Go Lectures/Concept/Concurrently.md",
@@ -364,7 +379,6 @@
     "Books/Money Literacy/Expense Income Guide.md",
     "PROJECTS/BlogDuaaeeg/System Analysis.md",
     "PROJECTS/BlogDuaaeeg/BlogDuaaeeg Overview.md",
-    "Go Lectures/Go Practical Examples.md",
     "PROJECTS/Home For Paws/Application Design.md",
     "PROJECTS/BlogDuaaeeg/App Requirement.md",
     "PROJECTS/Home For Paws/UML Design.md",
@@ -378,9 +392,6 @@
     "PROJECTS/BlogDuaaeeg/Requirement.md",
     "Pasted image 20240408211348.png",
     "Important note/Software Development Life Cycle (SDLC)",
-    "Books/Money Literacy/Based of Wealthy.md",
-    "Go Lectures/Gin/Quickstart.md",
-    "Go Lectures/Package & Module.md",
     "Temporary Notes",
     "PROJECTS/BlogDuaaeeg",
     "Go Lectures/Gin",
