@@ -93,7 +93,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       },
       {
         "id": "02a184b334bca340",
@@ -289,7 +289,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/System Design.md",
+                "file": "PROJECTS/BlogDuaaeeg/Implementation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -306,7 +306,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/System Design.md",
+                "file": "PROJECTS/BlogDuaaeeg/Implementation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -329,7 +329,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/System Design.md"
+                "file": "PROJECTS/BlogDuaaeeg/Implementation.md"
               }
             }
           },
@@ -362,14 +362,14 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "db50b8e91f0f7d63",
+  "active": "74680b0f6e4cd528",
   "lastOpenFiles": [
-    "Go Lectures/Concept/Go Generic.md",
     "PROJECTS/BlogDuaaeeg/System Design.md",
+    "PROJECTS/BlogDuaaeeg/Implementation.md",
+    "Go Lectures/Concept/Go Generic.md",
     "Go Lectures/Concept/Go Channels.md",
     "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md",
     "Go Lectures/Go Practical Examples.md",
-    "PROJECTS/BlogDuaaeeg/Implementation.md",
     "Go Lectures/Practical Examples/Logger.md",
     "Important note/Software Development Life Cycle (SDLC)/SDLC Method.md",
     "Important note/Software Development Life Cycle (SDLC)/Implementation.md",

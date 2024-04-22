@@ -154,11 +154,11 @@ model PublicationPost {
 - The benefit from using **Restful API** as App Architecture we can design our HTTPS request/response by the following **path structures** that we performed on  #BlogDuaaeeg-Usecases 
 - All routes had prefix with `/api/v1`
 ### 1. Production Route
-1. **User Registration** 
+1. **User Registration** 🟢
 	- Path: `POST /register`
 	- Request Payload: `{ userInfo }`
 	- Response: `registrationSuccessful`
-2. **User Authentication**
+2. **User Authentication** 🟢
 	- Path: `POST /login`
 	- Request Payload: `{ credentials }`
 	- Response: `authenticationSuccessful`
@@ -166,19 +166,19 @@ model PublicationPost {
 	- Path: `PUT /users/{userId}/profile`
 	- Request Payload: `{ info }`
 	- Response: `infoUpdated`
-5. **Create Post**
+5. **Create Post** 🟢
 	- Path: `POST /posts`
 	- Request Payload: `{ userId, postData }`
 	- Response: `postCreated`
-6. **Publish Post**
+6. **Publish Post** 🟢
 	- Path: `PUT /posts/{postId}/publish`
 	- Request Payload: `{ userId }`
 	- Response: `postPublished`
-7. **Submit Post to Publication**
+7. **Submit Post to Publication** 🟢
 	- Path: `POST /publications/{publicationId}/posts`
 	- Request Payload: `{ userId, postId }`
 	- Response: `postSubmitted`
-8. **Like Post**
+8. **Like Post** 
 	- Path: `POST /posts/{postId}/likes`
 	- Request Payload: `{ userId }`
 	- Response: `postLiked`

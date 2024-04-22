@@ -51,11 +51,6 @@ classDiagram
         +unpublishPost(userId)
     }
 
-    class Tag {
-        -tagId: int
-        -name: string
-    }
-
     class Category {
         -categoryId: int
         -name: string
@@ -64,11 +59,7 @@ classDiagram
     class PostTag {
         -postId: int
         -tagId: int
-    }
-
-    class PostCategory {
-        -postId: int
-        -categoryId: int
+        -tags: string[]
     }
 
     class Comment {
@@ -98,10 +89,8 @@ classDiagram
     User "1" --o "0..*" Comment : writes
     User "1" --o "0..*" Like : "likes"
     User "1" --o "1" UserProfile : "updated"
-    Post "0..*" --o "0..*" PostTag : tagged
-    Post "0..*" --o "0..*" PostCategory : categorized
-    Tag "1" --o "0..*" PostTag : tagged
-    Category "1" --o "0..*" PostCategory : categorized
+    Post "1" --o "1" PostTag : tagged
+    Post "1" --o "1" Category : categorized
     Comment "0..*" --o "1" Post : "commented on"
     Like "0..*" --o "1" PublicationPost : "liked"
 	Post "1" --o "1" PublicationPost : "submits to"
@@ -111,7 +100,7 @@ classDiagram
     class ContentDiscoveryService {
         +searchPosts(query, filters)
 		+searchByPostTag(postTagId)
-		+searchByPostCategory(postCategoryId)
+		+searchByCategory(categoryId)
         +getFeaturedPosts()
         +getRecommendedPosts(userId)
     }
@@ -125,7 +114,7 @@ classDiagram
     ContentDiscoveryService "1" --o "0..*" PublicationPost : "discoveried"
     AnalyticsService "1" --o "0..*" PublicationPost : "analytics"
 	PostTag "0..1" --o "1" ContentDiscoveryService : "sources"
-	PostCategory "0..1" --o "1" ContentDiscoveryService : "sources"
+	Category "0..1" --o "1" ContentDiscoveryService : "sources"
 ```
 
 ## Use-cases
