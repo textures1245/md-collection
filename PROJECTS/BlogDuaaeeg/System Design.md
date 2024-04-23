@@ -90,7 +90,7 @@ classDiagram
     User "1" --o "0..*" Like : "likes"
     User "1" --o "1" UserProfile : "updated"
     Post "1" --o "1" PostTag : tagged
-    Post "1" --o "1" Category : categorized
+    Category "1" --o "0..*" Post : grouped
     Comment "0..*" --o "1" Post : "commented on"
     Like "0..*" --o "1" PublicationPost : "liked"
 	Post "1" --o "1" PublicationPost : "submits to"
