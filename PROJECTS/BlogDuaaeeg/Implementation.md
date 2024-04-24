@@ -162,7 +162,7 @@ model PublicationPost {
 	- Path: `POST /login`
 	- Request Payload: `{ credentials }`
 	- Response: `authenticationSuccessful`
-3. **Update User Personal Information**`
+3. **Update User Personal Information**` 🟢
 	- Path: `PUT /users/{userId}/profile`
 	- Request Payload: `{ info }`
 	- Response: `infoUpdated`
@@ -170,55 +170,59 @@ model PublicationPost {
 	- Path: `POST /posts`
 	- Request Payload: `{ userId, postData }`
 	- Response: `postCreated`
-6. **Publish Post** 🟢
+6. **Delete Post and PublisherPost**
+	- Path: `DELETE /post/:user_uuid/post_form/post_uuid?action=DELETE`
+	- Request Params Payload: `{action: "DELETE"}`
+	- Response: `null`
+1. **Publish Post** 🟢
 	- Path: `PUT /posts/{postId}/publish`
 	- Request Payload: `{ userId }`
 	- Response: `postPublished`
-7. **Submit Post to Publication** 🟢
+2. **Submit Post to Publication** 🟢
 	- Path: `POST /publications/{publicationId}/posts`
 	- Request Payload: `{ userId, postId }`
 	- Response: `postSubmitted`
-8. **Like Post** 
+3. **Like, UnLike Post** 🟢
 	- Path: `POST /posts/{postId}/likes`
 	- Request Payload: `{ userId }`
 	- Response: `postLiked`
-9. **Comment on Post**
+4. **Comment, Update, Delete on Post** 🟢
 	- Path: `POST /posts/{postId}/comments`
 	- Request Payload: `{ userId, commentData }`
 	- Response: `commentAdded`
-10. **Follow Author**
+5. **Follow Author**
 	- Path: `POST /users/{authorId}/followers`
 	- Request Payload: `{ userId }`
 	- Response: `authorFollowed`
-11. **Search Posts**
+6. **Search Posts**
 	- Path: `GET /posts?query={query}&filters={filters}`
 	- Request Payload: `{ query, filters }`
 	- Response: `searchResults`
-12. **Get Featured Posts**
+7. **Get Featured Posts**
 	- Path: `GET /posts/featured`
 	- Request Payload: None
 	- Response: `featuredPosts`
-13. **Get Recommended Posts for User**
+8. **Get Recommended Posts for User**
 	- Path: `GET /users/{userId}/recommended-posts`
 	- Request Payload: None
 	- Response: `recommendedPosts`
-14. **Search Posts by Tag**
+9. **Search Posts by Tag**
 	- Path: `GET /posts/tags/{tagId}`
 	- Request Payload: None
 	- Response: `searchResults`
-15. **Search Posts by Category**
+10. **Search Posts by Category**
 	- Path: `GET /posts/categories/{categoryId}`
 	- Request Payload: None
 	- Response: `searchResults`
-16. **Get Post Analytics**
+11. **Get Post Analytics**
 	- Path: `GET /posts/{postId}/analytics`
 	- Request Payload: `{ userId }`
 	- Response: `postAnalytics`
-17. **Integrate Analytics Tool**
+12. **Integrate Analytics Tool**
 	- Path: `POST /analytics/tools`
 	- Request Payload: `{ toolName, config }`
 	- Response: `toolIntegrated`
-18. **Get Google Analytics Data**
+13. **Get Google Analytics Data**
 	- Path: `GET /analytics/google`
 	- Request Payload: None
 	- Response: `googleAnalyticsData`
