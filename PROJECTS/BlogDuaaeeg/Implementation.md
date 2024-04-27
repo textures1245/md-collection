@@ -230,6 +230,26 @@ model PublicationPost {
 	- Request Payload: None
 	- Response: `UserClaims`
 
+### 3. File Structors 
+- Following Clean Architecture, we can design app structure following by these step
+
+```dirtree
+root in
+
+- /src
+	- go.mod
+	- sum.mod
+	- main.go
+	- /routes (or handler)
+	- /models
+		- /resporitory
+		- /use-case (or service)
+		- /controller
+		- /entity
+	- /middlewares
+	- /migrations
+	- schema.prisma
+```
 
 
 

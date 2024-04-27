@@ -106,7 +106,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/System Analysis.md",
+                "file": "PROJECTS/BlogDuaaeeg/Implementation.md",
                 "mode": "source",
                 "source": false
               }
@@ -237,7 +237,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#BlogDuaaeeg-ERD",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -363,10 +363,12 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "74680b0f6e4cd528",
+  "active": "5bc2d6709be98b49",
   "lastOpenFiles": [
-    "PROJECTS/BlogDuaaeeg/System Analysis.md",
+    "Go Lectures/Package & Module.md",
     "PROJECTS/BlogDuaaeeg/Implementation.md",
+    "PROJECTS/BlogDuaaeeg/System Analysis.md",
+    "PROJECTS/BlogDuaaeeg/BlogDuaaeeg Overview.md",
     "PROJECTS/BlogDuaaeeg/System Design.md",
     "Go Lectures/Concept/Go Generic.md",
     "Go Lectures/Concept/Go Channels.md",
@@ -379,7 +381,6 @@
     "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
     "PROJECTS/BlogDuaaeeg/Note Detail.md",
     "Books/Money Literacy/Expense Income Guide.md",
-    "PROJECTS/BlogDuaaeeg/BlogDuaaeeg Overview.md",
     "PROJECTS/Home For Paws/Application Design.md",
     "PROJECTS/BlogDuaaeeg/App Requirement.md",
     "PROJECTS/Home For Paws/UML Design.md",
@@ -390,7 +391,6 @@
     "Important note/Software Development Life Cycle (SDLC)/SDLC Contents.md",
     "Temporary Notes/05-06-2024.md",
     "Important note/2nd Comcamp Scheduling.md",
-    "PROJECTS/BlogDuaaeeg/Requirement.md",
     "Pasted image 20240408211348.png",
     "Important note/Software Development Life Cycle (SDLC)",
     "Temporary Notes",
