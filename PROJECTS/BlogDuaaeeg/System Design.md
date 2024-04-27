@@ -78,6 +78,14 @@ classDiagram
         +likePost(userId, postId)
     }
 
+	class UserFollower {
+		-uuid string
+		-userWhoFollowedUuid string
+		-toFollowUserUuid string
+		+followAuthor()
+		+unFollowAuthor() 	
+	}
+
     class PublicationPost {
         -publicationId: int
         -userid: int
@@ -88,6 +96,7 @@ classDiagram
     User "1" --o "0..*" Post : creates
     User "1" --o "0..*" Comment : writes
     User "1" --o "0..*" Like : "likes"
+	User "1" --o "0..*" UserFollower : "followed"
     User "1" --o "1" UserProfile : "updated"
     Post "1" --o "1" PostTag : tagged
     Category "1" --o "0..*" Post : grouped
@@ -95,6 +104,7 @@ classDiagram
     Like "0..*" --o "1" PublicationPost : "liked"
 	Post "1" --o "1" PublicationPost : "submits to"
     User "1" --o "0..*" PublicationPost : "views"
+    UserFollower "1" --o "0..*" PublicationPost : "recived"
 	
 
     class ContentDiscoveryService {
@@ -111,10 +121,15 @@ classDiagram
         +googleAnalytics()
     }
 
+	class NotitficationService {
+		+sendNotiToUserEmail(userId)
+	}
+
     ContentDiscoveryService "1" --o "0..*" PublicationPost : "discoveried"
     AnalyticsService "1" --o "0..*" PublicationPost : "analytics"
 	PostTag "0..1" --o "1" ContentDiscoveryService : "sources"
 	Category "0..1" --o "1" ContentDiscoveryService : "sources"
+	UserFollower "0..1" --o "1" NotitficationService : "sends"
 ```
 
 ## Use-cases

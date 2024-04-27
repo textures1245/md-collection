@@ -2,6 +2,7 @@
 
 Based on [[Important note/Software Development Life Cycle (SDLC)/Implementation|Implementation]] we can developed the application following this roadmap. Which this can be describe as the following contents.
 
+Source Project Can be found on [Github](https://github.com/textures1245/blog-duaaeeg-rest-api-service) 
 ## Contents
 
 ## **Tech-stacks**
@@ -10,33 +11,36 @@ Based on [[Important note/Software Development Life Cycle (SDLC)/Implementation|
 	- SvelteKit: Rendered Client App and also communicated API thought SvelteKit Server   
 	- TailwindCSS
 	- Svelte-Shadcn
-- ### Backend (Server)
+- ### Backend (Server) 
 	- Go: Building for App server.   
-	- Gin: Restful Architecture. Using **MVC for Architectural pattern**
+	- Gin: Web API Framework. Using **Clean Architectural By Robert C. Martin**
 - ### Database
 	- Prisma: Database Tool Designing
 	- PostgresSQL
 - ### DevOps
-	- Vercel
+	- Docker
+	- Nginx
 	- Supabase 
 ## **Database**
 Based on #BlogDuaaeeg-Class-Diagram  and #BlogDuaaeeg-ERD we can performed SQL Structure by using **Prisma** Database Tool Design that build on top with **[Prisma-Client-Go](https://github.com/steebchen/prisma-client-go)** 
 
 ```prisma 
-// Note: 41f561d update: prisma schema v3
+// Note: commit tag -> update(db-v8): prisma schema v8
 
 model User {
-    id          Int           @default(autoincrement())
-    uuid        String        @id @unique @default(uuid())
-    createdAt   DateTime      @default(now())
-    updatedAt   DateTime      @updatedAt
-    email       String        @unique
-    password    String
-    posts       Post[]
-    comments    Comment[]
-    likes       Like[]
-    userProfile UserProfile?
-    UserContent UserContent[]
+    id              Int               @default(autoincrement())
+    uuid            String            @id @unique @default(uuid())
+    createdAt       DateTime          @default(now())
+    updatedAt       DateTime          @updatedAt
+    email           String            @unique
+    password        String
+    posts           Post[]
+    comments        Comment[]
+    likes           Like[]
+    userProfile     UserProfile?
+    PublicationPost PublicationPost[]
+    UserFollower    UserFollower[]    @relation("UserFollower")
+    UserFollowee    UserFollower[]    @relation("UserFollowee")
 }
 
 model UserProfile {
@@ -53,56 +57,46 @@ model UserProfile {
 }
 
 model Post {
-    id          Int            @default(autoincrement())
-    uuid        String         @id @unique @default(uuid())
-    title       String
-    content     String
-    createdAt   DateTime       @default(now())
-    updatedAt   DateTime       @updatedAt
-    published   Boolean        @default(false)
-    userUuid    String
-    user        User           @relation(fields: [userUuid], references: [uuid])
-    tags        PostTag[]
-    categories  PostCategory[]
-    comments    Comment[]
-    likes       Like[]
-    UserContent UserContent[]
-}
-
-model Tag {
-    id        Int       @id @default(autoincrement())
-    createdAt DateTime  @default(now())
-    name      String    @unique
-    posts     PostTag[]
-}
-
-model Category {
-    id        Int            @id @default(autoincrement())
-    createdAt DateTime       @default(now())
-    name      String         @unique
-    posts     PostCategory[]
+    id              Int              @default(autoincrement())
+    uuid            String           @id @unique @default(uuid())
+    title           String
+    source          String
+    srcType         SrcType
+    createdAt       DateTime         @default(now())
+    updatedAt       DateTime         @updatedAt
+    published       Boolean
+    userUuid        String
+    user            User             @relation(fields: [userUuid], references: [uuid])
+    tags            PostTag          @relation(onDelete: Cascade, fields: [postTagId], references: [id])
+    category        PostCategory     @relation(fields: [postCategoryId], references: [id])
+    postCategoryId  Int              @unique
+    postTagId       Int              @unique
+    comments        Comment[]
+    likes           Like[]
+    PublicationPost PublicationPost? @relation()
+    publishPostUuid String?          @unique
 }
 
 model PostTag {
-    postUuid  String
-    tagId     Int
+    id        Int      @id @default(autoincrement())
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
-    post      Post     @relation(fields: [postUuid], references: [uuid])
-    tag       Tag      @relation(fields: [tagId], references: [id])
-
-    @@id([postUuid, tagId])
+    post      Post?    @relation()
+    tags      String[]
 }
 
 model PostCategory {
-    postUuid   String
-    categoryId Int
-    createdAt  DateTime @default(now())
-    updatedAt  DateTime @updatedAt
-    post       Post     @relation(fields: [postUuid], references: [uuid])
-    category   Category @relation(fields: [categoryId], references: [id])
+    id        Int      @id @default(autoincrement())
+    name      String   @unique
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+    post      Post[]
+}
 
-    @@id([postUuid, categoryId])
+enum SrcType {
+    MARKDOWN_URL
+    CONTENT
+    MARKDOWN_FILE
 }
 
 model Comment {
@@ -125,29 +119,32 @@ model Like {
     postUuid  String
     user      User     @relation(fields: [userUuid], references: [uuid])
     post      Post     @relation(fields: [postUuid], references: [uuid])
+
+    @@unique([userUuid, postUuid])
 }
 
-model UserContent {
-    id              Int               @id @default(autoincrement())
-    uuid            String            @unique @default(uuid())
-    createdAt       DateTime          @default(now())
-    updatedAt       DateTime          @updatedAt
-    published       Boolean           @default(false)
-    postUuid        String
-    userUuid        String
-    User            User              @relation(fields: [userUuid], references: [uuid])
-    PublicationPost PublicationPost[]
-    Post            Post              @relation(fields: [postUuid], references: [uuid])
+model UserFollower {
+    id           Int      @id @default(autoincrement())
+    createdAt    DateTime @default(now())
+    updatedAt    DateTime @updatedAt
+    follower     User     @relation(name: "UserFollower", fields: [followerUuid], references: [uuid])
+    followee     User     @relation(name: "UserFollowee", fields: [followeeUuid], references: [uuid])
+    followerUuid String
+    followeeUuid String
+
+    @@unique([followerUuid, followeeUuid])
 }
 
 model PublicationPost {
-    id          Int         @default(autoincrement())
-    uuid        String      @id @unique @default(uuid())
-    createdAt   DateTime    @default(now())
-    updatedAt   DateTime    @updatedAt
-    contentUuid String
-    postUUid    String
-    publication UserContent @relation(fields: [contentUuid], references: [uuid])
+    id        Int      @default(autoincrement())
+    uuid      String   @id @unique @default(uuid())
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+    User      User     @relation(fields: [userUuid], references: [uuid])
+    Post      Post     @relation(onDelete: Cascade, fields: [postUuid], references: [uuid])
+    postUuid  String   @unique
+    userUuid  String
+}
 
 ```
 ## Route **Structure** 
@@ -170,7 +167,7 @@ model PublicationPost {
 	- Path: `POST /posts`
 	- Request Payload: `{ userId, postData }`
 	- Response: `postCreated`
-6. **Delete Post and PublisherPost**
+6. **Delete Post and PublisherPost** 🟢
 	- Path: `DELETE /post/:user_uuid/post_form/post_uuid?action=DELETE`
 	- Request Params Payload: `{action: "DELETE"}`
 	- Response: `null`
@@ -190,39 +187,39 @@ model PublicationPost {
 	- Path: `POST /posts/{postId}/comments`
 	- Request Payload: `{ userId, commentData }`
 	- Response: `commentAdded`
-5. **Follow Author**
+5. **Follow, UnFollow Author** 🟢
 	- Path: `POST /users/{authorId}/followers`
 	- Request Payload: `{ userId }`
 	- Response: `authorFollowed`
-6. **Search Posts**
+1. **Search Posts**
 	- Path: `GET /posts?query={query}&filters={filters}`
 	- Request Payload: `{ query, filters }`
 	- Response: `searchResults`
-7. **Get Featured Posts**
+2. **Get Featured Posts**
 	- Path: `GET /posts/featured`
 	- Request Payload: None
 	- Response: `featuredPosts`
-8. **Get Recommended Posts for User**
+3. **Get Recommended Posts for User**
 	- Path: `GET /users/{userId}/recommended-posts`
 	- Request Payload: None
 	- Response: `recommendedPosts`
-9. **Search Posts by Tag**
+4. **Search Posts by Tag**
 	- Path: `GET /posts/tags/{tagId}`
 	- Request Payload: None
 	- Response: `searchResults`
-10. **Search Posts by Category**
+5. **Search Posts by Category**
 	- Path: `GET /posts/categories/{categoryId}`
 	- Request Payload: None
 	- Response: `searchResults`
-11. **Get Post Analytics**
+6. **Get Post Analytics**
 	- Path: `GET /posts/{postId}/analytics`
 	- Request Payload: `{ userId }`
 	- Response: `postAnalytics`
-12. **Integrate Analytics Tool**
+7. **Integrate Analytics Tool**
 	- Path: `POST /analytics/tools`
 	- Request Payload: `{ toolName, config }`
 	- Response: `toolIntegrated`
-13. **Get Google Analytics Data**
+8. **Get Google Analytics Data**
 	- Path: `GET /analytics/google`
 	- Request Payload: None
 	- Response: `googleAnalyticsData`
@@ -232,6 +229,9 @@ model PublicationPost {
 	- Path: `GET /auth-test`
 	- Request Payload: None
 	- Response: `UserClaims`
+
+
+
 
 
 

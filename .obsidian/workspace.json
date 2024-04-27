@@ -106,7 +106,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/System Design.md",
+                "file": "PROJECTS/BlogDuaaeeg/System Analysis.md",
                 "mode": "source",
                 "source": false
               }
@@ -269,7 +269,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -364,8 +365,9 @@
   },
   "active": "74680b0f6e4cd528",
   "lastOpenFiles": [
-    "PROJECTS/BlogDuaaeeg/System Design.md",
+    "PROJECTS/BlogDuaaeeg/System Analysis.md",
     "PROJECTS/BlogDuaaeeg/Implementation.md",
+    "PROJECTS/BlogDuaaeeg/System Design.md",
     "Go Lectures/Concept/Go Generic.md",
     "Go Lectures/Concept/Go Channels.md",
     "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md",
@@ -377,7 +379,6 @@
     "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
     "PROJECTS/BlogDuaaeeg/Note Detail.md",
     "Books/Money Literacy/Expense Income Guide.md",
-    "PROJECTS/BlogDuaaeeg/System Analysis.md",
     "PROJECTS/BlogDuaaeeg/BlogDuaaeeg Overview.md",
     "PROJECTS/Home For Paws/Application Design.md",
     "PROJECTS/BlogDuaaeeg/App Requirement.md",
