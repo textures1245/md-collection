@@ -62,7 +62,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/Implementation.md",
+                "file": "Go Lectures/Practical Examples/Timer & Ticker, HTTP Protocols, and Testing and Benchmarking.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/Implementation.md",
+                "file": "Go Lectures/Concept/Concurrently.md",
                 "mode": "source",
                 "source": false
               }
@@ -269,8 +269,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -290,7 +289,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/Implementation.md",
+                "file": "Go Lectures/Practical Examples/Timer & Ticker, HTTP Protocols, and Testing and Benchmarking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -307,7 +306,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/Implementation.md",
+                "file": "Go Lectures/Practical Examples/Timer & Ticker, HTTP Protocols, and Testing and Benchmarking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -330,7 +329,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PROJECTS/BlogDuaaeeg/Implementation.md"
+                "file": "Go Lectures/Practical Examples/Timer & Ticker, HTTP Protocols, and Testing and Benchmarking.md"
               }
             }
           },
@@ -363,21 +362,27 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "5bc2d6709be98b49",
+  "active": "74680b0f6e4cd528",
   "lastOpenFiles": [
-    "Go Lectures/Package & Module.md",
+    "Go Lectures/Practical Examples/Go Generic and Timeout.md",
+    "Go Lectures/Practical Examples/Logger.md",
+    "Go Lectures/Concept/HTTP Protocols.md",
+    "Go Lectures/Practical Examples/Timer & Ticker, HTTP Protocols, and Testing and Benchmarking.md",
+    "Go Lectures/Concept/Concurrently.md",
+    "Go Lectures/Concept/Resource Management.md",
+    "Go Lectures/Concept/Go Channels.md",
+    "Go Lectures/Concept/Timer & Ticker.md",
+    "Go Lectures/Concept/Goroutine.md",
+    "Go Lectures/Go Practical Examples.md",
+    "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md",
     "PROJECTS/BlogDuaaeeg/Implementation.md",
+    "Go Lectures/Package & Module.md",
     "PROJECTS/BlogDuaaeeg/System Analysis.md",
     "PROJECTS/BlogDuaaeeg/BlogDuaaeeg Overview.md",
     "PROJECTS/BlogDuaaeeg/System Design.md",
     "Go Lectures/Concept/Go Generic.md",
-    "Go Lectures/Concept/Go Channels.md",
-    "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md",
-    "Go Lectures/Go Practical Examples.md",
-    "Go Lectures/Practical Examples/Logger.md",
     "Important note/Software Development Life Cycle (SDLC)/SDLC Method.md",
     "Important note/Software Development Life Cycle (SDLC)/Implementation.md",
-    "Go Lectures/Concept/Concurrently.md",
     "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
     "PROJECTS/BlogDuaaeeg/Note Detail.md",
     "Books/Money Literacy/Expense Income Guide.md",
@@ -385,12 +390,6 @@
     "PROJECTS/BlogDuaaeeg/App Requirement.md",
     "PROJECTS/Home For Paws/UML Design.md",
     "PROJECTS/PaoSatang/System Design.md",
-    "PROJECTS/PaoSatang/System Analysis (PaoSatang).md",
-    "PROJECTS/PersonalFinaceManangement/System Analysis.md",
-    "Important note/Software Development Life Cycle (SDLC)/Design.md",
-    "Important note/Software Development Life Cycle (SDLC)/SDLC Contents.md",
-    "Temporary Notes/05-06-2024.md",
-    "Important note/2nd Comcamp Scheduling.md",
     "Pasted image 20240408211348.png",
     "Important note/Software Development Life Cycle (SDLC)",
     "Temporary Notes",
