@@ -100,7 +100,7 @@ graph TD
 | ---- |
 | ![[Pasted image 20240217151926.png]] |
 ### 4.   Related with Proposal Transaction State Diagram
-| #Payment-and-Proposal-Process |
-| ---- |
+| #Payment-and-Proposal-Process        |
+| ------------------------------------ |
 | ![[Pasted image 20240220112809.png]] |
 

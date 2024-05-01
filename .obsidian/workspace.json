@@ -6,7 +6,7 @@
       {
         "id": "7501e7b31e1cd729",
         "type": "tabs",
-        "dimension": 47.57281553398058,
+        "dimension": 56.875,
         "children": [
           {
             "id": "bab31f94ab54824c",
@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PROJECTS/Home For Paws/Application Design.md",
+                "file": "Go Lectures/Clean Architecture Adaptation in GO.md",
                 "mode": "source",
                 "source": false
               }
@@ -62,7 +62,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Go Lectures/Practical Examples/Timer & Ticker, HTTP Protocols, and Testing and Benchmarking.md",
+                "file": "Go Lectures/Clean Architecture Adaptation in GO.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,13 +92,12 @@
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       },
       {
         "id": "02a184b334bca340",
         "type": "tabs",
-        "dimension": 52.42718446601942,
+        "dimension": 43.125,
         "children": [
           {
             "id": "db50b8e91f0f7d63",
@@ -106,7 +105,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Go Lectures/Concept/Concurrently.md",
+                "file": "Important note/Software Architectures/SOLID Principle.md",
                 "mode": "source",
                 "source": false
               }
@@ -289,7 +288,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Go Lectures/Practical Examples/Timer & Ticker, HTTP Protocols, and Testing and Benchmarking.md",
+                "file": "Go Lectures/Clean Architecture Adaptation in GO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -306,7 +305,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Go Lectures/Practical Examples/Timer & Ticker, HTTP Protocols, and Testing and Benchmarking.md",
+                "file": "Go Lectures/Clean Architecture Adaptation in GO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -329,7 +328,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Go Lectures/Practical Examples/Timer & Ticker, HTTP Protocols, and Testing and Benchmarking.md"
+                "file": "Go Lectures/Clean Architecture Adaptation in GO.md"
               }
             }
           },
@@ -362,34 +361,38 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "74680b0f6e4cd528",
+  "active": "bab31f94ab54824c",
   "lastOpenFiles": [
+    "Go Lectures/Package & Module.md",
     "Go Lectures/Practical Examples/Go Generic and Timeout.md",
     "Go Lectures/Practical Examples/Logger.md",
-    "Go Lectures/Concept/HTTP Protocols.md",
     "Go Lectures/Practical Examples/Timer & Ticker, HTTP Protocols, and Testing and Benchmarking.md",
-    "Go Lectures/Concept/Concurrently.md",
-    "Go Lectures/Concept/Resource Management.md",
-    "Go Lectures/Concept/Go Channels.md",
-    "Go Lectures/Concept/Timer & Ticker.md",
-    "Go Lectures/Concept/Goroutine.md",
-    "Go Lectures/Go Practical Examples.md",
+    "Go Lectures/Practical Examples/Error Handling, Pointers, and Concurrency.md",
     "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md",
-    "PROJECTS/BlogDuaaeeg/Implementation.md",
-    "Go Lectures/Package & Module.md",
-    "PROJECTS/BlogDuaaeeg/System Analysis.md",
-    "PROJECTS/BlogDuaaeeg/BlogDuaaeeg Overview.md",
-    "PROJECTS/BlogDuaaeeg/System Design.md",
-    "Go Lectures/Concept/Go Generic.md",
-    "Important note/Software Development Life Cycle (SDLC)/SDLC Method.md",
-    "Important note/Software Development Life Cycle (SDLC)/Implementation.md",
-    "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
-    "PROJECTS/BlogDuaaeeg/Note Detail.md",
-    "Books/Money Literacy/Expense Income Guide.md",
-    "PROJECTS/Home For Paws/Application Design.md",
-    "PROJECTS/BlogDuaaeeg/App Requirement.md",
-    "PROJECTS/Home For Paws/UML Design.md",
     "PROJECTS/PaoSatang/System Design.md",
+    "PROJECTS/PaoSatang/PaoSatang Overview.md",
+    "Important note/Software Architectures/Clean Architecture.md",
+    "Important note/Software Architectures/SOLID Principle.md",
+    "Important note/Software Development Life Cycle (SDLC)/Design.md",
+    "Important note/Software Development Life Cycle (SDLC)/Implementation.md",
+    "Important note/Software Development Life Cycle (SDLC)/SDLC Contents.md",
+    "PROJECTS/Home For Paws/Application Design.md",
+    "Untitled 1.canvas",
+    "Go Lectures/Clean Architecture Adaptation in GO.md",
+    "PROJECTS/BlogDuaaeeg/Implementation.md",
+    "Pasted image 20240429150935.png",
+    "Pasted image 20240429135535.png",
+    "Important note/Important Note Contents.md",
+    "Important note/Docker & Kubernates.md",
+    "Important note/Pay Solution Survey Note.md",
+    "Important note/Software Architectures",
+    "Important note/Todo-List.md",
+    "Important note/Cloud Service Integration.md",
+    "Important note/Guitar List.md",
+    "Important note/2nd Comcamp Scheduling.md",
+    "Important note/K8s Command Line.md",
+    "Important note/Interested Company List.md",
+    "Go Lectures/Concept/Concurrently.md",
     "Pasted image 20240408211348.png",
     "Important note/Software Development Life Cycle (SDLC)",
     "Temporary Notes",
@@ -400,7 +403,6 @@
     "Users/phakh/go/src/github.com",
     "Users/phakh/go/src",
     "Users/phakh/go",
-    "Users/phakh",
     "Pasted image 20240325142636.png",
     "Pasted image 20240325142612.png",
     "Pasted image 20240325142543.png",
@@ -408,9 +410,6 @@
     "Apple Notes Attachments/275380880_1151696682309661_9148540444223312813_n.png",
     "Apple Notes Attachments/275436907_282941767185126_2783035371904606674_n.png",
     "Apple Notes Attachments/บทที่ 2 พื้นฐานชีววิทยา ของพฤติกรรม.png",
-    "Apple Notes Attachments/บทที่ 3 ทฤษฎีพัฒนาการ และ มนุษย์.png",
-    "Apple Notes Attachments/Pasted Graphic 112.png",
-    "Untitled.canvas",
-    "Untitled 1.canvas"
+    "Untitled.canvas"
   ]
 }
