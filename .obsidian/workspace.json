@@ -6,7 +6,7 @@
       {
         "id": "7501e7b31e1cd729",
         "type": "tabs",
-        "dimension": 56.875,
+        "dimension": 44.32835820895523,
         "children": [
           {
             "id": "bab31f94ab54824c",
@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Go Lectures/Clean Architecture Adaptation in GO.md",
+                "file": "PROJECTS/BlogDuaaeeg/System Analysis.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
       {
         "id": "02a184b334bca340",
         "type": "tabs",
-        "dimension": 43.125,
+        "dimension": 55.67164179104478,
         "children": [
           {
             "id": "db50b8e91f0f7d63",
@@ -105,7 +105,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Important note/Software Architectures/SOLID Principle.md",
+                "file": "Go Lectures/Practical Examples/Error Handling, Pointers, and Concurrency.md",
                 "mode": "source",
                 "source": false
               }
@@ -288,7 +288,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Go Lectures/Clean Architecture Adaptation in GO.md",
+                "file": "PROJECTS/BlogDuaaeeg/System Analysis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -305,7 +305,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Go Lectures/Clean Architecture Adaptation in GO.md",
+                "file": "PROJECTS/BlogDuaaeeg/System Analysis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -328,7 +328,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Go Lectures/Clean Architecture Adaptation in GO.md"
+                "file": "PROJECTS/BlogDuaaeeg/System Analysis.md"
               }
             }
           },
@@ -363,36 +363,43 @@
   },
   "active": "bab31f94ab54824c",
   "lastOpenFiles": [
-    "Go Lectures/Package & Module.md",
-    "Go Lectures/Practical Examples/Go Generic and Timeout.md",
-    "Go Lectures/Practical Examples/Logger.md",
-    "Go Lectures/Practical Examples/Timer & Ticker, HTTP Protocols, and Testing and Benchmarking.md",
     "Go Lectures/Practical Examples/Error Handling, Pointers, and Concurrency.md",
-    "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md",
-    "PROJECTS/PaoSatang/System Design.md",
-    "PROJECTS/PaoSatang/PaoSatang Overview.md",
-    "Important note/Software Architectures/Clean Architecture.md",
-    "Important note/Software Architectures/SOLID Principle.md",
-    "Important note/Software Development Life Cycle (SDLC)/Design.md",
-    "Important note/Software Development Life Cycle (SDLC)/Implementation.md",
-    "Important note/Software Development Life Cycle (SDLC)/SDLC Contents.md",
-    "PROJECTS/Home For Paws/Application Design.md",
-    "Untitled 1.canvas",
-    "Go Lectures/Clean Architecture Adaptation in GO.md",
+    "PROJECTS/BlogDuaaeeg/System Analysis.md",
+    "PROJECTS/BlogDuaaeeg/Note Detail.md",
     "PROJECTS/BlogDuaaeeg/Implementation.md",
+    "PROJECTS/BlogDuaaeeg/BlogDuaaeeg Overview.md",
+    "PROJECTS/BlogDuaaeeg/System Design.md",
+    "PROJECTS/BlogDuaaeeg/App Requirement.md",
+    "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md",
+    "Go Lectures/Clean Architecture Adaptation in GO.md",
+    "Go Lectures/Practical Examples/Basic and Resource Management.md",
+    "Apple Notes/On My Mac/Angular Projects/NoteMarkDown.md",
+    "Important note/Cloud Service Integration.md",
+    "Go Lectures/Practical Examples/Go Generic and Timeout.md",
+    "Go Lectures/Go Lectures.md",
+    "Go Lectures/XAMPP Connection.md",
+    "Go Lectures/Practical Examples/Logger.md",
+    "Go Lectures/Concept/Concurrently.md",
+    "Go Lectures/Concept/Select.md",
+    "Go Lectures/Go Practical Examples.md",
+    "Go Lectures/Concept/Pointer.md",
+    "PROJECTS/PaoSatang/Note Detail.md",
+    "PROJECTS/PaoSatang/PaoSatang Overview.md",
+    "Go Lectures/Practical Examples/Timer & Ticker, HTTP Protocols, and Testing and Benchmarking.md",
+    "Important note/Software Architectures/SOLID Principle.md",
+    "Important note/Software Development Life Cycle (SDLC)/SDLC Contents.md",
+    "Important note/Software Development Life Cycle (SDLC)/Implementation.md",
+    "Pasted image 20240502094324.png",
+    "Pasted image 20240502094256.png",
+    "Pasted image 20240502094243.png",
+    "Pasted image 20240502094225.png",
+    "Pasted image 20240502094125.png",
+    "Pasted image 20240502094108.png",
+    "Pasted image 20240502094058.png",
+    "Untitled 1.canvas",
     "Pasted image 20240429150935.png",
     "Pasted image 20240429135535.png",
-    "Important note/Important Note Contents.md",
-    "Important note/Docker & Kubernates.md",
-    "Important note/Pay Solution Survey Note.md",
     "Important note/Software Architectures",
-    "Important note/Todo-List.md",
-    "Important note/Cloud Service Integration.md",
-    "Important note/Guitar List.md",
-    "Important note/2nd Comcamp Scheduling.md",
-    "Important note/K8s Command Line.md",
-    "Important note/Interested Company List.md",
-    "Go Lectures/Concept/Concurrently.md",
     "Pasted image 20240408211348.png",
     "Important note/Software Development Life Cycle (SDLC)",
     "Temporary Notes",
@@ -403,13 +410,6 @@
     "Users/phakh/go/src/github.com",
     "Users/phakh/go/src",
     "Users/phakh/go",
-    "Pasted image 20240325142636.png",
-    "Pasted image 20240325142612.png",
-    "Pasted image 20240325142543.png",
-    "Apple Notes Attachments/Pasted Graphic 113.png",
-    "Apple Notes Attachments/275380880_1151696682309661_9148540444223312813_n.png",
-    "Apple Notes Attachments/275436907_282941767185126_2783035371904606674_n.png",
-    "Apple Notes Attachments/บทที่ 2 พื้นฐานชีววิทยา ของพฤติกรรม.png",
     "Untitled.canvas"
   ]
 }
