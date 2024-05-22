@@ -6,27 +6,15 @@
       {
         "id": "7501e7b31e1cd729",
         "type": "tabs",
-        "dimension": 45.300181928441475,
+        "dimension": 31.722054380664655,
         "children": [
-          {
-            "id": "bab31f94ab54824c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
           {
             "id": "e1b4233932ef79f0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Books/Money Literacy/Based of Wealthy.md",
+                "file": "PROJECTS/PaySolutionStore/Database.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,51 +85,27 @@
       {
         "id": "02a184b334bca340",
         "type": "tabs",
-        "dimension": 54.699818071558525,
+        "dimension": 68.27794561933534,
         "children": [
-          {
-            "id": "db50b8e91f0f7d63",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Go Lectures/Concept/Testing and Bechmarking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "abdbfb539afea479",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d8627c0bb9c369c7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PROJECTS/PaoSatang/Case-Study (YNAB).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
           {
             "id": "b7c2457e02c46922",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Books/Money Literacy/Expense Income Guide.md",
+                "file": "Important note/Important Note Contents.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fbe079ed833bc949",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PROJECTS/BlogDuaaeeg/System Analysis.md",
                 "mode": "source",
                 "source": false
               }
@@ -182,9 +146,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2065b2f6c76668c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PROJECTS/PaySolutionStore/System Design.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -225,27 +201,12 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#WaitGroup",
-                "matchingCase": false,
+                "query": "Blog",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
-            }
-          },
-          {
-            "id": "2b7eb6c0c74254d4",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Untitled 1.canvas",
-                "viewState": {
-                  "x": -24.18,
-                  "y": -2280.36,
-                  "zoom": 0
-                }
               }
             }
           },
@@ -257,8 +218,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -278,7 +238,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md",
+                "file": "PROJECTS/PaySolutionStore/System Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -295,7 +255,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md",
+                "file": "PROJECTS/PaySolutionStore/System Design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -318,7 +278,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md"
+                "file": "PROJECTS/PaySolutionStore/System Design.md"
               }
             }
           },
@@ -351,34 +311,39 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "bab31f94ab54824c",
+  "active": "2065b2f6c76668c0",
   "lastOpenFiles": [
-    "Go Lectures/Concept/Go Channels.md",
-    "Go Lectures/Practical Examples/Go Channels, Goroutines, and Select.md",
-    "Go Lectures/Concept/Concurrently.md",
-    "Go Lectures/Concept/Select.md",
-    "Go Lectures/Concept/Goroutine.md",
-    "PROJECTS/BlogDuaaeeg/System Analysis.md",
-    "PROJECTS/PaoSatang/System Analysis (PaoSatang).md",
-    "Go Lectures/Practical Examples/Go Generic and Timeout.md",
+    "PROJECTS/PaySolutionStore/Database.md",
+    "PROJECTS/PaySolutionStore/System Design.md",
+    "PROJECTS/PaySolutionStore/System Analysis.md",
+    "PROJECTS/PaySolutionStore/Note Detail.md",
+    "PROJECTS/PaoSatang/Note Detail.md",
+    "PROJECTS/PaoSatang/System Design.md",
     "PROJECTS/PaoSatang/PaoSatang Overview.md",
-    "Important note/2nd Comcamp Scheduling.md",
-    "Books/Money Literacy/Expense Income Guide.md",
-    "Go Lectures/Go Practical Examples.md",
-    "Go Lectures/Go Lectures.md",
-    "Important note/Software Architectures/SOLID Principle.md",
-    "Go Lectures/Package & Module.md",
-    "Go Lectures/Concept/Testing and Bechmarking.md",
-    "Go Lectures/Practical Examples/Error Handling, Pointers, and Concurrency.md",
     "PROJECTS/BlogDuaaeeg/Note Detail.md",
+    "PROJECTS/BlogDuaaeeg/System Analysis.md",
     "PROJECTS/BlogDuaaeeg/Implementation.md",
-    "PROJECTS/BlogDuaaeeg/BlogDuaaeeg Overview.md",
-    "PROJECTS/BlogDuaaeeg/System Design.md",
+    "Important note/Linux/Basic Command Linux (Thai Docs).md",
     "PROJECTS/BlogDuaaeeg/App Requirement.md",
-    "Go Lectures/Clean Architecture Adaptation in GO.md",
+    "PROJECTS/PaySolutionStore",
+    "Temporary Notes/05-06-2024.md",
+    "Important note/2nd Comcamp Scheduling.md",
+    "Breif Intern Project.md",
+    "Important note/Linux/Basic Command In Linux.md",
+    "Important note/Linux/Linux Contents.md",
+    "Important note/Linux",
+    "Important note/Important Note Contents.md",
+    "Go Lectures/Practical Examples/Error Handling, Pointers, and Concurrency.md",
     "Go Lectures/Practical Examples/Basic and Resource Management.md",
     "Apple Notes/On My Mac/Angular Projects/NoteMarkDown.md",
-    "Important note/Cloud Service Integration.md",
+    "Books/Money Literacy/Based of Wealthy.md",
+    "Important note/Interested Company List.md",
+    "Important note/Web API Storage.md",
+    "Deployment Infrastructure.excalidraw",
+    "Important note/SonarQube.md",
+    "Books/Money Literacy/Expense Income Guide.md",
+    "Untitled 1.canvas",
+    "Important note/Server Network",
     "Pasted image 20240502094324.png",
     "Pasted image 20240502094256.png",
     "Pasted image 20240502094243.png",
@@ -386,7 +351,6 @@
     "Pasted image 20240502094125.png",
     "Pasted image 20240502094108.png",
     "Pasted image 20240502094058.png",
-    "Untitled 1.canvas",
     "Pasted image 20240429150935.png",
     "Pasted image 20240429135535.png",
     "Important note/Software Architectures",
@@ -396,10 +360,6 @@
     "PROJECTS/BlogDuaaeeg",
     "Go Lectures/Gin",
     "Users/phakh/go/src/github.com/textures1245/practical-examples",
-    "Users/phakh/go/src/github.com/textures1245",
-    "Users/phakh/go/src/github.com",
-    "Users/phakh/go/src",
-    "Users/phakh/go",
     "Untitled.canvas"
   ]
 }

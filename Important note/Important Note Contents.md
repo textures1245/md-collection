@@ -1,5 +1,9 @@
 ## Content Category
 
+- #Todo
+	- [[SonarQube]]
+	- [[Basic Command In Linux]]
+
 - #Knowlaged-Category
 	- [[SDLC Method]]
 	- [[Software Testing]]
