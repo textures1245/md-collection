@@ -1,4 +1,4 @@
-[[PROJECTS/PaySolutionStore/Note Detail|Note Detail]]
+[[PaySolutionStore Note Detail|PaySolutionStore Note Detail]]
 ## Contents
  #PaySolutonShop-DB-Design-Solution-1
  #PaySolutonShop-DB-Design-Solution-2

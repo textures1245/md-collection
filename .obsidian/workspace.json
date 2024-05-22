@@ -147,12 +147,8 @@
             "id": "2065b2f6c76668c0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PROJECTS/PaySolutionStore/Note Detail.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ],
@@ -234,7 +230,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PROJECTS/PaySolutionStore/Note Detail.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -251,7 +246,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PROJECTS/PaySolutionStore/Note Detail.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -273,9 +267,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "PROJECTS/PaySolutionStore/Note Detail.md"
-              }
+              "state": {}
             }
           },
           {
@@ -309,13 +301,17 @@
   },
   "active": "2065b2f6c76668c0",
   "lastOpenFiles": [
+    "PROJECTS/Project Contents.md",
+    "PROJECTS/PaySolutionStore/PaySolutionStore Note Detail.md",
+    "PROJECTS/Components.md",
+    "PROJECTS/BlogDuaaeeg/System Design.md",
+    "PROJECTS/BlogDuaaeeg/App Requirement.md",
     "PROJECTS/PaySolutionStore/System Design.md",
     "PROJECTS/PaySolutionStore/System Analysis.md",
     "Todo/Todo 05-May 2024.md",
     "Todo/Todo Contents.md",
     "PROJECTS/PaySolutionStore/Database.md",
     "Todo",
-    "PROJECTS/PaySolutionStore/Note Detail.md",
     "PROJECTS/PaoSatang/Note Detail.md",
     "PROJECTS/PaoSatang/System Design.md",
     "PROJECTS/PaoSatang/PaoSatang Overview.md",
@@ -323,7 +319,6 @@
     "PROJECTS/BlogDuaaeeg/System Analysis.md",
     "PROJECTS/BlogDuaaeeg/Implementation.md",
     "Important note/Linux/Basic Command Linux (Thai Docs).md",
-    "PROJECTS/BlogDuaaeeg/App Requirement.md",
     "PROJECTS/PaySolutionStore",
     "Temporary Notes/05-06-2024.md",
     "Important note/2nd Comcamp Scheduling.md",
@@ -335,9 +330,6 @@
     "Go Lectures/Practical Examples/Error Handling, Pointers, and Concurrency.md",
     "Go Lectures/Practical Examples/Basic and Resource Management.md",
     "Apple Notes/On My Mac/Angular Projects/NoteMarkDown.md",
-    "Books/Money Literacy/Based of Wealthy.md",
-    "Important note/Interested Company List.md",
-    "Important note/Web API Storage.md",
     "Deployment Infrastructure.excalidraw",
     "Untitled 1.canvas",
     "Important note/Server Network",
