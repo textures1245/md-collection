@@ -44,6 +44,7 @@
 	- password
 	- activeStatus
 
+## Detail
 From this diagram, this diagram is about shopping store where it have 3 important actor roles following by these
 1. Admin
 2. Store

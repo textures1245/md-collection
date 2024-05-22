@@ -1,6 +1,8 @@
+[[PROJECTS/PaySolutionStore/Note Detail|Note Detail]]
 ## Contents
  #PaySolutonShop-DB-Design-Solution-1
  #PaySolutonShop-DB-Design-Solution-2
+ #PaySolution-Solution-Sumary 
 
 ## Using Account to store all Actors (Admin, Customer and Store) 
 #PaySolutonShop-DB-Design-Solution-1
@@ -664,7 +666,9 @@ classDiagram
 ```
 
 ## Solution Summary
+#PaySolution-Solution-Sumary 
 ### Diagram 1: Single `Account` Table with Role-based Differentiation
+#PaySolutonShop-DB-Design-Solution-1
 
 #### Pros:
 
@@ -695,6 +699,7 @@ classDiagram
     - Enforcing role-specific relationships (e.g., only a store can manage products) requires complex constraints or application logic.
 
 ### Diagram 2: `Account` Table with Separate `Admin`, `Store`, and `Customer` Tables
+#PaySolutonShop-DB-Design-Solution-2
 
 #### Pros:
 
