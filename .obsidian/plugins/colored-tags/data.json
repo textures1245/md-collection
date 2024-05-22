@@ -179,7 +179,10 @@
     "Implemented-on-Websocket": 166,
     "Implemented-on--fasthttp-Websocket": 167,
     "fasthttp-Websocket-Implemented": 168,
-    "Linux": 169
+    "Linux": 169,
+    "Solution-1": 170,
+    "PaySolutonShop-DB-Design-Solution-1": 171,
+    "PaySolutonShop-DB-Design-Solution-2": 172
   },
   "_version": 3
 }
