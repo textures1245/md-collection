@@ -1,5 +1,7 @@
 [[Important Note Contents]] #Knowlaged-Category #Software-Achitrectures
 
+Diagram : 
+![[CleanArchitechtureStructureDiagarm.excalidraw]]
 Ref: [Clean Architecture In go](https://pkritiotis.io/clean-architecture-in-golang/)
 
 ![[Pasted image 20240429135535.png]]
