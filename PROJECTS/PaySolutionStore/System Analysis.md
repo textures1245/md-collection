@@ -1,3 +1,4 @@
+[[PaySolutionStore Note Detail]]
 - Role
 	- Admin
 	- Seller

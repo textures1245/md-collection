@@ -1,4 +1,4 @@
-
+[[PaySolutionStore Note Detail]]
 ## Master Table (Following by the Ui)
 - Account
 - Admin

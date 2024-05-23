@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "",
+  "search": "path:PROJECTS/PaySolutionStore  ",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -15,24 +15,38 @@
       }
     },
     {
-      "query": "path:\"Important note\"  ",
+      "query": "path:\"Go Lectures\"  ",
       "color": {
         "a": 1,
         "rgb": 14069084
       }
     },
     {
-      "query": "path:\"Go Lectures\"  ",
+      "query": "path:Books  ",
       "color": {
         "a": 1,
-        "rgb": 2962411
+        "rgb": 11392604
+      }
+    },
+    {
+      "query": "path:\"Important note\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14159549
+      }
+    },
+    {
+      "query": "path:Todo  ",
+      "color": {
+        "a": 1,
+        "rgb": 6890220
       }
     },
     {
       "query": "path:\"Apple Notes\"  ",
       "color": {
         "a": 1,
-        "rgb": 2877739
+        "rgb": 2010870
       }
     }
   ],
@@ -46,6 +60,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.6696365270974095,
-  "close": true
+  "scale": 1.4307467338657558,
+  "close": false
 }

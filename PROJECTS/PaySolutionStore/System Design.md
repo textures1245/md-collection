@@ -1,4 +1,4 @@
-[[PaySolutionStore Note Detail|PaySolutionStore Note Detail]]
+****[[PaySolutionStore Note Detail|PaySolutionStore Note Detail]]
 ## Contents
  #PaySolutonShop-DB-Design-Solution-1
  #PaySolutonShop-DB-Design-Solution-2
@@ -7,18 +7,22 @@
 ## Using Account to store all Actors (Admin, Customer and Store) 
 #PaySolutonShop-DB-Design-Solution-1
 ### ER Diagram
-- v1
+- v1 - mermaid
 ```merm
 erDiagram
     ACCOUNT ||--o{ FILE : "uploads"
     ACCOUNT ||--|| ADMINPERMISSION : "manages : if role is ADMIN"
+    ACCOUNT ||--o{ LOG : "manages : if role is ADMIN"
     ACCOUNT ||--o{ PRODUCT : "manages : if role is STORE"
     ACCOUNT ||--o{ PRODUCTCATEGORY : "manages : if role is STORE"
     ACCOUNT ||--o{ BANK : "manages : if role is STORE"
     ACCOUNT ||--o{ ORDER : "places : if role is CUSTOMER"
     ORDER ||--o{ FILE : "uploads"
     ORDER ||--|{ PRODUCT : "contains"
-    ORDER }|--|{ BANK : "uses"
+    ORDER }|--|{ BANK : "processs"
+    BANK ||--o{ FILE : "uploads"
+    ORDER ||--o{ ORDER_PRODUCT : includes
+    PRODUCT ||--o{ ORDER_PRODUCT : is_part_o
     PRODUCT ||--o{ FILE : "uploads"
     PRODUCT ||--|| PRODUCTCATEGORY : "categorized into"
     
@@ -40,8 +44,12 @@ erDiagram
         int id PK
         varchar name
         decimal price
+        int stock
+        varchar detail
+        bool status
         int categoryId FK
-        int ownerId FK
+        int storeId FK
+        int productId FK
     }
     
     PRODUCTCATEGORY {
@@ -57,18 +65,30 @@ erDiagram
         varchar orderId "UNIQUE"
         decimal totalAmount
         varchar topic
-        float price
+        float sumPrice
         date timestamp
-        bool status
+        enum state "ENUM(PENDING, PREPARED, SEND, SUCCEED, REJECTED)"
+        varchar deliverytType "nullable if Order.state != SEND"
+        varchar parcelNumber "nullable if Order.state != SEND"
+        date sentDate "nullable if Order.state != SEND"
         int customerId FK
         int storeId FK
         int bankId FK
+    }
+
+    ORDER_PRODUCT {
+        int orderId FK
+        int productId FK
+        int quantity
     }
     
     BANK {
         int id PK
         varchar name
-        varchar details
+        varchar accNumber
+        varchar accName
+        varchar status
+        int storeId FK
     }
     
     ADMINPERMISSION {
@@ -81,10 +101,102 @@ erDiagram
         varchar name
         varchar pathUrl
         varchar type
-        enum entityType "ENTITY_TYPE(ACCOUNT, ORDER, PRODUCT)"
+        enum entityType "ENTITY_TYPE(ACCOUNT, ORDER, PRODUCT, BANK)"
         int entityId FK
     }
+
+    LOG {
+        int id 
+        String fullName
+        String menuRequest
+        String actionRequest
+        timestamp createdAt
+        timestamp updatedAt 
+        int accountId FK
+    }
 ```
+v1 - DBML
+	```dbml
+	Table Account {
+	    id int [pk]
+	    name varchar
+	    password varchar
+	    phone varchar
+	    location varchar
+	    email varchar [unique]
+	    role enum [note: 'ROLE(ADMIN, STORE, CUSTOMER)']
+	    status boolean [default: true]
+	    storeName varchar [note: 'nullable if not STORE']
+	    storeLocation varchar [note: 'nullable if not STORE']
+	    permissionId int [note: 'nullable if not ADMIN']
+	}
+	
+	Table Product {
+	    id int [pk]
+	    name varchar
+	    price decimal
+	    categoryId int [ref: > ProductCategory.id]
+	    ownerId int [ref: > Account.id]
+	}
+	
+	Table ProductCategory {
+	    id int [pk]
+	    name varchar
+	    status boolean
+	    code varchar
+	    detail varchar
+	}
+	
+	Table Order {
+	    id int [pk]
+	    orderId varchar [unique]
+	    totalAmount decimal
+	    topic varchar
+	    price float
+	    timestamp date
+	    status boolean
+	    customerId int [ref: > Account.id]
+	    storeId int [ref: > Account.id]
+	    productId int [ref: > Product.id]
+	    bankId int [ref: > Bank.id]
+	}
+	
+	Table Bank {
+	    id int [pk]
+	    name varchar
+	    details varchar
+	}
+	
+	Table AdminPermission {
+	    id int [pk]
+	    menuPermission varchar[]
+	}
+	
+	Table File {
+	    id int [pk]
+	    name varchar
+	    pathUrl varchar
+	    type varchar
+	    entityType enum [note: 'ENTITY_TYPE(ACCOUNT, ORDER, PRODUCT)']
+	    entityId int
+	}
+	
+	Table Log {
+	    id int [pk, ref: > Account.id]
+	    fullName varchar
+	    menuRequest varchar
+	    actionRequest varchar
+	    createdAt timestamp
+	    updatedAt timestamp
+	}
+	
+	Ref: Account.permissionId > AdminPermission.id
+	
+	Ref: File.entityId > Account.id
+	Ref: File.entityId > Order.id
+	Ref: File.entityId > Product.id
+	```
+
 ### Class Diagram
 - v1 (Based on ER Diagram v1)
 ```merm
@@ -535,6 +647,8 @@ classDiagram
         String phone
         String location
         String email
+        timestamp createdAt
+        timestamp updatedAt 
         Role role
         boolean status
         +uploadFile(File file)
@@ -544,6 +658,8 @@ classDiagram
         int id
         int accountId
         int permissionId
+        timestamp createdAt
+        timestamp updatedAt 
         +createAccount(Account account)
         +viewAccount(int accountId)
         +updateAccount(Account account)
@@ -557,6 +673,8 @@ classDiagram
         String storeName
         String storeLocation
         int accountId
+        timestamp createdAt
+        timestamp updatedAt 
         +registerAccount(Account account)
         +manageProduct(Product product)
         +manageProductCategory(ProductCategory category)
@@ -568,6 +686,8 @@ classDiagram
     class Customer {
         int id
         int accountId
+        timestamp createdAt
+        timestamp updatedAt 
         +viewProduct(int productId)
         +buyProduct(Product product)
         +placeOrder(Order order)
@@ -579,6 +699,8 @@ classDiagram
         float price
         int categoryId
         int ownerId
+        timestamp createdAt
+        timestamp updatedAt 
         +uploadFile(File file)
     }
 
@@ -588,6 +710,8 @@ classDiagram
         boolean status
         String code
         String detail
+        timestamp createdAt
+        timestamp updatedAt 
     }
 
     class Order {
@@ -597,10 +721,13 @@ classDiagram
         String topic
         float price
         Date timestamp
-        boolean status
+        enum state
+        OrderProduct[] orderProducts
         int customerId
         int storeId
         int bankId
+        timestamp createdAt
+        timestamp updatedAt 
         +uploadFile(File file)
     }
 
@@ -608,11 +735,15 @@ classDiagram
         int id
         String name
         String details
+        timestamp createdAt
+        timestamp updatedAt 
     }
 
     class AdminPermission {
         int id
         String[] menuPermission
+        timestamp createdAt
+        timestamp updatedAt 
     }
 
     class File {
@@ -622,7 +753,26 @@ classDiagram
         String type
         EntityType entityType
         int entityId
+        timestamp createdAt
+        timestamp updatedAt 
     }
+
+	class Log {
+        int id 
+        String fullName
+        String menuRequest
+        String actionRequest
+        timestamp createdAt
+        timestamp updatedAt 
+    }
+
+	class OrderProduct {
+		<<interface>>
+		Product product
+		int quantity
+		float sumPrice 
+	}
+
 
     class Role {
         <<enumeration>>
@@ -639,6 +789,15 @@ classDiagram
         PRODUCT
     }
 
+	class OrderState {
+        <<enumeration>>
+        PENDING
+        PREPARED
+        SEND
+        SUCCEED
+        FAILED
+    }
+
     Account <|-- Admin : inherits
     Account <|-- Store : inherits
     Account <|-- Customer : inherits
@@ -646,6 +805,7 @@ classDiagram
     
     Admin --* AdminPermission : manages
     Admin --o File : uploads
+    Admin --> Log : manages
     
     Store --o File : uploads
     Store --> Product : manages
@@ -658,12 +818,16 @@ classDiagram
     Customer --o Order : places
     
     Order --o File : uploads
-    Order --> Product : contains
+    Order --> Product : has
+    Product --o OrderProduct : contains
+    Order --* OrderProduct : has
+    Order --> OrderState : references
     Order <..>	 Bank : uses
     
     Product --o File : uploads
     Product --* ProductCategory : categorized into
 ```
+
 
 ## Solution Summary
 #PaySolution-Solution-Sumary 
@@ -755,3 +919,4 @@ While it has some drawbacks, such as potential sparse data and complexity in han
 - **Diagram 1** easy for querying and simplifies user management by consolidating all roles into a single table but could lead to complexity and scalability issues as the system grows.
 
 - **Diagram 2** provides better organization, data integrity, and scalability, making it more robust and maintainable for production use, but may complex for querying and maintenance overhead 
+

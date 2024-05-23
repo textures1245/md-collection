@@ -6,35 +6,15 @@
       {
         "id": "7501e7b31e1cd729",
         "type": "tabs",
-        "dimension": 38.61702127659574,
+        "dimension": 37.93800539083558,
         "children": [
-          {
-            "id": "e1b4233932ef79f0",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "75c609d7062b334f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PROJECTS/Components.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
           {
             "id": "aab986805e5d0abd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Go Lectures/Concept/Concurrently.md",
+                "file": "Go Lectures/Clean Architecture Adaptation in GO.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +61,7 @@
       {
         "id": "02a184b334bca340",
         "type": "tabs",
-        "dimension": 61.38297872340426,
+        "dimension": 62.061994609164415,
         "children": [
           {
             "id": "b7c2457e02c46922",
@@ -125,34 +105,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
+                "file": "PROJECTS/PaySolutionStore/Final Database Diagram.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "37d49bb1db211b2b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PROJECTS/BlogDuaaeeg/System Analysis.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2065b2f6c76668c0",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -230,6 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "PROJECTS/PaySolutionStore/Final Database Diagram.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -246,6 +207,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "PROJECTS/PaySolutionStore/Final Database Diagram.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -267,7 +229,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "PROJECTS/PaySolutionStore/Final Database Diagram.md"
+              }
             }
           },
           {
@@ -299,37 +263,37 @@
       "notion-like-tables:Create loom": false
     }
   },
-  "active": "2065b2f6c76668c0",
+  "active": "c6f0d280a398a220",
   "lastOpenFiles": [
-    "PROJECTS/Project Contents.md",
     "PROJECTS/PaySolutionStore/PaySolutionStore Note Detail.md",
+    "PROJECTS/PaySolutionStore/System Design.md",
+    "PROJECTS/PaySolutionStore/Final Database Diagram.md",
+    "Go Lectures/Clean Architecture Adaptation in GO.md",
+    "Todo/Todo 05-May 2024.md",
+    "PROJECTS/Home For Paws/Application Design.md",
+    "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
+    "Go Lectures/Concept/Concurrently.md",
+    "PROJECTS/BlogDuaaeeg/System Analysis.md",
     "PROJECTS/Components.md",
+    "Unit Testing/Unit Testing Roadmap.md",
+    "PROJECTS/Project Contents.md",
+    "PROJECTS/PaySolutionStore/Database.md",
+    "PROJECTS/PaySolutionStore/System Analysis.md",
     "PROJECTS/BlogDuaaeeg/System Design.md",
     "PROJECTS/BlogDuaaeeg/App Requirement.md",
-    "PROJECTS/PaySolutionStore/System Design.md",
-    "PROJECTS/PaySolutionStore/System Analysis.md",
-    "Todo/Todo 05-May 2024.md",
     "Todo/Todo Contents.md",
-    "PROJECTS/PaySolutionStore/Database.md",
     "Todo",
     "PROJECTS/PaoSatang/Note Detail.md",
     "PROJECTS/PaoSatang/System Design.md",
     "PROJECTS/PaoSatang/PaoSatang Overview.md",
     "PROJECTS/BlogDuaaeeg/Note Detail.md",
-    "PROJECTS/BlogDuaaeeg/System Analysis.md",
     "PROJECTS/BlogDuaaeeg/Implementation.md",
     "Important note/Linux/Basic Command Linux (Thai Docs).md",
     "PROJECTS/PaySolutionStore",
     "Temporary Notes/05-06-2024.md",
     "Important note/2nd Comcamp Scheduling.md",
     "Breif Intern Project.md",
-    "Important note/Linux/Basic Command In Linux.md",
-    "Important note/Linux/Linux Contents.md",
     "Important note/Linux",
-    "Important note/Important Note Contents.md",
-    "Go Lectures/Practical Examples/Error Handling, Pointers, and Concurrency.md",
-    "Go Lectures/Practical Examples/Basic and Resource Management.md",
-    "Apple Notes/On My Mac/Angular Projects/NoteMarkDown.md",
     "Deployment Infrastructure.excalidraw",
     "Untitled 1.canvas",
     "Important note/Server Network",
