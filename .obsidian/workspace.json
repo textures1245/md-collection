@@ -6,7 +6,7 @@
       {
         "id": "7501e7b31e1cd729",
         "type": "tabs",
-        "dimension": 54.851752021563335,
+        "dimension": 48.65229110512129,
         "children": [
           {
             "id": "74680b0f6e4cd528",
@@ -49,7 +49,7 @@
       {
         "id": "02a184b334bca340",
         "type": "tabs",
-        "dimension": 45.14824797843666,
+        "dimension": 51.34770889487871,
         "children": [
           {
             "id": "b7c2457e02c46922",
@@ -81,7 +81,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PROJECTS/Home For Paws/Application Design.md",
+                "file": "PROJECTS/PaySolutionStore/PaySolutionStore Note Detail.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,21 +96,9 @@
                 "file": "CleanArchitechtureStructureDiagarm.excalidraw"
               }
             }
-          },
-          {
-            "id": "20b94b697c22d912",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PROJECTS/PaySolutionStore/PaySolutionStore Note Detail.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -188,7 +176,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PROJECTS/PaySolutionStore/PaySolutionStore Note Detail.md",
+                "file": "CleanArchitechtureStructureDiagarm.excalidraw",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -205,7 +193,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PROJECTS/PaySolutionStore/PaySolutionStore Note Detail.md",
+                "file": "CleanArchitechtureStructureDiagarm.excalidraw",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,7 +216,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PROJECTS/PaySolutionStore/PaySolutionStore Note Detail.md"
+                "file": "CleanArchitechtureStructureDiagarm.excalidraw"
               }
             }
           },
@@ -262,21 +250,23 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "20b94b697c22d912",
+  "active": "a2f8d836e8a0e894",
   "lastOpenFiles": [
-    "13 มิ.ย.md",
+    "Pasted image 20240526093529.png",
+    "PROJECTS/PaySolutionStore/Work Summary.md",
     "PROJECTS/PaySolutionStore/PaySolutionStore Note Detail.md",
-    "PROJECTS/PaySolutionStore/Final Database Diagram.md",
     "PROJECTS/PaySolutionStore/System Design.md",
+    "Go Lectures/Clean Architecture Adaptation in GO.md",
+    "PROJECTS/Home For Paws/Application Design.md",
+    "CleanArchitechtureStructureDiagarm.excalidraw",
+    "13 มิ.ย.md",
+    "PROJECTS/PaySolutionStore/Final Database Diagram.md",
     "PROJECTS/BlogDuaaeeg/BlogDuaaeeg Overview.md",
     "PROJECTS/BlogDuaaeeg/App Requirement.md",
     "PROJECTS/BlogDuaaeeg/System Analysis.md",
-    "PROJECTS/Home For Paws/Application Design.md",
-    "CleanArchitechtureStructureDiagarm.excalidraw",
     "Important note/Software Architectures/Clean Architecture.md",
     "Important note/Important Note Contents.md",
     "PROJECTS/PaySolutionStore/Database.md",
-    "Go Lectures/Clean Architecture Adaptation in GO.md",
     "PROJECTS/Project Contents.md",
     "Important note/Software Architectures/SOLID Principle.md",
     "Excalidraw/Drawing 2024-05-23 13.17.44.excalidraw.md",
@@ -292,8 +282,6 @@
     "PROJECTS/BlogDuaaeeg/System Design.md",
     "Todo/Todo Contents.md",
     "Todo",
-    "PROJECTS/PaoSatang/Note Detail.md",
-    "PROJECTS/PaoSatang/System Design.md",
     "PROJECTS/PaySolutionStore",
     "Important note/Linux",
     "Deployment Infrastructure.excalidraw",
@@ -308,7 +296,6 @@
     "Pasted image 20240502094058.png",
     "Pasted image 20240429135535.png",
     "Important note/Software Architectures",
-    "Pasted image 20240408211348.png",
     "Important note/Software Development Life Cycle (SDLC)",
     "Temporary Notes",
     "Untitled.canvas"
