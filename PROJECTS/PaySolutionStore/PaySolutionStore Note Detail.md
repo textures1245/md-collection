@@ -8,8 +8,8 @@
 	[[PROJECTS/PaySolutionStore/System Analysis|System Analysis]]
 	[[Database]]
 	[[PROJECTS/PaySolutionStore/System Design|System Design]]
-
 ## Assets 
 	 [[Final Database Diagram]]
+	 [[Work Summary]]
 
 class keyboard adwdd

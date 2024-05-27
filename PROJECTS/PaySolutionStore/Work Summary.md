@@ -20,3 +20,20 @@
 		- จัดการในส่วนของ Sidebar Active (only checked for last slice element from path array) 
 		- ~~ในส่วนของ Body, Content ยังมีการล้นออกมาทำให้ Sidebar และ Body Content ไม่สมมาตรการกัน~~ 
 		- แก้ปัญาหาในส่วนของ ข้อมูลใน Table มีการกินพื้นที่เมื่อมีการ Resize 
+
+- 27/05/2024
+	- หนึ่ง 
+		- แก้ปัญหาในส่วนของรูปภาพ 
+		- แก้ปัญหา Layout Responsive ใส่ส่วนของ (login)
+	- ก๊อด
+		- implemented Table ในส่วนของหน้า `customer-cart` และ `order`
+		- แก้ปัญหา Layout Responsive ใส่ส่วนของ (customer) --> `customer-cart`
+	- เจแปน
+		- แก้ Layout ในส่วนของ (admin)
+		- Implemented Table และ Modal ให้ในส่วนของ (admin)
+	- ภาค
+		 - จัดการในส่วนของ Sidebar Active (only checked for last slice element from path array) 
+		- แก้ปัญาหาในส่วนของ ข้อมูลใน Table มีการกินพื้นที่เมื่อมีการ Resize 
+		- แก้ Sidebar viewpoint ไม่ให้มองเห็นจากฝั่ง (customer)
+		- เริ่มพัฒนาในส่วนของ (store)
+		- ลง SQL จาก Digram ที่วาดไว้
