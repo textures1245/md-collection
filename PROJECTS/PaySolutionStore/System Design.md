@@ -646,6 +646,7 @@ classDiagram
         String password
         String phone
         String location
+        String imageAvatar
         String email
         timestamp createdAt
         timestamp updatedAt 

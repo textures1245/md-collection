@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "tag:#PaySolution-Solution-Sumary  ",
+  "search": "path:\"Important note\"  ",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -60,6 +60,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.4747963605913468,
+  "scale": 1.1704693269388422,
   "close": false
 }

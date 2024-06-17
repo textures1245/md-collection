@@ -6,7 +6,7 @@
       {
         "id": "7501e7b31e1cd729",
         "type": "tabs",
-        "dimension": 37.331536388140165,
+        "dimension": 42.52021563342318,
         "children": [
           {
             "id": "74680b0f6e4cd528",
@@ -49,7 +49,7 @@
       {
         "id": "02a184b334bca340",
         "type": "tabs",
-        "dimension": 62.668463611859835,
+        "dimension": 57.47978436657682,
         "children": [
           {
             "id": "b7c2457e02c46922",
@@ -81,7 +81,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PROJECTS/PaySolutionStore/Final Database Diagram.md",
+                "file": "PROJECTS/PaySolutionStore/System Design.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,9 +96,33 @@
                 "file": "CleanArchitechtureStructureDiagarm.excalidraw"
               }
             }
+          },
+          {
+            "id": "71e600f17ac8713b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Important note/PaysolutionShop Meetup.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3604326eac039f8e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Important note/PaysolutionShop Meetup.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -139,7 +163,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:Users  ",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -176,7 +200,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PROJECTS/PaySolutionStore/Final Database Diagram.md",
+                "file": "Go Lectures/Clean Architecture Adaptation in GO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -193,7 +217,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PROJECTS/PaySolutionStore/Final Database Diagram.md",
+                "file": "Go Lectures/Clean Architecture Adaptation in GO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -216,7 +240,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PROJECTS/PaySolutionStore/Final Database Diagram.md"
+                "file": "Go Lectures/Clean Architecture Adaptation in GO.md"
               }
             }
           },
@@ -250,20 +274,27 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "98b9b4baf172b3e0",
+  "active": "74680b0f6e4cd528",
   "lastOpenFiles": [
+    "Important note/PaysolutionShop Meetup.md",
+    "Pasted image 20240612140858.png",
+    "Pasted image 20240612140337.png",
+    "Pasted image 20240612140335.png",
+    "Pasted image 20240612135426.png",
+    "Important note/Linux/Basic Command In Linux.md",
+    "Go Lectures/Clean Architecture Adaptation in GO.md",
+    "PROJECTS/PaySolutionStore/System Design.md",
     "PROJECTS/PaySolutionStore/PaySolutionStore Note Detail.md",
+    "PROJECTS/PaySolutionStore/Final Database Diagram.md",
+    "PROJECTS/PaySolutionStore/System Analysis.md",
     "PROJECTS/PaySolutionStore/Database.md",
     "PROJECTS/PaySolutionStore/Work Summary.md",
     "PROJECTS/Project Contents.md",
-    "PROJECTS/PaySolutionStore/System Design.md",
     "CompCamp22ndPromote/Implementation.md",
     "13 มิ.ย.md",
     "Todo/Todo 05-May 2024.md",
     "CleanArchitechtureStructureDiagarm.excalidraw",
-    "PROJECTS/PaySolutionStore/Final Database Diagram.md",
     "Todo/Todo Contents.md",
-    "Go Lectures/Clean Architecture Adaptation in GO.md",
     "Pasted image 20240526093529.png",
     "PROJECTS/Home For Paws/Application Design.md",
     "PROJECTS/BlogDuaaeeg/BlogDuaaeeg Overview.md",
@@ -278,10 +309,6 @@
     "Pasted image 20240429150935.png",
     "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
     "Go Lectures/Concept/Concurrently.md",
-    "PROJECTS/Components.md",
-    "Unit Testing/Unit Testing Roadmap.md",
-    "PROJECTS/PaySolutionStore/System Analysis.md",
-    "PROJECTS/BlogDuaaeeg/System Design.md",
     "Todo",
     "PROJECTS/PaySolutionStore",
     "Important note/Linux",
@@ -292,10 +319,6 @@
     "Pasted image 20240502094256.png",
     "Pasted image 20240502094243.png",
     "Pasted image 20240502094225.png",
-    "Pasted image 20240502094125.png",
-    "Pasted image 20240502094108.png",
-    "Pasted image 20240502094058.png",
-    "Pasted image 20240429135535.png",
     "Important note/Software Architectures",
     "Important note/Software Development Life Cycle (SDLC)",
     "Temporary Notes",

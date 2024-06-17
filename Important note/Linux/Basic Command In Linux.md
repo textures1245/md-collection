@@ -137,3 +137,9 @@ rmdir directory_name
 # View log files
 tail -n 20 /path/to/log_file
 ```
+
+## Lab 
+
+- `find` -> lab 3 (find the hidden file)
+- `ssh` -> lab 0
+- cat, head/tail -> lab 1
