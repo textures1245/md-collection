@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "path:\"Important note\"  ",
+  "search": " path:\"Important note\" ",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -29,7 +29,7 @@
       }
     },
     {
-      "query": "path:\"Important note\"  ",
+      "query": "path:\"Important note/Knowladge\"  ",
       "color": {
         "a": 1,
         "rgb": 14159549
@@ -48,6 +48,13 @@
         "a": 1,
         "rgb": 2010870
       }
+    },
+    {
+      "query": "path:\"Important note\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 2500338
+      }
     }
   ],
   "collapse-display": true,
@@ -60,6 +67,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.1704693269388422,
+  "scale": 1.0954939844842724,
   "close": false
 }

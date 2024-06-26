@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Go Lectures/Clean Architecture Adaptation in GO.md",
+                "file": "Go Lectures/Go Lectures.md",
                 "mode": "source",
                 "source": false
               }
@@ -120,9 +120,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "acea084d27c02504",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Important note/Knowladge/HTTP Request Data types.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -200,7 +212,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Go Lectures/Clean Architecture Adaptation in GO.md",
+                "file": "Important note/Knowladge/HTTP Request Data types.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,7 +229,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Go Lectures/Clean Architecture Adaptation in GO.md",
+                "file": "Important note/Knowladge/HTTP Request Data types.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -240,7 +252,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Go Lectures/Clean Architecture Adaptation in GO.md"
+                "file": "Important note/Knowladge/HTTP Request Data types.md"
               }
             }
           },
@@ -274,41 +286,46 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "74680b0f6e4cd528",
+  "active": "acea084d27c02504",
   "lastOpenFiles": [
+    "Important note/Knowladge/Docker & Kubernates.md",
+    "Important note/Knowladge/Knowledge Contents.md",
+    "Important note/Knowladge/HTTP Request Data types.md",
+    "Important note/Software Architectures/Clean Architecture.md",
+    "Important note/Important Note Contents.md",
+    "Important note/Interested Company List.md",
+    "Important note/Pay Solution Survey Note.md",
+    "Important note/SonarQube.md",
+    "Important note/Todo-List.md",
+    "Important note/Typescript EXP.md",
+    "Important note/Web API Storage.md",
+    "Important note/Software Development Life Cycle (SDLC)/SDLC Contents.md",
+    "Important note/2nd Comcamp Scheduling.md",
+    "Important note/Conference Summary.md",
+    "Important note/Software Development Life Cycle (SDLC)/Design.md",
+    "Important note/Software Development Life Cycle (SDLC)/Implementation.md",
+    "Important note/Software Architectures/Software Testing.md",
+    "Important note/Linux/Basic Command Linux (Thai Docs).md",
+    "Go Lectures/Go Practical Examples.md",
+    "Go Lectures/Go Lectures.md",
+    "Go Lectures/Clean Architecture Adaptation in GO.md",
+    "Important note/K8s Command Line.md",
+    "Important note/Cloud Service Integration.md",
+    "Important note/Guitar List.md",
     "Important note/PaysolutionShop Meetup.md",
+    "Important note/Linux/Basic Command In Linux.md",
+    "Important note/Knowladge",
+    "Pasted image 20240626015444.png",
+    "Pasted image 20240626015442.png",
+    "PROJECTS/PaysolutionCheckSlip",
     "Pasted image 20240612140858.png",
     "Pasted image 20240612140337.png",
     "Pasted image 20240612140335.png",
     "Pasted image 20240612135426.png",
-    "Important note/Linux/Basic Command In Linux.md",
-    "Go Lectures/Clean Architecture Adaptation in GO.md",
-    "PROJECTS/PaySolutionStore/System Design.md",
-    "PROJECTS/PaySolutionStore/PaySolutionStore Note Detail.md",
-    "PROJECTS/PaySolutionStore/Final Database Diagram.md",
-    "PROJECTS/PaySolutionStore/System Analysis.md",
-    "PROJECTS/PaySolutionStore/Database.md",
-    "PROJECTS/PaySolutionStore/Work Summary.md",
-    "PROJECTS/Project Contents.md",
-    "CompCamp22ndPromote/Implementation.md",
-    "13 มิ.ย.md",
-    "Todo/Todo 05-May 2024.md",
     "CleanArchitechtureStructureDiagarm.excalidraw",
-    "Todo/Todo Contents.md",
     "Pasted image 20240526093529.png",
-    "PROJECTS/Home For Paws/Application Design.md",
-    "PROJECTS/BlogDuaaeeg/BlogDuaaeeg Overview.md",
-    "PROJECTS/BlogDuaaeeg/App Requirement.md",
-    "PROJECTS/BlogDuaaeeg/System Analysis.md",
-    "Important note/Software Architectures/Clean Architecture.md",
-    "Important note/Important Note Contents.md",
-    "Important note/Software Architectures/SOLID Principle.md",
-    "Excalidraw/Drawing 2024-05-23 13.17.44.excalidraw.md",
     "Excalidraw",
-    "Important note/Software Architectures/Untitled.md",
     "Pasted image 20240429150935.png",
-    "PROJECTS/Home For Paws/หาบ้านให้สุนัข (Home for Paw 🐾) (ที่ชื่อว่าเพื่อน) 🐶.md",
-    "Go Lectures/Concept/Concurrently.md",
     "Todo",
     "PROJECTS/PaySolutionStore",
     "Important note/Linux",
@@ -317,11 +334,7 @@
     "Important note/Server Network",
     "Pasted image 20240502094324.png",
     "Pasted image 20240502094256.png",
-    "Pasted image 20240502094243.png",
-    "Pasted image 20240502094225.png",
     "Important note/Software Architectures",
-    "Important note/Software Development Life Cycle (SDLC)",
-    "Temporary Notes",
     "Untitled.canvas"
   ]
 }
