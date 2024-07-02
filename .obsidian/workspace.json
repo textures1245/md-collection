@@ -132,9 +132,31 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "dba424ef9726ce4d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Summary.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aea0a2cb160860be",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20240627110706.png"
+              }
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -212,7 +234,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Important note/Knowladge/HTTP Request Data types.md",
+                "file": "Go Lectures/Go Lectures.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -229,7 +251,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Important note/Knowladge/HTTP Request Data types.md",
+                "file": "Go Lectures/Go Lectures.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -252,7 +274,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Important note/Knowladge/HTTP Request Data types.md"
+                "file": "Go Lectures/Go Lectures.md"
               }
             }
           },
@@ -286,11 +308,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "acea084d27c02504",
+  "active": "74680b0f6e4cd528",
   "lastOpenFiles": [
+    "Summary.md",
+    "Go Lectures/Go Lectures.md",
+    "Pasted image 20240627110706.png",
+    "Important note/Untitled",
+    "Pasted image 20240627110549.png",
+    "Pasted image 20240627110322.png",
+    "Important note/Knowladge/HTTP Request Data types.md",
+    "Important note/PaysolutionShop Meetup.md",
     "Important note/Knowladge/Docker & Kubernates.md",
     "Important note/Knowladge/Knowledge Contents.md",
-    "Important note/Knowladge/HTTP Request Data types.md",
     "Important note/Software Architectures/Clean Architecture.md",
     "Important note/Important Note Contents.md",
     "Important note/Interested Company List.md",
@@ -307,13 +336,9 @@
     "Important note/Software Architectures/Software Testing.md",
     "Important note/Linux/Basic Command Linux (Thai Docs).md",
     "Go Lectures/Go Practical Examples.md",
-    "Go Lectures/Go Lectures.md",
     "Go Lectures/Clean Architecture Adaptation in GO.md",
     "Important note/K8s Command Line.md",
     "Important note/Cloud Service Integration.md",
-    "Important note/Guitar List.md",
-    "Important note/PaysolutionShop Meetup.md",
-    "Important note/Linux/Basic Command In Linux.md",
     "Important note/Knowladge",
     "Pasted image 20240626015444.png",
     "Pasted image 20240626015442.png",
@@ -325,16 +350,12 @@
     "CleanArchitechtureStructureDiagarm.excalidraw",
     "Pasted image 20240526093529.png",
     "Excalidraw",
-    "Pasted image 20240429150935.png",
     "Todo",
     "PROJECTS/PaySolutionStore",
     "Important note/Linux",
     "Deployment Infrastructure.excalidraw",
     "Untitled 1.canvas",
     "Important note/Server Network",
-    "Pasted image 20240502094324.png",
-    "Pasted image 20240502094256.png",
-    "Important note/Software Architectures",
     "Untitled.canvas"
   ]
 }
