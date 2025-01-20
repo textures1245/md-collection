@@ -1,0 +1,11 @@
+DevOps Tooling
+- CNCF : https://landscape.cncf.io/
+- CI/CD
+- Container Runtime
+- Containerization 
+- Monitoring And Observability
+	- Observability
+		- Metrics
+		- Traces
+		- Logging
+- The SRE Pyramid

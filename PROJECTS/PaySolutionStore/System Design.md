@@ -1,3 +1,5 @@
+flowchart LR
+Start --> Stop
 ****[[PaySolutionStore Note Detail|PaySolutionStore Note Detail]]
 ## Contents
  #PaySolutonShop-DB-Design-Solution-1
@@ -24,7 +26,9 @@ erDiagram
     ORDER ||--o{ ORDER_PRODUCT : includes
     PRODUCT ||--o{ ORDER_PRODUCT : is_part_o
     PRODUCT ||--o{ FILE : "uploads"
-    PRODUCT ||--|| PRODUCTCATEGORY : "categorized into"
+    PRODUCT ||--|| PRODUCTCATEGORY : "categorized into"flowchart LR
+Start --> Stop
+
     
     ACCOUNT {
         int id PK

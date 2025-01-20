@@ -1,0 +1,48 @@
+/**
+* Snippet Name: Minimal image captions with tweaks for image grids
+* Version: 1.0
+* Author: Created via Claude
+* Source: https://forum.obsidian.md/t/adding-caption-to-images/16431/46
+* Last Updated: 2024-12-18
+*/
+
+.image-captions-figure {
+   padding: 0;
+   background-color: var(--bg-color) !important;
+   display: flex !important;
+   flex-direction: column !important;
+   gap: 16px !important;
+}
+
+.image-captions-caption {
+   margin: 0 !important;
+   padding: 0 !important;
+   background-color: var(--bg-color) !important;
+   color: var(--tx3);
+   line-height: 1.5em;
+}
+
+.hide-captions .image-captions-caption {
+   display: none;
+}
+
+.img-grid .image-embed.is-loaded {
+   display: flex !important;
+   align-items: center !important;
+   height: auto !important;
+}
+
+.img-grid .markdown-preview-section div:has(> .image-embed ~ .image-embed) {
+   display: grid !important;
+   grid-auto-rows: auto !important;
+}
+
+.img-grid .markdown-preview-section div:has(> .image-embed ~ .image-embed) .image-embed img,
+.img-grid .markdown-preview-section p:has(> .image-embed ~ .image-embed) .image-embed img {
+   height: auto !important;
+   object-fit: var(--image-grid-fit) !important;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview:not(.cm-focused) {
+   padding-bottom: initial !important;
+}

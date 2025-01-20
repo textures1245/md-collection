@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": " path:\"Important note\" ",
+  "search": "path:\"Software\"  ",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -29,20 +29,6 @@
       }
     },
     {
-      "query": "path:\"Important note/Knowladge\"  ",
-      "color": {
-        "a": 1,
-        "rgb": 14159549
-      }
-    },
-    {
-      "query": "path:Todo  ",
-      "color": {
-        "a": 1,
-        "rgb": 6890220
-      }
-    },
-    {
       "query": "path:\"Apple Notes\"  ",
       "color": {
         "a": 1,
@@ -50,10 +36,17 @@
       }
     },
     {
-      "query": "path:\"Important note\"  ",
+      "query": "path:\"Software Architectures\"",
       "color": {
         "a": 1,
         "rgb": 2500338
+      }
+    },
+    {
+      "query": "path:\"Important note\" ",
+      "color": {
+        "a": 1,
+        "rgb": 6073814
       }
     }
   ],
@@ -67,6 +60,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.0954939844842724,
+  "scale": 1.279916410321769,
   "close": false
 }

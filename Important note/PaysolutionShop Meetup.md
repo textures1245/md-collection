@@ -18,3 +18,26 @@
 # Reset Password
 - เมื่อทำการกรอก Reset รหัสผ่านใหม่ ไม่เหมือนกัน จะทำให้เกิด Error แล้ว เด้งมาหน้า OTP
 - เมื่อทำการ Login ด้วยรหัสผ่านใหม่ที่ทำการ Reset กลับขึ้นว่ารหัสผ่านไม่ตรงกัน
+
+
+```merm
+sequenceDiagram
+    actor Merchant
+    actor Customer
+    participant LINE
+    participant LINE Bot Check Slip
+    participant PaysoCheckSlip
+
+    alt ใช้บริการในบัญชีทางการของ LINE Official Account ของ Merchant
+        Merchant->>LINE: เพิ่ม Bot ใน LINE Official Account
+        Merchant->>LINE Bot Check Slip: ส่ง TOKEN QR ผ่าน LINE Official Account
+    end
+
+    alt ลูกค้าของ Merchant อัปโหลดรูปภาพ
+        Customer->>LINE Official Account: ส่ง slip ในกลุ่มแชท
+        LINE Official Account->>LINE Bot Check Slip: ส่ง slip ที่อัปโหลด
+        LINE Bot Check Slip->>PaysoCheckSlip: ตรวจสอบ slip
+        PaysoCheckSlip->>LINE Bot Check Slip: ผลการตรวจสอบ slip
+        LINE Bot Check Slip->>Customer: ส่งกลับผลลัพธ์ผ่าน LINE Official Account
+    end
+```

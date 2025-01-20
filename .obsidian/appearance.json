@@ -1,9 +1,10 @@
 {
   "accentColor": "",
-  "theme": "system",
+  "theme": "moonstone",
   "baseFontSize": 13,
   "cssTheme": "Minimal",
   "enabledCssSnippets": [
-    "tag_colors"
+    "tag_colors",
+    "minimal-caption-image"
   ]
 }
