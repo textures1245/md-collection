@@ -56,4 +56,9 @@ Ref: https://www.youtube.com/watch?v=p7IqD83ljvc, https://github.com/ddd-crew/ev
 	![](https://github.com/ddd-crew/eventstorming-glossary-cheat-sheet/raw/master/_resources/software-picture.jpg)
 
 ## Event Storming Case-Study on E-commerce
+- Scenario from [[Domain Driven Design (DDD)]]
+
+https://app.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1#Htextures1245%2Ftextures1245%2Fmain%2FE-commerce%20Event%20Stroming
+
+![[E-commerce Event Stroming.drawio.png]]
 

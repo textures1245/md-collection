@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "path:\"Software\"  ",
+  "search": "path:\"Software\" ",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -36,17 +36,31 @@
       }
     },
     {
-      "query": "path:\"Software Architectures\"",
+      "query": "path:\"Important note/Software Architectures/Infrastrcture\" ",
       "color": {
         "a": 1,
-        "rgb": 2500338
+        "rgb": 5658357
       }
     },
     {
-      "query": "path:\"Important note\" ",
+      "query": "path:\"Important note/Software Architectures/Event Driven\" ",
       "color": {
         "a": 1,
-        "rgb": 6073814
+        "rgb": 14437502
+      }
+    },
+    {
+      "query": "path:\"Important note/Software\" ",
+      "color": {
+        "a": 1,
+        "rgb": 11361494
+      }
+    },
+    {
+      "query": "path:\"Important note\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14048429
       }
     }
   ],
@@ -60,6 +74,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.279916410321769,
+  "scale": 1.235235438815443,
   "close": false
 }
