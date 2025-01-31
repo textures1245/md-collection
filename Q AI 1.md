@@ -67,7 +67,7 @@
 	- keyword: 
 	- solution: 
 		- using longest common subsequence method for cutting some part of output that seems likes question by checking if the some part of length is similar to the input.
-
+- 
 
 # Question
 1. Why you stores model into HuggingFace and Google Drive? What is the different between and what pro and cons.

@@ -1,4 +1,4 @@
-z[[Event Driven Architecture]]
+[[Event Driven Architecture]]
 
 ## Concept
 

@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8e3ba964aed3ee6b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Important note/Software Architectures/Event Driven/Event Sourcing.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Event Sourcing"
-            }
-          },
-          {
             "id": "8ae8b222de364348",
             "type": "leaf",
             "state": {
@@ -41,50 +27,36 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Important note/Software Architectures/Event Driven/Event Sourcing.md",
+                "file": "Q AI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Event Sourcing"
-            }
-          }
-        ]
-      },
-      {
-        "id": "5fb0f7e63cd96417",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "71e600f17ac8713b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Important note/Software Architectures/User Story Mapping (USM).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "User Story Mapping (USM)"
-            }
-          },
-          {
-            "id": "8a06c8e79b7762c5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Important note/Software Architectures/Event Driven/Event Driven Architecture.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Event Driven Architecture"
+              "title": "Q AI"
             }
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "1130af236b616da0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1f01488bf564abe9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Important note/General Notes/DeepSeek Survey.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DeepSeek Survey"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -129,7 +101,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "DDD",
+                "query": "Company",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -256,28 +228,38 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "9818297229f795d6",
+  "active": "851a4ab9b2fb424e",
   "lastOpenFiles": [
+    "Important note/General Notes/DeepSeek Survey.md",
+    "Q AI.md",
+    "Q AI 1.md",
+    "Important note/Software Architectures/Software Testing.md",
     "Important note/Software Architectures/Clean Architecture.md",
-    "Important note/Software Architectures/Event Driven/Event Sourcing.md",
-    "Important note/Software Architectures/Event Driven/Event Driven Architecture.md",
-    "Excalidraw/Drawing 2025-01-16 13.24.47.excalidraw.md",
-    "Important note/Software Architectures/Domain Driven Design (DDD).md",
-    "Important note/Software Architectures/User Story Mapping (USM).md",
-    "Important note/Overview/Micro-service Overview.md",
-    "Untitled Diagram 3.svg",
-    "Important note/Software Architectures/Event Driven/Command Query Response Segregation (CQRS).md",
-    "Important note/Software Architectures/Event Driven/Event Carried State Transfer (ECST) And Event Notification (EN).md",
-    "Important note/Software Architectures/Event Driven/Event Driven Patterns Overview.md",
-    "Important note/Software Architectures/Event Driven/Event Producers And Consumers.md",
     "Important note/Software Architectures/Infrastrcture/Infrastructure Overview.md",
     "Important note/Software Architectures/Infrastrcture/Message-oriented middleware (MOM).md",
-    "Important note/Software Architectures/SA Overview.md",
+    "Important note/Software Architectures/Domain Driven Design (DDD).md",
+    "Important note/Software Architectures/Event Driven/Command Query Response Segregation (CQRS).md",
+    "Important note/Software Architectures/Event Driven/Event Driven Patterns Overview.md",
+    "Important note/Software Architectures/Event Driven/Event Sourcing.md",
+    "Important note/Software Architectures/eTOM.md",
     "Important note/Software Architectures/Event Storming.md",
+    "Important note/Software Architectures/SOLID Principle.md",
+    "Important note/Software Architectures/USM & ES.md",
+    "Important note/Software Architectures/User Story Mapping (USM).md",
+    "Important note/Software Architectures/SA Overview.md",
+    "Important note/Software Architectures/Event Driven/Event Driven Architecture.md",
+    "Important note/Software Architectures/Event Driven/Event Carried State Transfer (ECST) And Event Notification (EN).md",
+    "Important note/Software Architectures/Event Driven/Event Producers And Consumers.md",
+    "Important note/Overview/Micro-service Overview.md",
+    "Important note/ข้าราชการ.md",
+    "Pasted image 20250127094743.png",
+    "Pasted image 20250127093826.png",
+    "Important note/Interested Company List.md",
+    "Excalidraw/Drawing 2025-01-16 13.24.47.excalidraw.md",
+    "Untitled Diagram 3.svg",
     "Important note/Software Architectures/Untitled.md",
     "Important note/Software Architectures/Event Driven",
     "Important note/Overview",
-    "Important note/Software Architectures/eTOM.md",
     "Important note/Software Architectures/Infrastrcture",
     "Untitled Diagram 2.svg",
     "~$commerce Event Stroming.drawio.xml",
@@ -285,15 +267,8 @@
     "E-commerce Event Stroming.drawio.png",
     "Untitled Diagram 1.svg",
     "Untitled Diagram.svg",
-    "Important note/Software Architectures/USM & ES.md",
     "Untitled 1.canvas",
-    "Important note/Software Architectures/Software Testing.md",
     "PROJECTS/Home For Paws/Software Architecture Design.md",
-    "Important note/Software Development Life Cycle (SDLC)/Design.md",
-    "Important note/Software Development Life Cycle (SDLC)/Implementation.md",
-    "Important note/Software Development Life Cycle (SDLC)/SDLC Method.md",
-    "Important note/Software Development Life Cycle (SDLC)/SDLC Contents.md",
-    "Important note/Software Architectures/SOLID Principle.md",
     "Pasted image 20250117125543.png",
     "Deployment Infrastructure.excalidraw",
     "Pasted image 20250114135813.png",
@@ -303,8 +278,6 @@
     "PROJECTS/PaysolutionCheckSlip/Research Paper",
     "PROJECTS/PaysolutionCheckSlip/Migration/Slip Verification",
     "PROJECTS/PaysolutionCheckSlip/Migration",
-    "Pasted image 20241127110527.png",
-    "Pasted image 20241126232532.png",
     "Untitled.canvas"
   ]
 }
