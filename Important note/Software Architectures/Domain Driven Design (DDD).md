@@ -129,6 +129,6 @@ Start by breaking the system into **domains** and **subdomains** based on the pr
 #### 4. **Define Relationships Between Contexts**
 #### 5. **Implement Anti-Corruption Layers (ACLs) and Open Host Service (OHS)**
 
-![[Drawing 2025-01-16 13.24.47.excalidraw]]
+
 
 

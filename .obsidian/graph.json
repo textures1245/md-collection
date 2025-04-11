@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "path:\"Software\" ",
+  "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -50,30 +50,51 @@
       }
     },
     {
-      "query": "path:\"Important note/Software\" ",
+      "query": "path:\"Important note/Software Design\" ",
       "color": {
         "a": 1,
-        "rgb": 11361494
+        "rgb": 15052053
       }
     },
     {
-      "query": "path:\"Important note\"  ",
+      "query": "path:\"Important note/Software Architectures/Layer \" ",
       "color": {
         "a": 1,
         "rgb": 14048429
       }
+    },
+    {
+      "query": "path:\"Important note/Software Architectures/Software Principle\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14069084
+      }
+    },
+    {
+      "query": "path:\"Important note/Software Architectures\" ",
+      "color": {
+        "a": 1,
+        "rgb": 1497759
+      }
+    },
+    {
+      "query": "path:\"Important note\" ",
+      "color": {
+        "a": 1,
+        "rgb": 8972305
+      }
     }
   ],
   "collapse-display": true,
-  "showArrow": false,
-  "textFadeMultiplier": 0,
+  "showArrow": true,
+  "textFadeMultiplier": -2.1,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
-  "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
+  "collapse-forces": false,
+  "centerStrength": 0.369499892680833,
+  "repelStrength": 14.5225048923679,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.3086590792178319,
+  "scale": 0.3127284159073002,
   "close": false
 }

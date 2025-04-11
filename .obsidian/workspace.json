@@ -1,62 +1,91 @@
 {
   "main": {
-    "id": "91622c51dc4840a0",
+    "id": "5324373015726ba8",
     "type": "split",
     "children": [
       {
-        "id": "24d85eac676935cd",
+        "id": "a2c94a3afbbbaad2",
         "type": "tabs",
+        "dimension": 32.88003885381253,
         "children": [
           {
-            "id": "8ae8b222de364348",
+            "id": "26e444917be1251d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Important note/Overview/Micro-service Overview.md",
+                "file": "Important note/Software Architectures/Test Driven Development/TDD as Revisited.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Micro-service Overview"
+              "title": "TDD as Revisited"
             }
           },
           {
-            "id": "851a4ab9b2fb424e",
+            "id": "e980f5c145f69e74",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Q AI.md",
+                "file": "Important note/Software Architectures/Layer Architecture/Layer Architecture Overview.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Q AI"
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "1130af236b616da0",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "1f01488bf564abe9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Important note/General Notes/DeepSeek Survey.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "DeepSeek Survey"
+              "title": "Layer Architecture Overview"
             }
           }
         ]
+      },
+      {
+        "id": "531dba59c781e93e",
+        "type": "split",
+        "dimension": 67.11996114618746,
+        "children": [
+          {
+            "id": "62283fe05d9a0226",
+            "type": "tabs",
+            "dimension": 49.368088467614534,
+            "children": [
+              {
+                "id": "2c5b7d1860acfafd",
+                "type": "leaf",
+                "state": {
+                  "type": "graph",
+                  "state": {},
+                  "icon": "lucide-git-fork",
+                  "title": "Graph view"
+                }
+              }
+            ]
+          },
+          {
+            "id": "5be0af9d6940cd41",
+            "type": "tabs",
+            "dimension": 50.631911532385466,
+            "children": [
+              {
+                "id": "ad29937fddd71ad8",
+                "type": "leaf",
+                "state": {
+                  "type": "canvas",
+                  "state": {
+                    "file": "Important note/Software Architectures/Software Architecture Overview.canvas",
+                    "viewState": {
+                      "x": 3309.3208368248393,
+                      "y": 941.6131087802812,
+                      "zoom": -0.8499654400340451
+                    }
+                  },
+                  "icon": "lucide-layout-dashboard",
+                  "title": "Software Architecture Overview"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -89,7 +118,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -101,8 +131,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Company",
-                "matchingCase": false,
+                "query": "",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -127,7 +157,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200.50418853759766
   },
   "right": {
     "id": "fcab376267815ad6",
@@ -210,7 +240,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 321.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -225,59 +255,61 @@
       "mermaid-tools:Open Mermaid Toolbar": false,
       "notion-like-tables:Create loom": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-kanban:Create new board": false,
+      "homepage:Open homepage": false
     }
   },
-  "active": "851a4ab9b2fb424e",
+  "active": "9818297229f795d6",
   "lastOpenFiles": [
-    "Important note/General Notes/DeepSeek Survey.md",
-    "Q AI.md",
-    "Q AI 1.md",
-    "Important note/Software Architectures/Software Testing.md",
-    "Important note/Software Architectures/Clean Architecture.md",
-    "Important note/Software Architectures/Infrastrcture/Infrastructure Overview.md",
+    "Important note/Software Architectures/Test Driven Development/TDD as Revisited.md",
+    "Important note/Software Architectures/Software Architecture Overview.canvas",
+    "Pasted image 20250411165832.png",
+    "Important note/Software Architectures/Software Principle/SOLID Principle.md",
+    "Important note/Software Architectures/Test Driven Development",
     "Important note/Software Architectures/Infrastrcture/Message-oriented middleware (MOM).md",
-    "Important note/Software Architectures/Domain Driven Design (DDD).md",
-    "Important note/Software Architectures/Event Driven/Command Query Response Segregation (CQRS).md",
-    "Important note/Software Architectures/Event Driven/Event Driven Patterns Overview.md",
-    "Important note/Software Architectures/Event Driven/Event Sourcing.md",
-    "Important note/Software Architectures/eTOM.md",
+    "Important note/Software Architectures/Infrastrcture/Infrastructure Overview.md",
+    "Important note/Software Architectures/Philosophy of Architecture.md",
+    "Important note/Software Architectures/Layer Architecture/Clean Architecture.md",
+    "Important note/Software Architectures/Software Principle/Software Principle Overview.md",
+    "Important note/Software Architectures/Software Principle",
+    "Important note/Software Architectures/Layer Architecture/Layer Architecture Overview.md",
+    "PROJECTS/Home For Paws/Software Architecture Design.md",
+    "Important note/Software Architectures/Layer Architecture/Hexagonal Architectures.md",
+    "CleanArchitechtureStructureDiagarm.excalidraw",
     "Important note/Software Architectures/Event Storming.md",
-    "Important note/Software Architectures/SOLID Principle.md",
+    "Important note/Software Architectures/Layer Architecture",
+    "ETOM Process Freamwork.png",
+    "Pasted image 20250411141423.png",
+    "Important note/Software Architectures/Software Testing.md",
+    "Important note/Software Architectures/Untitled.md",
+    "Important note/Software Architectures/DDD E-Commernce Pototype.excalidraw.md",
+    "Important note/Software Architectures/Domain Driven Design (DDD).md",
     "Important note/Software Architectures/USM & ES.md",
     "Important note/Software Architectures/User Story Mapping (USM).md",
-    "Important note/Software Architectures/SA Overview.md",
+    "Balancing Coupling in Software Design.md",
     "Important note/Software Architectures/Event Driven/Event Driven Architecture.md",
-    "Important note/Software Architectures/Event Driven/Event Carried State Transfer (ECST) And Event Notification (EN).md",
-    "Important note/Software Architectures/Event Driven/Event Producers And Consumers.md",
-    "Important note/Overview/Micro-service Overview.md",
-    "Important note/ข้าราชการ.md",
-    "Pasted image 20250127094743.png",
-    "Pasted image 20250127093826.png",
-    "Important note/Interested Company List.md",
-    "Excalidraw/Drawing 2025-01-16 13.24.47.excalidraw.md",
-    "Untitled Diagram 3.svg",
-    "Important note/Software Architectures/Untitled.md",
-    "Important note/Software Architectures/Event Driven",
-    "Important note/Overview",
-    "Important note/Software Architectures/Infrastrcture",
-    "Untitled Diagram 2.svg",
-    "~$commerce Event Stroming.drawio.xml",
-    "E-commerce Event Stroming.drawio.xml",
-    "E-commerce Event Stroming.drawio.png",
-    "Untitled Diagram 1.svg",
-    "Untitled Diagram.svg",
+    "Important note/Software Architectures/SA Overview.md",
+    "Coupling In Software Design.md",
+    "Excalidraw/LinerGraphOfCouplingCostDevelopement.excalidraw.md",
+    "Pasted image 20250410175246.png",
+    "Pasted image 20250410175046.png",
+    "Excalidraw/Drawing 2025-03-19 14.29.44.excalidraw.md",
+    "Pasted image 20250410163826.png",
+    "PROJECTS/PaysolutionCheckSlip/User Jounery.md",
+    "Important note/Todo-List.md",
+    "Excalidraw/Scripts/Downloaded/Zoom to Fit Selected Elements.svg",
+    "Excalidraw/Scripts/Downloaded",
+    "Excalidraw/Scripts",
+    "Untitled Diagram 4.svg",
+    "Pasted image 20250401170327.png",
+    "Important note/Software Design",
+    "Pasted image 20250331180706.png",
+    "Untitled 2.loom",
+    "PROJECTS/LLM Diagram Producer/Kanban",
+    "Important note/Software Architectures/Monolith",
+    "Untitled 2.canvas",
     "Untitled 1.canvas",
-    "PROJECTS/Home For Paws/Software Architecture Design.md",
-    "Pasted image 20250117125543.png",
-    "Deployment Infrastructure.excalidraw",
-    "Pasted image 20250114135813.png",
-    "Pasted image 20241126232227.png",
-    "Important note/Untitled 1",
-    "Important note/Untitled.canvas",
-    "PROJECTS/PaysolutionCheckSlip/Research Paper",
-    "PROJECTS/PaysolutionCheckSlip/Migration/Slip Verification",
-    "PROJECTS/PaysolutionCheckSlip/Migration",
-    "Untitled.canvas"
+    "Untitled.canvas",
+    "Important note/Untitled.canvas"
   ]
 }

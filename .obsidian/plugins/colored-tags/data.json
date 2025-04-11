@@ -193,7 +193,10 @@
     "PaysolutionCheckSlip": 180,
     "Todo": 181,
     "UbiquitousLanguage": 182,
-    "Ubiquitous-Language": 183
+    "Ubiquitous-Language": 183,
+    "LLMs": 184,
+    "LLMs-Serving-Service": 185,
+    "LLMs-Inference-Engines": 186
   },
   "_version": 3
 }

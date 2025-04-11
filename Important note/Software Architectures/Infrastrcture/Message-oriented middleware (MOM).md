@@ -1,4 +1,4 @@
-[[Infrastructure Overview]] [[Micro-service Overview]]
+[[Infrastructure Overview]] [[The truth of Microservice]]
 
 - Software or hardware infrastructure that supports **sending and receiving messages between distributed systems**. It allows different applications, often running on different platforms, to communicate with each other by exchanging messages. Here are some key points about MOM
 

@@ -5,6 +5,7 @@
   "cssTheme": "Minimal",
   "enabledCssSnippets": [
     "tag_colors",
-    "minimal-caption-image"
+    "minimal-caption-image",
+    "img_align"
   ]
 }

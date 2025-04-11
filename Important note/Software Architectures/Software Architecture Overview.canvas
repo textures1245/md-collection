@@ -1,0 +1,796 @@
+{
+  "edges": [
+    {
+      "color": "1",
+      "fromNode": "c5799bc901d83954",
+      "fromSide": "top",
+      "id": "5db31b01b7db50bd",
+      "styleAttributes": {
+      },
+      "toNode": "a79cd05451278e8f",
+      "toSide": "left"
+    },
+    {
+      "color": "1",
+      "fromNode": "c5799bc901d83954",
+      "fromSide": "left",
+      "id": "39238afe19a9a691",
+      "styleAttributes": {
+      },
+      "toNode": "164a0f91c6559a4d",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "a79cd05451278e8f",
+      "fromSide": "left",
+      "id": "59d7625367e44308",
+      "styleAttributes": {
+      },
+      "toNode": "d760801ed070fa6c",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "a79cd05451278e8f",
+      "fromSide": "right",
+      "id": "d4262f45c0d71981",
+      "styleAttributes": {
+      },
+      "toNode": "1145b74216258ee7",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "f02607611a90a9ef",
+      "fromSide": "bottom",
+      "id": "8d412e2a5a53abcf",
+      "styleAttributes": {
+      },
+      "toNode": "a79cd05451278e8f",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "b0e0e287dc87c035",
+      "fromSide": "bottom",
+      "id": "a935637d098cffca",
+      "styleAttributes": {
+      },
+      "toNode": "d760801ed070fa6c",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "a79cd05451278e8f",
+      "fromSide": "right",
+      "id": "0fb106edb1abc673",
+      "styleAttributes": {
+      },
+      "toNode": "46c529009dfc5319",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "739865984586ba6e",
+      "fromSide": "top",
+      "id": "b2b7bb02430c4014",
+      "styleAttributes": {
+      },
+      "toNode": "80e1b84270977843",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "739865984586ba6e",
+      "fromSide": "top",
+      "id": "90926806e9eb2470",
+      "styleAttributes": {
+      },
+      "toNode": "14c95ecb767f7781",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "739865984586ba6e",
+      "fromSide": "bottom",
+      "id": "7ed1a0519be5918f",
+      "styleAttributes": {
+      },
+      "toNode": "49485441bc401c29",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "4036f8b45ba32fed",
+      "fromSide": "top",
+      "id": "e1d37e75198b4c38",
+      "styleAttributes": {
+      },
+      "toNode": "49485441bc401c29",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "9182eefb7da39b1a",
+      "fromSide": "left",
+      "id": "17e929f5a5e850ed",
+      "styleAttributes": {
+      },
+      "toNode": "739865984586ba6e",
+      "toSide": "right"
+    },
+    {
+      "color": "3",
+      "fromNode": "0a1d29c6aed3ed3c",
+      "fromSide": "bottom",
+      "id": "7aec2d6dbcde1012",
+      "styleAttributes": {
+        "path": null,
+        "pathfindingMethod": "square"
+      },
+      "toNode": "6960a5ae4eb28276",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "a79cd05451278e8f",
+      "fromSide": "bottom",
+      "id": "df1b1fb56ef8b663",
+      "styleAttributes": {
+      },
+      "toNode": "9182eefb7da39b1a",
+      "toSide": "top"
+    },
+    {
+      "color": "3",
+      "fromNode": "c07f9fe41196f8db",
+      "fromSide": "top",
+      "id": "f5d802a6382ce7a1",
+      "styleAttributes": {
+        "path": "dotted",
+        "pathfindingMethod": "square"
+      },
+      "toNode": "0a1d29c6aed3ed3c",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "6b048793126bb514",
+      "fromSide": "top",
+      "id": "79822b92084058ca",
+      "styleAttributes": {
+      },
+      "toNode": "dad80f25a7c1d110",
+      "toSide": "right"
+    },
+    {
+      "color": "1",
+      "fromNode": "c5799bc901d83954",
+      "fromSide": "right",
+      "id": "6f734ba578967db7",
+      "styleAttributes": {
+      },
+      "toNode": "6b048793126bb514",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "6b048793126bb514",
+      "fromSide": "top",
+      "id": "7bc1ccfe13e3e609",
+      "styleAttributes": {
+      },
+      "toNode": "2e1b2cb164bf8311",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "6b048793126bb514",
+      "fromSide": "bottom",
+      "id": "d9c1e82e773667a4",
+      "styleAttributes": {
+      },
+      "toNode": "4524d31bd0e3964c",
+      "toSide": "top"
+    },
+    {
+      "color": "3",
+      "fromNode": "6960a5ae4eb28276",
+      "fromSide": "right",
+      "id": "6973fd627792ec7c",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toNode": "021ff3e1bb9d7d8e",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "3765e2520bb6f47a",
+      "fromSide": "left",
+      "id": "e35eaa24e62da5a7",
+      "styleAttributes": {
+      },
+      "toNode": "495585a27cd136e2",
+      "toSide": "right"
+    },
+    {
+      "color": "1",
+      "fromNode": "c5799bc901d83954",
+      "fromSide": "top",
+      "id": "21328675bcf14910",
+      "styleAttributes": {
+      },
+      "toNode": "3765e2520bb6f47a",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "3765e2520bb6f47a",
+      "fromSide": "top",
+      "id": "27ba746e45ae6f50",
+      "styleAttributes": {
+      },
+      "toNode": "e24192a46cea4794",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "3765e2520bb6f47a",
+      "fromSide": "right",
+      "id": "d776aeea8b821e4e",
+      "styleAttributes": {
+      },
+      "toNode": "a8a332c1a754d3fb",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "3765e2520bb6f47a",
+      "fromSide": "bottom",
+      "id": "a17afad5db5a2479",
+      "styleAttributes": {
+      },
+      "toNode": "a6facee74df26e7f",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "68d0fd1255828146",
+      "fromSide": "top",
+      "id": "52caa633b91d726e",
+      "styleAttributes": {
+      },
+      "toNode": "495585a27cd136e2",
+      "toSide": "left"
+    },
+    {
+      "color": "3",
+      "fromNode": "021ff3e1bb9d7d8e",
+      "fromSide": "top",
+      "id": "166726ef07f96786",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toNode": "56881a0ea76dd86d",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "739865984586ba6e",
+      "fromSide": "bottom",
+      "id": "e7e9b4868c88333e",
+      "styleAttributes": {
+      },
+      "toNode": "a77601ecfcb72a3c",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "164a0f91c6559a4d",
+      "fromSide": "left",
+      "id": "331d522719851256",
+      "styleAttributes": {
+      },
+      "toNode": "81feb2291f251a52",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "164a0f91c6559a4d",
+      "fromSide": "top",
+      "id": "266a0c63f2531daa",
+      "styleAttributes": {
+      },
+      "toNode": "fd009af6f4525a68",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "81feb2291f251a52",
+      "fromSide": "left",
+      "id": "6dcbff1765017c37",
+      "styleAttributes": {
+      },
+      "toNode": "2f996032f04f5f3e",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "164a0f91c6559a4d",
+      "fromSide": "top",
+      "id": "e2d189982997cae1",
+      "styleAttributes": {
+      },
+      "toNode": "77539fc0ed6670fb",
+      "toSide": "bottom"
+    },
+    {
+      "color": "4",
+      "fromNode": "c07f9fe41196f8db",
+      "fromSide": "top",
+      "id": "3e617f1a1e4c396c",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toNode": "c46ab3bf8c5b1ba6",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "4a39e64892575a70",
+      "fromSide": "right",
+      "id": "65ee6a6f70087757",
+      "styleAttributes": {
+      },
+      "toNode": "a878546f00a4a2dc",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "e186c8d2146312ad",
+      "fromSide": "top",
+      "id": "50f406c7f8e7979b",
+      "styleAttributes": {
+      },
+      "toNode": "2a8e35138b20e215",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "4a39e64892575a70",
+      "fromSide": "left",
+      "id": "3e99ae08f24a686f",
+      "styleAttributes": {
+      },
+      "toNode": "e186c8d2146312ad",
+      "toSide": "right"
+    }
+  ],
+  "nodes": [
+    {
+      "color": "3",
+      "height": 1953,
+      "id": "0a1d29c6aed3ed3c",
+      "label": "Domain Driven Desgin ",
+      "sideRatio": 1.7777777777777777,
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 3472,
+      "x": 640,
+      "y": -2240
+    },
+    {
+      "color": "3",
+      "height": 1898,
+      "id": "6960a5ae4eb28276",
+      "label": "Event Driven Architecture",
+      "sideRatio": 1.7777777777777777,
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 3374,
+      "x": 2160,
+      "y": 80
+    },
+    {
+      "color": "3",
+      "height": 1515,
+      "id": "021ff3e1bb9d7d8e",
+      "label": "Layers Architecture",
+      "sideRatio": 1.7777777777777777,
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 2693,
+      "x": 4280,
+      "y": -1840
+    },
+    {
+      "color": "3",
+      "height": 1240,
+      "id": "56881a0ea76dd86d",
+      "label": "Software Principles",
+      "sideRatio": 1.7777777777777777,
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 2204,
+      "x": 4400,
+      "y": -3280
+    },
+    {
+      "color": "4",
+      "height": 1100,
+      "id": "c46ab3bf8c5b1ba6",
+      "label": "Software Design",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 2240,
+      "x": -1840,
+      "y": -1400
+    },
+    {
+      "height": 980,
+      "id": "1fcffb2682fa0229",
+      "label": "Test Driven Development",
+      "sideRatio": 1.7777777777777777,
+      "type": "group",
+      "width": 1742,
+      "x": -1120,
+      "y": 760
+    },
+    {
+      "height": 680,
+      "id": "c07f9fe41196f8db",
+      "isStartNode": true,
+      "label": "Start Slide",
+      "sideRatio": 1.7777777777777777,
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 1209,
+      "x": -80,
+      "y": 0
+    },
+    {
+      "file": "ETOM Process Freamwork.png",
+      "height": 570,
+      "id": "46c529009dfc5319",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 880,
+      "x": 3083,
+      "y": -1105
+    },
+    {
+      "file": "Important note/Software Architectures/USM & ES.md",
+      "height": 480,
+      "id": "1145b74216258ee7",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 600,
+      "x": 2360,
+      "y": -1160
+    },
+    {
+      "file": "Important note/Software Architectures/Event Driven/Command Query Response Segregation (CQRS).md",
+      "height": 600,
+      "id": "14c95ecb767f7781",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 590,
+      "x": 3220,
+      "y": 180
+    },
+    {
+      "file": "Important note/Software Architectures/Event Driven/Event Carried State Transfer (ECST) And Event Notification (EN).md",
+      "height": 560,
+      "id": "80e1b84270977843",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 630,
+      "x": 2240,
+      "y": 220
+    },
+    {
+      "color": "1",
+      "file": "Important note/Software Architectures/Event Driven/Event Driven Architecture.md",
+      "height": 1089,
+      "id": "9182eefb7da39b1a",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 1200,
+      "x": 3880,
+      "y": 480
+    },
+    {
+      "file": "Important note/Software Architectures/SA Overview.md",
+      "height": 600,
+      "id": "c5799bc901d83954",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 660,
+      "x": 180,
+      "y": 40
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "739865984586ba6e",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "# Event Driven Patterns",
+      "type": "text",
+      "width": 260,
+      "x": 2960,
+      "y": 880
+    },
+    {
+      "file": "Important note/Software Architectures/Event Driven/Event Producers And Consumers.md",
+      "height": 100,
+      "id": "49485441bc401c29",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 400,
+      "x": 2600,
+      "y": 1080
+    },
+    {
+      "height": 460,
+      "id": "4036f8b45ba32fed",
+      "styleAttributes": {
+      },
+      "text": "\n![](https://cdn.prod.website-files.com/63e3d6905bacd6855fa38c1c/63e3d6905bacd642b4a390a4_event-driven-architecture.jpg)",
+      "type": "text",
+      "width": 1220,
+      "x": 2500,
+      "y": 1280
+    },
+    {
+      "color": "1",
+      "file": "Important note/Software Architectures/Domain Driven Design (DDD).md",
+      "height": 520,
+      "id": "a79cd05451278e8f",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 560,
+      "x": 1400,
+      "y": -1080
+    },
+    {
+      "color": "1",
+      "file": "Important note/Software Architectures/Layer Architecture/Layer Architecture Overview.md",
+      "height": 77,
+      "id": "6b048793126bb514",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 400,
+      "x": 5160,
+      "y": -1240
+    },
+    {
+      "file": "Important note/Software Architectures/Layer Architecture/Clean Architecture.md",
+      "height": 601,
+      "id": "dad80f25a7c1d110",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 560,
+      "x": 4480,
+      "y": -1600
+    },
+    {
+      "height": 601,
+      "id": "4524d31bd0e3964c",
+      "styleAttributes": {
+      },
+      "type": "link",
+      "url": "https://medium.com/expedia-group-tech/onion-architecture-deed8a554423",
+      "width": 720,
+      "x": 5200,
+      "y": -960
+    },
+    {
+      "height": 701,
+      "id": "2e1b2cb164bf8311",
+      "styleAttributes": {
+      },
+      "type": "link",
+      "url": "https://docs.mikelopster.dev/c/goapi-essential/chapter-7/intro",
+      "width": 721,
+      "x": 5700,
+      "y": -1760
+    },
+    {
+      "file": "Important note/Software Architectures/DDD E-Commernce Pototype.excalidraw.md",
+      "height": 780,
+      "id": "f02607611a90a9ef",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 1283,
+      "x": 2240,
+      "y": -2080
+    },
+    {
+      "file": "Pasted image 20250411141423.png",
+      "height": 520,
+      "id": "b0e0e287dc87c035",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 1425,
+      "x": 780,
+      "y": -2080
+    },
+    {
+      "file": "Important note/Software Architectures/Event Storming.md",
+      "height": 400,
+      "id": "d760801ed070fa6c",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 400,
+      "x": 760,
+      "y": -1360
+    },
+    {
+      "file": "Important note/Software Architectures/Software Principle/SOLID Principle.md",
+      "height": 380,
+      "id": "495585a27cd136e2",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 600,
+      "x": 5020,
+      "y": -3230
+    },
+    {
+      "color": "1",
+      "file": "Important note/Software Architectures/Software Principle/Software Principle Overview.md",
+      "height": 60,
+      "id": "3765e2520bb6f47a",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 400,
+      "x": 5500,
+      "y": -2640
+    },
+    {
+      "height": 60,
+      "id": "e24192a46cea4794",
+      "styleAttributes": {
+      },
+      "text": "# Keep it Simple, Stupid (KISS) ",
+      "type": "text",
+      "width": 260,
+      "x": 5840,
+      "y": -3040
+    },
+    {
+      "height": 60,
+      "id": "a8a332c1a754d3fb",
+      "styleAttributes": {
+      },
+      "text": "# Don't Repeat Yourserlf (DRY)",
+      "type": "text",
+      "width": 260,
+      "x": 6020,
+      "y": -2780
+    },
+    {
+      "height": 710,
+      "id": "68d0fd1255828146",
+      "styleAttributes": {
+      },
+      "text": "![](https://pbs.twimg.com/media/F-5pS1zWcAEML_P.jpg:large)",
+      "type": "text",
+      "width": 710,
+      "x": 4565,
+      "y": -2815
+    },
+    {
+      "height": 60,
+      "id": "a6facee74df26e7f",
+      "styleAttributes": {
+      },
+      "text": "# You Aren't Gonna Need it (YAGNI)",
+      "type": "text",
+      "width": 260,
+      "x": 5860,
+      "y": -2520
+    },
+    {
+      "height": 420,
+      "id": "a77601ecfcb72a3c",
+      "styleAttributes": {
+      },
+      "text": "# Message Oriented Middleware (MOM)\n\n![](https://docs.oracle.com/cd/E19340-01/820-6424/images/to_RPC_MOM.gif)",
+      "type": "text",
+      "width": 480,
+      "x": 3275,
+      "y": 815
+    },
+    {
+      "color": "1",
+      "file": "Important note/Software Design/Design Pattern Overview.md",
+      "height": 80,
+      "id": "164a0f91c6559a4d",
+      "type": "file",
+      "width": 400,
+      "x": -480,
+      "y": -480
+    },
+    {
+      "file": "Important note/Software Design/DI and IoC.md",
+      "height": 400,
+      "id": "fd009af6f4525a68",
+      "type": "file",
+      "width": 400,
+      "x": -40,
+      "y": -760
+    },
+    {
+      "file": "Coupling In Software Design.md",
+      "height": 560,
+      "id": "81feb2291f251a52",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 760,
+      "x": -1280,
+      "y": -1160
+    },
+    {
+      "file": "Balancing Coupling in Software Design.md",
+      "height": 400,
+      "id": "2f996032f04f5f3e",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 400,
+      "x": -1720,
+      "y": -1320
+    },
+    {
+      "file": "Important note/Software Design/Mediator Design Pattern.md",
+      "height": 520,
+      "id": "77539fc0ed6670fb",
+      "type": "file",
+      "width": 600,
+      "x": -480,
+      "y": -1320
+    },
+    {
+      "file": "Important note/Software Architectures/Test Driven Development/TDD as Revisited.md",
+      "height": 400,
+      "id": "4a39e64892575a70",
+      "type": "file",
+      "width": 400,
+      "x": -600,
+      "y": 1120
+    },
+    {
+      "height": 410,
+      "id": "a878546f00a4a2dc",
+      "styleAttributes": {
+      },
+      "text": "![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*u3dujpEnufi324TsCF6OJA.png)\n",
+      "type": "text",
+      "width": 670,
+      "x": -80,
+      "y": 840
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "e186c8d2146312ad",
+      "styleAttributes": {
+      },
+      "text": "# Fallacy Of TDD",
+      "type": "text",
+      "width": 160,
+      "x": -840,
+      "y": 1220
+    },
+    {
+      "height": 260,
+      "id": "2a8e35138b20e215",
+      "styleAttributes": {
+      },
+      "text": "# Developers wrtie Unit Test\n![[Pasted image 20250411165832.png]]",
+      "type": "text",
+      "width": 400,
+      "x": -1040,
+      "y": 840
+    }
+  ]
+}

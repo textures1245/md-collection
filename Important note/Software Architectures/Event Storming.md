@@ -1,4 +1,4 @@
-[[Domain Driven Design (DDD)]] [[SA Overview|SA Overview]]
+[](DDD%20E-Commernce%20Pototype.excalidraw.md)[[Domain Driven Design (DDD)]] [[SA Overview|SA Overview]]
 
 Ref: https://www.youtube.com/watch?v=p7IqD83ljvc, https://github.com/ddd-crew/eventstorming-glossary-cheat-sheet?tab=readme-ov-file
 

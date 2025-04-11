@@ -1,4 +1,4 @@
-[[SA Overview|SA Overview]] [[Important Note Contents]] #Knowlaged-Category 
+[[Software Principle Overview]] [[Important Note Contents]] #Knowlaged-Category 
 
 SOLID is an acronym representing five essential design principles for writing maintainable and scalable software. These principles were introduced by Robert C. Martin (Uncle Bob) and have become fundamental guidelines for good software design.
 
